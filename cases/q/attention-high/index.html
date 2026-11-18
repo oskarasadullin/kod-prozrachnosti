@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0000e8">
+  <title>Реестр · Код прозрачности</title>
+  <link rel="preload" href="/kod-prozrachnosti/static/fonts/science-gothic-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/kod-prozrachnosti/static/css/app.css">
+  <link rel="icon" href="/kod-prozrachnosti/static/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/kod-prozrachnosti/static/img/apple-touch-icon.png">
+  
+<meta name="robots" content="noindex">
+</head>
+<body class="">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m5 9 7 7 7-7"/></symbol>
+  </svg>
+  
+  <header class="hdr" data-hdr>
+    <div class="hdr-in">
+      <a class="hdr-logo" href="/kod-prozrachnosti/"><span class="mark hdr-mark" aria-hidden="true"></span><span>Код прозрачности</span></a>
+      
+      <div class="hdr-user">
+        <button class="hdr-burger" type="button" aria-expanded="false" aria-controls="sheet" data-burger>Разделы <span class="hdr-burger-box"><i></i><i></i><i></i></span></button>
+      </div>
+      
+    </div>
+  </header>
+  
+  <div class="sheet" id="sheet" data-sheet>
+    <nav class="sheet-nav" aria-label="Разделы">
+      <a class="sheet-link" href="/kod-prozrachnosti/" >Обзор</a>
+      <a class="sheet-link" href="/kod-prozrachnosti/cases/" aria-current="page">Реестр</a>
+      <a class="sheet-link" href="/kod-prozrachnosti/map/" >Карта</a>
+      <a class="sheet-link" href="/kod-prozrachnosti/officials/" >Должностные лица</a>
+      <a class="sheet-link" href="/kod-prozrachnosti/sources/" >Источники</a>
+      <a class="sheet-link" href="/kod-prozrachnosti/method/" >Методика</a>
+      <a class="sheet-link" href="/kod-prozrachnosti/imports/" >Загрузка</a>
+      <div class="sheet-foot eyebrow">
+        <span>head / Руководитель</span>
+        
+        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="Fyi0pm3wuLVO41yiJXznDTcQynffRXsptr0IDOGOHX0fXBRX9EXygl9zuBf15wkr"><button class="btn-plain" type="submit">Выйти</button></form>
+      </div>
+    </nav>
+    <figure class="sheet-plate"><img src="/kod-prozrachnosti/static/img/band-map.jpg" alt="" loading="lazy"></figure>
+  </div>
+  
+  
+
+  
+  <section class="band band-short">
+  <img class="band-bg" src="/kod-prozrachnosti/static/img/band-cases.jpg" alt="" aria-hidden="true" width="1500" height="844" fetchpriority="high">
+  <div class="wrap band-in">
+    <div class="band-plate">
+      <span class="eyebrow">Объекты проверки</span>
+      <h1 class="display-l">Реестр</h1>
+      <p class="lede">Сначала объекты с высоким приоритетом. Строка открывает карточку: почему объект здесь, на каких фактах это держится и чего не хватает.</p>
+    </div>
+  </div>
+</section>
+
+  <main class="paper">
+    <div class="wrap">
+      
+<section class="section">
+  <form method="get" class="filters" role="search">
+    <nav class="seg" aria-label="Итог анализа">
+      <a href="/kod-prozrachnosti/cases/" data-lbl="Все" >Все</a>
+      
+      <a href="/kod-prozrachnosti/cases/q/attention-high/" data-lbl="Высокий" aria-current="true">Высокий</a>
+      
+      <a href="/kod-prozrachnosti/cases/q/attention-normal/" data-lbl="Требуют проверки" >Требуют проверки</a>
+      
+      <a href="/kod-prozrachnosti/cases/q/attention-low/" data-lbl="Контекст" >Контекст</a>
+      
+      <a href="/kod-prozrachnosti/cases/q/attention-insufficient/" data-lbl="Нет данных" >Нет данных</a>
+      
+      <a href="/kod-prozrachnosti/cases/q/attention-none/" data-lbl="Без сигналов" >Без сигналов</a>
+      
+    </nav>
+    <input type="hidden" name="attention" value="high">
+    <div class="filters-row">
+      <label class="sr-only" for="q">Поиск</label>
+      <input class="input" id="q" name="q" value="" placeholder="Кадастровый номер, адрес, правообладатель" maxlength="200">
+      <select class="input" name="indicator" aria-label="Индикатор">
+        <option value="">Все индикаторы</option>
+        <option value="I1" >И1 / Покупка до смены категории</option><option value="I2" >И2 / Точечная правка ПЗЗ / генплана</option><option value="I3" >И3 / Выгода после смены категории</option><option value="I4" >И4 / Единственный участник торгов</option><option value="I6" >И6 / Связанное лицо до процедуры</option><option value="I8" >И8 / Аномалия границ</option><option value="I10" >И10 / Повтор должностного лица</option>
+      </select>
+      <select class="input" name="region" aria-label="Регион">
+        <option value="">Все регионы</option>
+        <option >Белгородская обл.</option><option >Владимирская обл.</option><option >Воронежская обл.</option><option >Краснодарский край</option><option >Московская обл.</option><option >Нижегородская обл.</option><option >Ростовская обл.</option><option >Саратовская обл.</option><option >Свердловская обл.</option><option >Челябинская обл.</option>
+      </select>
+      <select class="input" name="review" aria-label="Проверка сотрудника">
+        <option value="">Любой итог проверки</option>
+        <option value="none" >Без проверки</option><option value="confirmed" >Основания для дальнейшей проверки подтверждены</option><option value="not_confirmed" >Предположение не подтвердилось</option><option value="needs_information" >Нужны дополнительные сведения</option>
+      </select>
+      <button class="btn btn-primary" type="submit" data-lbl="Показать">Показать</button>
+    </div>
+  </form>
+
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:var(--s4);flex-wrap:wrap;padding-block:var(--s7) var(--s4)">
+    <h2 class="h1">Найдено: 8</h2>
+    <a class="btn" data-lbl="Выгрузить CSV" href="/kod-prozrachnosti/exports/cases.csv">Выгрузить CSV</a>
+  </div>
+  <div class="tbl-wrap">
+    <table class="tbl">
+      <thead><tr><th>Объект</th><th>Индикаторы</th><th>Итог анализа</th><th class="hide-s">Регион</th><th class="hide-s">Проверка сотрудника</th><th></th></tr></thead>
+      <tbody>
+        <tr class="row">
+          <td><a class="row-link" href="/kod-prozrachnosti/cases/b64101b0-6ae5-45ee-91e3-acb7182f95e2/">Ростовская обл., Аксайский р-н, Щепкинское с/п, 1,5 км севернее п. Щепкин</a><span class="sub">61:02:0600010:2843 / Земельный участок / демонстрация</span></td>
+          <td data-label="Индикаторы"><div class="codes"><span class="code">И1</span><span class="code">И6</span><span class="code">И10</span></div></td>
+          <td data-label="Итог"><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Высокий приоритет проверки</span></td>
+          <td class="hide-s small">Ростовская обл.</td>
+          <td class="hide-s small nowrap"><span class="soft">не проверялся</span></td>
+          <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
+        </tr>
+      
+        <tr class="row">
+          <td><a class="row-link" href="/kod-prozrachnosti/cases/652441ab-03f1-4213-b3d2-36eb934b2fff/">Ростовская обл., Егорлыкский р-н, ст. Егорлыкская, северная окраина</a><span class="sub">61:10:0600002:854 / Земельный участок / демонстрация</span></td>
+          <td data-label="Индикаторы"><div class="codes"><span class="code">И1</span><span class="code">И3</span><span class="code">И10</span></div></td>
+          <td data-label="Итог"><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Высокий приоритет проверки</span></td>
+          <td class="hide-s small">Ростовская обл.</td>
+          <td class="hide-s small nowrap"><span class="soft">не проверялся</span></td>
+          <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
+        </tr>
+      
+        <tr class="row">
+          <td><a class="row-link" href="/kod-prozrachnosti/cases/f84d22ef-e5c0-48e5-87b5-a4f70586719a/">Ростовская обл., Октябрьский р-н, р.п. Каменоломни, пер. Шоссейный, 2а</a><span class="sub">61:28:0600016:3061 / Земельный участок / демонстрация</span></td>
+          <td data-label="Индикаторы"><div class="codes"><span class="code">И1</span><span class="code">И2</span><span class="code">И10</span></div></td>
+          <td data-label="Итог"><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Высокий приоритет проверки</span></td>
+          <td class="hide-s small">Ростовская обл.</td>
+          <td class="hide-s small nowrap"><span class="soft">не проверялся</span></td>
+          <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
+        </tr>
+      
+        <tr class="row">
+          <td><a class="row-link" href="/kod-prozrachnosti/cases/62dc4c0e-6fc8-4a15-a4f5-4cf6374548b2/">Ростовская обл., г. Ростов-на-Дону, Советский р-н</a><span class="sub">61:44:0072201:356 / Земельный участок / демонстрация</span></td>
+          <td data-label="Индикаторы"><div class="codes"><span class="code">И2</span><span class="code">И6</span><span class="code">И10</span></div></td>
+          <td data-label="Итог"><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Высокий приоритет проверки</span></td>
+          <td class="hide-s small">Ростовская обл.</td>
+          <td class="hide-s small nowrap"><span class="soft">не проверялся</span></td>
+          <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
+        </tr>
+      
+        <tr class="row">
+          <td><a class="row-link" href="/kod-prozrachnosti/cases/41f96bae-ff6b-4b3a-bc68-971f49ae3663/">Земельный участок 61:02:0120102:1543</a><span class="sub">61:02:0120102:1543 / демонстрация</span></td>
+          <td data-label="Индикаторы"><div class="codes"><span class="code">И2</span><span class="code">И10</span></div></td>
+          <td data-label="Итог"><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Высокий приоритет проверки</span></td>
+          <td class="hide-s small">Ростовская обл.</td>
+          <td class="hide-s small nowrap"><span class="soft">не проверялся</span></td>
+          <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
+        </tr>
+      
+        <tr class="row">
+          <td><a class="row-link" href="/kod-prozrachnosti/cases/71cd858a-e2b5-4a0c-8bdf-34a9f3b80643/">Земельный участок 61:02:0120102:1544</a><span class="sub">61:02:0120102:1544 / демонстрация</span></td>
+          <td data-label="Индикаторы"><div class="codes"><span class="code">И2</span><span class="code">И10</span></div></td>
+          <td data-label="Итог"><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Высокий приоритет проверки</span></td>
+          <td class="hide-s small">Ростовская обл.</td>
+          <td class="hide-s small nowrap"><span class="soft">не проверялся</span></td>
+          <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
+        </tr>
+      
+        <tr class="row">
+          <td><a class="row-link" href="/kod-prozrachnosti/cases/ef36696f-26a7-4083-bac9-263ad0ac4c45/">Земельный участок 61:02:0120105:331</a><span class="sub">61:02:0120105:331 / Земельный участок / демонстрация</span></td>
+          <td data-label="Индикаторы"><div class="codes"><span class="code">И8</span><span class="code">И10</span></div></td>
+          <td data-label="Итог"><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Высокий приоритет проверки</span></td>
+          <td class="hide-s small">Ростовская обл.</td>
+          <td class="hide-s small nowrap"><span class="soft">не проверялся</span></td>
+          <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
+        </tr>
+      
+        <tr class="row">
+          <td><a class="row-link" href="/kod-prozrachnosti/cases/2ded220e-5eed-4600-8d7c-1864c62f5e7b/">Земельный участок 61:02:0600012:1388</a><span class="sub">61:02:0600012:1388 / демонстрация</span></td>
+          <td data-label="Индикаторы"><div class="codes"><span class="code">И10</span></div></td>
+          <td data-label="Итог"><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Высокий приоритет проверки</span></td>
+          <td class="hide-s small">Ростовская обл.</td>
+          <td class="hide-s small nowrap"><span class="soft">не проверялся</span></td>
+          <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+    </div>
+  </main>
+  
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <a class="foot-mark" href="/kod-prozrachnosti/"><span class="mark" aria-hidden="true"></span>Код прозрачности</a>
+      <div class="foot-meta body-s">
+        <span>ЕГРН / НСПД / ЕГРЮЛ / ГИС «Торги»</span>
+        <span>правила 1.0</span>
+        <span>анализ 19.11.2026 01:23</span>
+        <span class="nowrap" data-clock>01:23 МСК</span>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+  // every page opens at its top after a link or a reload; only an #anchor opens at the anchor
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  if (!location.hash) window.scrollTo(0, 0);
+  </script>
+  <script>
+  // Each line of a .fit heading is scaled to the full width of its block, so a heading
+  // lies as one rectangle (like FitLine on ЭВА-РИСК) instead of a ragged staircase.
+  (function () {
+    function fit() {
+      document.querySelectorAll(".fit").forEach((box) => {
+        const width = box.getBoundingClientRect().width;
+        box.querySelectorAll(".fit-line").forEach((line) => {
+          // measure the glyphs themselves: a grid item always stretches to its column
+          line.style.fontSize = "100px";
+          const range = document.createRange();
+          range.selectNodeContents(line);
+          const natural = range.getBoundingClientRect().width || 1;
+          line.style.fontSize = Math.min((width / natural) * 100 * 0.995, box.dataset.max || 999) + "px";
+        });
+        box.classList.add("fitted");
+      });
+    }
+    fit();
+    if (document.fonts) document.fonts.ready.then(fit);
+    let pending;
+    window.addEventListener("resize", () => { cancelAnimationFrame(pending); pending = requestAnimationFrame(fit); });
+  })();
+  (function () {
+    const hdr = document.querySelector("[data-hdr]");
+    const burger = document.querySelector("[data-burger]");
+    const sheet = document.querySelector("[data-sheet]");
+    let open = false;
+    function paint() {
+      if (open) { hdr.removeAttribute("data-solid"); hdr.removeAttribute("data-hidden"); return; }
+      const y = hdr.offsetHeight + 1;
+      const below = document.elementFromPoint(window.innerWidth / 2, y);
+      const onPaper = below && below.closest(".paper");
+      hdr.toggleAttribute("data-solid", !!onPaper);
+      hdr.toggleAttribute("data-hidden", !onPaper && window.scrollY > 40);
+    }
+    let ticking = false;
+    window.addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { paint(); ticking = false; }); } }, { passive: true });
+    window.addEventListener("resize", paint);
+    paint();
+    if (burger && sheet) {
+      burger.addEventListener("click", () => {
+        open = !open;
+        sheet.toggleAttribute("data-open", open);
+        burger.setAttribute("aria-expanded", String(open));
+        document.documentElement.style.overflow = open ? "hidden" : "";
+        paint();
+      });
+      document.addEventListener("keydown", (event) => { if (event.key === "Escape" && open) burger.click(); });
+    }
+  })();
+  </script>
+  <script>
+  // One dropdown for every list: the native select stays in the form (hidden) and is driven
+  // by a button and a listbox in the site's own style. Keyboard: Enter/Space, arrows, Esc.
+  (function () {
+    const chev = '<svg class="icon chev" aria-hidden="true"><use href="#i-chev"/></svg>';
+    document.querySelectorAll("select.input").forEach((select, n) => {
+      const box = document.createElement("div");
+      box.className = "dd";
+      select.parentNode.insertBefore(box, select);
+      box.appendChild(select);
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "input dd-btn";
+      button.setAttribute("aria-haspopup", "listbox");
+      button.setAttribute("aria-expanded", "false");
+      if (select.getAttribute("aria-label")) button.setAttribute("aria-label", select.getAttribute("aria-label"));
+      if (select.id) { button.id = select.id; select.removeAttribute("id"); }
+      const list = document.createElement("ul");
+      list.className = "dd-list";
+      list.setAttribute("role", "listbox");
+      list.id = "dd-list-" + n;
+      button.setAttribute("aria-controls", list.id);
+      [...select.options].forEach((option, i) => {
+        const item = document.createElement("li");
+        item.setAttribute("role", "option");
+        item.textContent = option.textContent;
+        item.dataset.index = i;
+        list.appendChild(item);
+      });
+      box.append(button, list);
+      let active = select.selectedIndex;
+      const items = [...list.children];
+      button.innerHTML = "<span></span>" + chev;  // built once: re-rendering inside a click detached its target
+      const label = button.firstChild;
+      function render() {
+        label.textContent = select.options[select.selectedIndex]?.textContent || "";
+        items.forEach((item, i) => {
+          item.setAttribute("aria-selected", String(i === select.selectedIndex));
+          item.toggleAttribute("data-active", i === active);
+        });
+      }
+      function open(state) {
+        box.toggleAttribute("data-open", state);
+        button.setAttribute("aria-expanded", String(state));
+        if (state) { active = select.selectedIndex; render(); items[active]?.scrollIntoView({ block: "nearest" }); }
+      }
+      function choose(i) {
+        select.selectedIndex = i;
+        select.dispatchEvent(new Event("change", { bubbles: true }));
+        open(false); render(); button.focus();
+      }
+      button.addEventListener("click", () => open(!box.hasAttribute("data-open")));
+      list.addEventListener("click", (event) => { const item = event.target.closest("li"); if (item) choose(Number(item.dataset.index)); });
+      button.addEventListener("keydown", (event) => {
+        const isOpen = box.hasAttribute("data-open");
+        if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+          event.preventDefault();
+          if (!isOpen) return open(true);
+          active = Math.max(0, Math.min(items.length - 1, active + (event.key === "ArrowDown" ? 1 : -1)));
+          render(); items[active].scrollIntoView({ block: "nearest" });
+        } else if ((event.key === "Enter" || event.key === " ") && isOpen) { event.preventDefault(); choose(active); }
+        else if (event.key === "Escape" && isOpen) { event.preventDefault(); open(false); }
+      });
+      document.addEventListener("click", (event) => { if (event.target.isConnected && !box.contains(event.target)) open(false); });
+      render();
+    });
+  })();
+  </script>
+  <script>
+  (function () {
+    const clock = document.querySelector("[data-clock]");
+    if (!clock) return;
+    const tick = () => { clock.textContent = new Date().toLocaleTimeString("ru-RU", { timeZone: "Europe/Moscow" }) + " МСК"; };
+    tick(); setInterval(tick, 1000);
+  })();
+  </script>
+  <script>
+  (function () {
+    const box = document.querySelector("[data-toasts]");
+    if (!box) return;
+    const hide = () => box.setAttribute("data-hidden", "");
+    box.addEventListener("click", (event) => { if (event.target.closest("[data-close]")) hide(); });
+    setTimeout(hide, 7000);
+  })();
+  </script>
+  
+
+<script>
+(function () {
+  function note() {
+    let box = document.querySelector("[data-toasts]");
+    if (!box) { box = document.createElement("div"); box.className = "toasts"; box.dataset.toasts = ""; document.body.appendChild(box); }
+    box.innerHTML = '<div class="toast" role="status"><span class="body-s">Демо-версия: здесь только просмотр. Загрузка, анализ, проверка и фильтры работают в полной версии.</span></div>';
+    box.removeAttribute("data-hidden");
+    clearTimeout(window.__demoNote); window.__demoNote = setTimeout(() => box.setAttribute("data-hidden", ""), 4500);
+  }
+  document.addEventListener("submit", (event) => { event.preventDefault(); note(); }, true);
+})();
+</script>
+</body>
+</html>

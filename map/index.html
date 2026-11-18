@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0000e8">
+  <title>Карта · Код прозрачности</title>
+  <link rel="preload" href="/kod-prozrachnosti/static/fonts/science-gothic-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/kod-prozrachnosti/static/css/app.css">
+  <link rel="icon" href="/kod-prozrachnosti/static/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/kod-prozrachnosti/static/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="/kod-prozrachnosti/static/vendor/ol/ol.css">
+<meta name="robots" content="noindex">
+</head>
+<body class="">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m5 9 7 7 7-7"/></symbol>
+  </svg>
+  
+  <header class="hdr" data-hdr>
+    <div class="hdr-in">
+      <a class="hdr-logo" href="/kod-prozrachnosti/"><span class="mark hdr-mark" aria-hidden="true"></span><span>Код прозрачности</span></a>
+      
+      <div class="hdr-user">
+        <button class="hdr-burger" type="button" aria-expanded="false" aria-controls="sheet" data-burger>Разделы <span class="hdr-burger-box"><i></i><i></i><i></i></span></button>
+      </div>
+      
+    </div>
+  </header>
+  
+  <div class="sheet" id="sheet" data-sheet>
+    <nav class="sheet-nav" aria-label="Разделы">
+      <a class="sheet-link" href="/kod-prozrachnosti/" >Обзор</a>
+      <a class="sheet-link" href="/kod-prozrachnosti/cases/" >Реестр</a>
+      <a class="sheet-link" href="/kod-prozrachnosti/map/" aria-current="page">Карта</a>
+      <a class="sheet-link" href="/kod-prozrachnosti/officials/" >Должностные лица</a>
+      <a class="sheet-link" href="/kod-prozrachnosti/sources/" >Источники</a>
+      <a class="sheet-link" href="/kod-prozrachnosti/method/" >Методика</a>
+      <a class="sheet-link" href="/kod-prozrachnosti/imports/" >Загрузка</a>
+      <div class="sheet-foot eyebrow">
+        <span>head / Руководитель</span>
+        
+        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="beLWe0kNvRBWKI6KuA2qro4J4Cwkc0lBZ7tEssX5I3GnDippUhqB4Q1s0Qw6qzdD"><button class="btn-plain" type="submit">Выйти</button></form>
+      </div>
+    </nav>
+    <figure class="sheet-plate"><img src="/kod-prozrachnosti/static/img/band-map.jpg" alt="" loading="lazy"></figure>
+  </div>
+  
+  
+
+  
+  <section class="band band-short">
+  <img class="band-bg" src="/kod-prozrachnosti/static/img/band-map.jpg" alt="" aria-hidden="true" width="1500" height="844" fetchpriority="high">
+  <div class="wrap band-in">
+    <div class="band-plate">
+      <span class="eyebrow">Геометрия из таблиц</span>
+      <h1 class="display-l">Карта</h1>
+      <p class="lede">Контуры участков из И8 и изменённые зоны ПЗЗ и генплана из И2. Чем плотнее заливка — тем выше приоритет. Клик по контуру открывает карточку.</p>
+    </div>
+  </div>
+</section>
+
+  <main class="paper">
+    <div class="wrap">
+      
+<section class="section">
+  <div class="map-grid">
+    <div class="map" id="map" role="region" aria-label="Карта объектов"><div class="map-pop" id="map-pop" hidden></div></div>
+    <aside class="map-list">
+      <span class="eyebrow">Объекты с геометрией / 19</span>
+      <ul class="list"><li><button type="button" class="map-item" data-feature="0"><span class="meta small"><span class="eyebrow">61:02:0120105:331</span><span class="codes"><span class="code">И8</span><span class="code">И10</span></span></span><span class="body-s">Земельный участок 61:02:0120105:331</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Высокий приоритет проверки</span></button></li><li><button type="button" class="map-item" data-feature="1"><span class="meta small"><span class="eyebrow">61:10:0600002:901</span><span class="codes"><span class="code">И8</span></span></span><span class="body-s">Земельный участок 61:10:0600002:901</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg>Требует проверки</span></button></li><li><button type="button" class="map-item" data-feature="2"><span class="meta small"><span class="eyebrow">61:33:0600008:1517</span><span class="codes"><span class="code">И8</span></span></span><span class="body-s">Земельный участок 61:33:0600008:1517</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg>Требует проверки</span></button></li><li><button type="button" class="map-item" data-feature="3"><span class="meta small"><span class="eyebrow">61:39:0600012:744</span><span class="codes"><span class="code">И8</span></span></span><span class="body-s">Земельный участок 61:39:0600012:744</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg>Требует проверки</span></button></li><li><button type="button" class="map-item" data-feature="4"><span class="meta small"><span class="eyebrow">31:19:0504002:36</span><span class="codes"></span></span><span class="body-s">Земельный участок 31:19:0504002:36</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg>Сигналов нет</span></button></li><li><button type="button" class="map-item" data-feature="5"><span class="meta small"><span class="eyebrow">61:01:0600011:2093</span><span class="codes"></span></span><span class="body-s">Земельный участок 61:01:0600011:2093</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg>Сигналов нет</span></button></li><li><button type="button" class="map-item" data-feature="6"><span class="meta small"><span class="eyebrow">61:02:0120105:118</span><span class="codes"></span></span><span class="body-s">Земельный участок 61:02:0120105:118</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg>Сигналов нет</span></button></li><li><button type="button" class="map-item" data-feature="7"><span class="meta small"><span class="eyebrow">61:25:0600301:4211</span><span class="codes"></span></span><span class="body-s">Земельный участок 61:25:0600301:4211</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg>Сигналов нет</span></button></li><li><button type="button" class="map-item" data-feature="8"><span class="meta small"><span class="eyebrow">61:28:0600021:752</span><span class="codes"></span></span><span class="body-s">Земельный участок 61:28:0600021:752</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg>Сигналов нет</span></button></li><li><button type="button" class="map-item" data-feature="9"><span class="meta small"><span class="eyebrow">61:44:0072201:371</span><span class="codes"></span></span><span class="body-s">Земельный участок 61:44:0072201:371</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg>Сигналов нет</span></button></li><li><button type="button" class="map-item" data-feature="10"><span class="meta small"><span class="eyebrow">Изменённая зона</span><span class="codes"><span class="code">И2</span></span></span><span class="body-s">г. Аксай, южнее пр. Ленина, 112</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Изменённая зона ПЗЗ / генплана</span></button></li><li><button type="button" class="map-item" data-feature="11"><span class="meta small"><span class="eyebrow">Изменённая зона</span><span class="codes"><span class="code">И2</span></span></span><span class="body-s">х. Ленинаван, 600 м северо-западнее ул. Октябрьской</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg>Изменённая зона ПЗЗ / генплана</span></button></li><li><button type="button" class="map-item" data-feature="12"><span class="meta small"><span class="eyebrow">Изменённая зона</span><span class="codes"><span class="code">И2</span></span></span><span class="body-s">Советский район, ул. Малиновского, 210</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Изменённая зона ПЗЗ / генплана</span></button></li><li><button type="button" class="map-item" data-feature="13"><span class="meta small"><span class="eyebrow">Изменённая зона</span><span class="codes"><span class="code">И2</span></span></span><span class="body-s">Северо-восточная часть города, между ул. Северный Массив и границей г…</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg>Изменённая зона ПЗЗ / генплана</span></button></li><li><button type="button" class="map-item" data-feature="14"><span class="meta small"><span class="eyebrow">Изменённая зона</span><span class="codes"><span class="code">И2</span></span></span><span class="body-s">р.п. Каменоломни, пер. Шоссейный, 2а</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Изменённая зона ПЗЗ / генплана</span></button></li><li><button type="button" class="map-item" data-feature="15"><span class="meta small"><span class="eyebrow">Изменённая зона</span><span class="codes"><span class="code">И2</span></span></span><span class="body-s">с. Кулешовка, 1,2 км южнее ул. Луговой, вдоль р. Кагальник</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg>Изменённая зона ПЗЗ / генплана</span></button></li><li><button type="button" class="map-item" data-feature="16"><span class="meta small"><span class="eyebrow">Изменённая зона</span><span class="codes"><span class="code">И2</span></span></span><span class="body-s">Северо-западный жилой район, кварталы между ул. Сызранова и ул. Бабуш…</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg>Изменённая зона ПЗЗ / генплана</span></button></li><li><button type="button" class="map-item" data-feature="17"><span class="meta small"><span class="eyebrow">Изменённая зона</span><span class="codes"><span class="code">И2</span></span></span><span class="body-s">Микрорайон Донской, южнее ул. Магистральной, 1</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg>Изменённая зона ПЗЗ / генплана</span></button></li><li><button type="button" class="map-item" data-feature="18"><span class="meta small"><span class="eyebrow">Изменённая зона</span><span class="codes"><span class="code">И2</span></span></span><span class="body-s">г. Белая Калитва, ул. Заводская, 1–23 (промышленная площадка)</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg>Изменённая зона ПЗЗ / генплана</span></button></li></ul>
+    </aside>
+  </div>
+  <div class="legend small" style="padding-top:var(--s4)">
+    <span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>высокий приоритет</span><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg>требует проверки</span><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg>сигналов нет</span>
+    <span>пунктир — изменённая зона ПЗЗ / генплана</span><span>без координат в таблицах: 40 объектов</span>
+  </div>
+</section>
+<script id="features" type="application/json">[{"kind": "plot", "id": "ef36696f-26a7-4083-bac9-263ad0ac4c45", "title": "\u0417\u0435\u043c\u0435\u043b\u044c\u043d\u044b\u0439 \u0443\u0447\u0430\u0441\u0442\u043e\u043a 61:02:0120105:331", "reference": "61:02:0120105:331", "attention": "high", "attention_label": "\u0412\u044b\u0441\u043e\u043a\u0438\u0439 \u043f\u0440\u0438\u043e\u0440\u0438\u0442\u0435\u0442 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438", "codes": ["\u04188", "\u041810"], "points": [[47.2618, 39.853], [47.2618, 39.853529], [47.262069, 39.853529], [47.262069, 39.853291], [47.262213, 39.853291], [47.262267, 39.85341], [47.262339, 39.853344], [47.262339, 39.853251], [47.262222, 39.853225], [47.262069, 39.853212], [47.262069, 39.853]]}, {"kind": "plot", "id": "52a2d21c-3076-4f08-a08e-a30cb4227f34", "title": "\u0417\u0435\u043c\u0435\u043b\u044c\u043d\u044b\u0439 \u0443\u0447\u0430\u0441\u0442\u043e\u043a 61:10:0600002:901", "reference": "61:10:0600002:901", "attention": "normal", "attention_label": "\u0422\u0440\u0435\u0431\u0443\u0435\u0442 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438", "codes": ["\u04188"], "points": [[46.6365, 41.0028], [46.6365, 41.003454], [46.636859, 41.003454], [46.636859, 41.003219], [46.636608, 41.003219], [46.636608, 41.003035], [46.636859, 41.003035], [46.636859, 41.0028]]}, {"kind": "plot", "id": "47496503-a5db-492a-afc1-69f60c7a08c5", "title": "\u0417\u0435\u043c\u0435\u043b\u044c\u043d\u044b\u0439 \u0443\u0447\u0430\u0441\u0442\u043e\u043a 61:33:0600008:1517", "reference": "61:33:0600008:1517", "attention": "normal", "attention_label": "\u0422\u0440\u0435\u0431\u0443\u0435\u0442 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438", "codes": ["\u04188"], "points": [[46.4752, 41.5291], [46.4752, 41.529491], [46.475425, 41.529491], [46.475425, 41.529322], [46.476188, 41.529322], [46.476188, 41.52927], [46.475425, 41.52927], [46.475425, 41.5291]]}, {"kind": "plot", "id": "cb55aeeb-d156-4a62-8055-d45edcbe5415", "title": "\u0417\u0435\u043c\u0435\u043b\u044c\u043d\u044b\u0439 \u0443\u0447\u0430\u0441\u0442\u043e\u043a 61:39:0600012:744", "reference": "61:39:0600012:744", "attention": "normal", "attention_label": "\u0422\u0440\u0435\u0431\u0443\u0435\u0442 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438", "codes": ["\u04188"], "points": [[46.5532, 41.0418], [46.5532, 41.042584], [46.553272, 41.042584], [46.553272, 41.041957], [46.553559, 41.041957], [46.553559, 41.0418]]}, {"kind": "plot", "id": "2d4c038b-c791-40da-9500-3ff43176451f", "title": "\u0417\u0435\u043c\u0435\u043b\u044c\u043d\u044b\u0439 \u0443\u0447\u0430\u0441\u0442\u043e\u043a 31:19:0504002:36", "reference": "31:19:0504002:36", "attention": "none", "attention_label": "\u0421\u0438\u0433\u043d\u0430\u043b\u043e\u0432 \u043d\u0435\u0442", "codes": [], "points": [[50.859653, 38.009024], [50.861557, 38.010628], [50.861506, 38.010779], [50.859603, 38.009175]]}, {"kind": "plot", "id": "6eb96ccd-d6ce-4d75-9229-4a1173e51d41", "title": "\u0417\u0435\u043c\u0435\u043b\u044c\u043d\u044b\u0439 \u0443\u0447\u0430\u0441\u0442\u043e\u043a 61:01:0600011:2093", "reference": "61:01:0600011:2093", "attention": "none", "attention_label": "\u0421\u0438\u0433\u043d\u0430\u043b\u043e\u0432 \u043d\u0435\u0442", "codes": [], "points": [[47.0856, 39.5601], [47.0856, 39.560562], [47.085798, 39.560562], [47.085852, 39.560483], [47.085852, 39.5601]]}, {"kind": "plot", "id": "2737e004-d0e7-4e8a-a2a7-aeff190c1d91", "title": "\u0417\u0435\u043c\u0435\u043b\u044c\u043d\u044b\u0439 \u0443\u0447\u0430\u0441\u0442\u043e\u043a 61:02:0120105:118", "reference": "61:02:0120105:118", "attention": "none", "attention_label": "\u0421\u0438\u0433\u043d\u0430\u043b\u043e\u0432 \u043d\u0435\u0442", "codes": [], "points": [[47.2671, 39.8702], [47.267147, 39.870524], [47.267498, 39.870414], [47.267451, 39.87009]]}, {"kind": "plot", "id": "7ab3c2ac-1bab-401d-ad0e-c22e0e4e118d", "title": "\u0417\u0435\u043c\u0435\u043b\u044c\u043d\u044b\u0439 \u0443\u0447\u0430\u0441\u0442\u043e\u043a 61:25:0600301:4211", "reference": "61:25:0600301:4211", "attention": "none", "attention_label": "\u0421\u0438\u0433\u043d\u0430\u043b\u043e\u0432 \u043d\u0435\u0442", "codes": [], "points": [[47.3012, 39.5874], [47.30116, 39.58782], [47.301563, 39.587876], [47.301574, 39.587477]]}, {"kind": "plot", "id": "ca9a71fe-1235-4bd0-aa13-1c05bbe83dfe", "title": "\u0417\u0435\u043c\u0435\u043b\u044c\u043d\u044b\u0439 \u0443\u0447\u0430\u0441\u0442\u043e\u043a 61:28:0600021:752", "reference": "61:28:0600021:752", "attention": "none", "attention_label": "\u0421\u0438\u0433\u043d\u0430\u043b\u043e\u0432 \u043d\u0435\u0442", "codes": [], "points": [[47.5398, 40.0805], [47.539942, 40.080962], [47.540186, 40.080787], [47.540047, 40.080338]]}, {"kind": "plot", "id": "da468f0d-73f0-4357-9f23-4ef5d634a0bd", "title": "\u0417\u0435\u043c\u0435\u043b\u044c\u043d\u044b\u0439 \u0443\u0447\u0430\u0441\u0442\u043e\u043a 61:44:0072201:371", "reference": "61:44:0072201:371", "attention": "none", "attention_label": "\u0421\u0438\u0433\u043d\u0430\u043b\u043e\u0432 \u043d\u0435\u0442", "codes": [], "points": [[47.2349, 39.6244], [47.234807, 39.624595], [47.235506, 39.625316], [47.235599, 39.625121]]}, {"kind": "zone", "id": "41f96bae-ff6b-4b3a-bc68-971f49ae3663", "title": "\u0433. \u0410\u043a\u0441\u0430\u0439, \u044e\u0436\u043d\u0435\u0435 \u043f\u0440. \u041b\u0435\u043d\u0438\u043d\u0430, 112", "reference": "\u0410\u043a\u0441\u0430\u0439\u0441\u043a\u043e\u0435 \u0433\u043e\u0440\u043e\u0434\u0441\u043a\u043e\u0435 \u043f\u043e\u0441\u0435\u043b\u0435\u043d\u0438\u0435 \u0410\u043a\u0441\u0430\u0439\u0441\u043a\u043e\u0433\u043e \u0440\u0430\u0439\u043e\u043d\u0430", "attention": "high", "attention_label": "\u0418\u0437\u043c\u0435\u043d\u0451\u043d\u043d\u0430\u044f \u0437\u043e\u043d\u0430 \u041f\u0417\u0417 / \u0433\u0435\u043d\u043f\u043b\u0430\u043d\u0430", "codes": ["\u04182"], "points": [[47.2614, 39.8521], [47.26159, 39.8552], [47.2633, 39.855355], [47.263452, 39.85303], [47.26254, 39.851945]]}, {"kind": "zone", "id": "92725bf9-dd46-4928-bc54-c4f33db170f9", "title": "\u0445. \u041b\u0435\u043d\u0438\u043d\u0430\u0432\u0430\u043d, 600 \u043c \u0441\u0435\u0432\u0435\u0440\u043e-\u0437\u0430\u043f\u0430\u0434\u043d\u0435\u0435 \u0443\u043b. \u041e\u043a\u0442\u044f\u0431\u0440\u044c\u0441\u043a\u043e\u0439", "reference": "\u041c\u044f\u0441\u043d\u0438\u043a\u043e\u0432\u0441\u043a\u0438\u0439 \u0440\u0430\u0439\u043e\u043d, \u0427\u0430\u043b\u0442\u044b\u0440\u0441\u043a\u043e\u0435 \u0441\u0435\u043b\u044c\u0441\u043a\u043e\u0435 \u043f\u043e\u0441\u0435\u043b\u0435\u043d\u0438\u0435", "attention": "normal", "attention_label": "\u0418\u0437\u043c\u0435\u043d\u0451\u043d\u043d\u0430\u044f \u0437\u043e\u043d\u0430 \u041f\u0417\u0417 / \u0433\u0435\u043d\u043f\u043b\u0430\u043d\u0430", "codes": ["\u04182"], "points": [[47.3021, 39.5862], [47.30237, 39.5904], [47.3048, 39.59061], [47.305016, 39.58746], [47.30372, 39.58599]]}, {"kind": "zone", "id": "62dc4c0e-6fc8-4a15-a4f5-4cf6374548b2", "title": "\u0421\u043e\u0432\u0435\u0442\u0441\u043a\u0438\u0439 \u0440\u0430\u0439\u043e\u043d, \u0443\u043b. \u041c\u0430\u043b\u0438\u043d\u043e\u0432\u0441\u043a\u043e\u0433\u043e, 210", "reference": "\u0433. \u0420\u043e\u0441\u0442\u043e\u0432-\u043d\u0430-\u0414\u043e\u043d\u0443 (\u0433\u043e\u0440\u043e\u0434\u0441\u043a\u043e\u0439 \u043e\u043a\u0440\u0443\u0433)", "attention": "high", "attention_label": "\u0418\u0437\u043c\u0435\u043d\u0451\u043d\u043d\u0430\u044f \u0437\u043e\u043d\u0430 \u041f\u0417\u0417 / \u0433\u0435\u043d\u043f\u043b\u0430\u043d\u0430", "codes": ["\u04182"], "points": [[47.2342, 39.6237], [47.23432, 39.6255], [47.2354, 39.62559], [47.235496, 39.62424], [47.23492, 39.62361]]}, {"kind": "zone", "id": "f37e7089-9361-4e2c-8917-0d4e1637bc63", "title": "\u0421\u0435\u0432\u0435\u0440\u043e-\u0432\u043e\u0441\u0442\u043e\u0447\u043d\u0430\u044f \u0447\u0430\u0441\u0442\u044c \u0433\u043e\u0440\u043e\u0434\u0430, \u043c\u0435\u0436\u0434\u0443 \u0443\u043b. \u0421\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u041c\u0430\u0441\u0441\u0438\u0432 \u0438 \u0433\u0440\u0430\u043d\u0438\u0446\u0435\u0439 \u0433. \u0420\u043e\u0441\u0442\u043e\u0432\u0430-\u043d\u0430-\u0414\u043e\u043d\u0443", "reference": "\u0433. \u0411\u0430\u0442\u0430\u0439\u0441\u043a (\u0433\u043e\u0440\u043e\u0434\u0441\u043a\u043e\u0439 \u043e\u043a\u0440\u0443\u0433)", "attention": "none", "attention_label": "\u0418\u0437\u043c\u0435\u043d\u0451\u043d\u043d\u0430\u044f \u0437\u043e\u043d\u0430 \u041f\u0417\u0417 / \u0433\u0435\u043d\u043f\u043b\u0430\u043d\u0430", "codes": ["\u04182"], "points": [[47.1555, 39.7486], [47.15618, 39.7601], [47.1623, 39.760675], [47.162844, 39.75205], [47.15958, 39.748025]]}, {"kind": "zone", "id": "f84d22ef-e5c0-48e5-87b5-a4f70586719a", "title": "\u0440.\u043f. \u041a\u0430\u043c\u0435\u043d\u043e\u043b\u043e\u043c\u043d\u0438, \u043f\u0435\u0440. \u0428\u043e\u0441\u0441\u0435\u0439\u043d\u044b\u0439, 2\u0430", "reference": "\u041e\u043a\u0442\u044f\u0431\u0440\u044c\u0441\u043a\u0438\u0439 \u0440\u0430\u0439\u043e\u043d, \u041a\u0430\u043c\u0435\u043d\u043e\u043b\u043e\u043c\u043d\u0435\u043d\u0441\u043a\u043e\u0435 \u0433\u043e\u0440\u043e\u0434\u0441\u043a\u043e\u0435 \u043f\u043e\u0441\u0435\u043b\u0435\u043d\u0438\u0435", "attention": "high", "attention_label": "\u0418\u0437\u043c\u0435\u043d\u0451\u043d\u043d\u0430\u044f \u0437\u043e\u043d\u0430 \u041f\u0417\u0417 / \u0433\u0435\u043d\u043f\u043b\u0430\u043d\u0430", "codes": ["\u04182"], "points": [[47.5402, 40.0791], [47.54036, 40.0815], [47.5418, 40.08162], [47.541928, 40.07982], [47.54116, 40.07898]]}, {"kind": "zone", "id": "db7b45f1-be2e-4ee0-8a42-14a0643da479", "title": "\u0441. \u041a\u0443\u043b\u0435\u0448\u043e\u0432\u043a\u0430, 1,2 \u043a\u043c \u044e\u0436\u043d\u0435\u0435 \u0443\u043b. \u041b\u0443\u0433\u043e\u0432\u043e\u0439, \u0432\u0434\u043e\u043b\u044c \u0440. \u041a\u0430\u0433\u0430\u043b\u044c\u043d\u0438\u043a", "reference": "\u0410\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440\u0430\u0439\u043e\u043d, \u041a\u0443\u043b\u0435\u0448\u043e\u0432\u0441\u043a\u043e\u0435 \u0441\u0435\u043b\u044c\u0441\u043a\u043e\u0435 \u043f\u043e\u0441\u0435\u043b\u0435\u043d\u0438\u0435", "attention": "normal", "attention_label": "\u0418\u0437\u043c\u0435\u043d\u0451\u043d\u043d\u0430\u044f \u0437\u043e\u043d\u0430 \u041f\u0417\u0417 / \u0433\u0435\u043d\u043f\u043b\u0430\u043d\u0430", "codes": ["\u04182"], "points": [[47.0823, 39.5613], [47.08264, 39.5671], [47.0857, 39.56739], [47.085972, 39.56304], [47.08434, 39.56101]]}, {"kind": "zone", "id": "456e5029-c683-4fde-9bd2-077c682e2147", "title": "\u0421\u0435\u0432\u0435\u0440\u043e-\u0437\u0430\u043f\u0430\u0434\u043d\u044b\u0439 \u0436\u0438\u043b\u043e\u0439 \u0440\u0430\u0439\u043e\u043d, \u043a\u0432\u0430\u0440\u0442\u0430\u043b\u044b \u043c\u0435\u0436\u0434\u0443 \u0443\u043b. \u0421\u044b\u0437\u0440\u0430\u043d\u043e\u0432\u0430 \u0438 \u0443\u043b. \u0411\u0430\u0431\u0443\u0448\u043a\u0438\u043d\u0430", "reference": "\u0433. \u0422\u0430\u0433\u0430\u043d\u0440\u043e\u0433 (\u0433\u043e\u0440\u043e\u0434\u0441\u043a\u043e\u0439 \u043e\u043a\u0440\u0443\u0433)", "attention": "none", "attention_label": "\u0418\u0437\u043c\u0435\u043d\u0451\u043d\u043d\u0430\u044f \u0437\u043e\u043d\u0430 \u041f\u0417\u0417 / \u0433\u0435\u043d\u043f\u043b\u0430\u043d\u0430", "codes": ["\u04182"], "points": [[47.2387, 38.8742], [47.23916, 38.8813], [47.2433, 38.881655], [47.243668, 38.87633], [47.24146, 38.873845]]}, {"kind": "zone", "id": "3acdee00-8147-4e07-98d6-077021e11f4f", "title": "\u041c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d \u0414\u043e\u043d\u0441\u043a\u043e\u0439, \u044e\u0436\u043d\u0435\u0435 \u0443\u043b. \u041c\u0430\u0433\u0438\u0441\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0439, 1", "reference": "\u0433. \u041d\u043e\u0432\u043e\u0447\u0435\u0440\u043a\u0430\u0441\u0441\u043a (\u0433\u043e\u0440\u043e\u0434\u0441\u043a\u043e\u0439 \u043e\u043a\u0440\u0443\u0433)", "attention": "normal", "attention_label": "\u0418\u0437\u043c\u0435\u043d\u0451\u043d\u043d\u0430\u044f \u0437\u043e\u043d\u0430 \u041f\u0417\u0417 / \u0433\u0435\u043d\u043f\u043b\u0430\u043d\u0430", "codes": ["\u04182"], "points": [[47.4004, 40.0619], [47.40058, 40.0646], [47.4022, 40.064735], [47.402344, 40.06271], [47.40148, 40.061765]]}, {"kind": "zone", "id": "7da3dce0-1ba5-4ac0-ba97-e068d577fd34", "title": "\u0433. \u0411\u0435\u043b\u0430\u044f \u041a\u0430\u043b\u0438\u0442\u0432\u0430, \u0443\u043b. \u0417\u0430\u0432\u043e\u0434\u0441\u043a\u0430\u044f, 1\u201323 (\u043f\u0440\u043e\u043c\u044b\u0448\u043b\u0435\u043d\u043d\u0430\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u043a\u0430)", "reference": "\u0411\u0435\u043b\u043e\u043a\u0430\u043b\u0438\u0442\u0432\u0438\u043d\u0441\u043a\u0438\u0439 \u0440\u0430\u0439\u043e\u043d, \u0411\u0435\u043b\u043e\u043a\u0430\u043b\u0438\u0442\u0432\u0438\u043d\u0441\u043a\u043e\u0435 \u0433\u043e\u0440\u043e\u0434\u0441\u043a\u043e\u0435 \u043f\u043e\u0441\u0435\u043b\u0435\u043d\u0438\u0435", "attention": "none", "attention_label": "\u0418\u0437\u043c\u0435\u043d\u0451\u043d\u043d\u0430\u044f \u0437\u043e\u043d\u0430 \u041f\u0417\u0417 / \u0433\u0435\u043d\u043f\u043b\u0430\u043d\u0430", "codes": ["\u04182"], "points": [[48.1802, 40.7812], [48.18071, 40.7901], [48.1853, 40.790545], [48.185708, 40.78387], [48.18326, 40.780755]]}]</script>
+<script id="center" type="application/json">[47.400523842105265, 39.91192757894737]</script>
+
+    </div>
+  </main>
+  
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <a class="foot-mark" href="/kod-prozrachnosti/"><span class="mark" aria-hidden="true"></span>Код прозрачности</a>
+      <div class="foot-meta body-s">
+        <span>ЕГРН / НСПД / ЕГРЮЛ / ГИС «Торги»</span>
+        <span>правила 1.0</span>
+        <span>анализ 19.11.2026 01:23</span>
+        <span class="nowrap" data-clock>01:23 МСК</span>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+  // every page opens at its top after a link or a reload; only an #anchor opens at the anchor
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  if (!location.hash) window.scrollTo(0, 0);
+  </script>
+  <script>
+  // Each line of a .fit heading is scaled to the full width of its block, so a heading
+  // lies as one rectangle (like FitLine on ЭВА-РИСК) instead of a ragged staircase.
+  (function () {
+    function fit() {
+      document.querySelectorAll(".fit").forEach((box) => {
+        const width = box.getBoundingClientRect().width;
+        box.querySelectorAll(".fit-line").forEach((line) => {
+          // measure the glyphs themselves: a grid item always stretches to its column
+          line.style.fontSize = "100px";
+          const range = document.createRange();
+          range.selectNodeContents(line);
+          const natural = range.getBoundingClientRect().width || 1;
+          line.style.fontSize = Math.min((width / natural) * 100 * 0.995, box.dataset.max || 999) + "px";
+        });
+        box.classList.add("fitted");
+      });
+    }
+    fit();
+    if (document.fonts) document.fonts.ready.then(fit);
+    let pending;
+    window.addEventListener("resize", () => { cancelAnimationFrame(pending); pending = requestAnimationFrame(fit); });
+  })();
+  (function () {
+    const hdr = document.querySelector("[data-hdr]");
+    const burger = document.querySelector("[data-burger]");
+    const sheet = document.querySelector("[data-sheet]");
+    let open = false;
+    function paint() {
+      if (open) { hdr.removeAttribute("data-solid"); hdr.removeAttribute("data-hidden"); return; }
+      const y = hdr.offsetHeight + 1;
+      const below = document.elementFromPoint(window.innerWidth / 2, y);
+      const onPaper = below && below.closest(".paper");
+      hdr.toggleAttribute("data-solid", !!onPaper);
+      hdr.toggleAttribute("data-hidden", !onPaper && window.scrollY > 40);
+    }
+    let ticking = false;
+    window.addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { paint(); ticking = false; }); } }, { passive: true });
+    window.addEventListener("resize", paint);
+    paint();
+    if (burger && sheet) {
+      burger.addEventListener("click", () => {
+        open = !open;
+        sheet.toggleAttribute("data-open", open);
+        burger.setAttribute("aria-expanded", String(open));
+        document.documentElement.style.overflow = open ? "hidden" : "";
+        paint();
+      });
+      document.addEventListener("keydown", (event) => { if (event.key === "Escape" && open) burger.click(); });
+    }
+  })();
+  </script>
+  <script>
+  // One dropdown for every list: the native select stays in the form (hidden) and is driven
+  // by a button and a listbox in the site's own style. Keyboard: Enter/Space, arrows, Esc.
+  (function () {
+    const chev = '<svg class="icon chev" aria-hidden="true"><use href="#i-chev"/></svg>';
+    document.querySelectorAll("select.input").forEach((select, n) => {
+      const box = document.createElement("div");
+      box.className = "dd";
+      select.parentNode.insertBefore(box, select);
+      box.appendChild(select);
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "input dd-btn";
+      button.setAttribute("aria-haspopup", "listbox");
+      button.setAttribute("aria-expanded", "false");
+      if (select.getAttribute("aria-label")) button.setAttribute("aria-label", select.getAttribute("aria-label"));
+      if (select.id) { button.id = select.id; select.removeAttribute("id"); }
+      const list = document.createElement("ul");
+      list.className = "dd-list";
+      list.setAttribute("role", "listbox");
+      list.id = "dd-list-" + n;
+      button.setAttribute("aria-controls", list.id);
+      [...select.options].forEach((option, i) => {
+        const item = document.createElement("li");
+        item.setAttribute("role", "option");
+        item.textContent = option.textContent;
+        item.dataset.index = i;
+        list.appendChild(item);
+      });
+      box.append(button, list);
+      let active = select.selectedIndex;
+      const items = [...list.children];
+      button.innerHTML = "<span></span>" + chev;  // built once: re-rendering inside a click detached its target
+      const label = button.firstChild;
+      function render() {
+        label.textContent = select.options[select.selectedIndex]?.textContent || "";
+        items.forEach((item, i) => {
+          item.setAttribute("aria-selected", String(i === select.selectedIndex));
+          item.toggleAttribute("data-active", i === active);
+        });
+      }
+      function open(state) {
+        box.toggleAttribute("data-open", state);
+        button.setAttribute("aria-expanded", String(state));
+        if (state) { active = select.selectedIndex; render(); items[active]?.scrollIntoView({ block: "nearest" }); }
+      }
+      function choose(i) {
+        select.selectedIndex = i;
+        select.dispatchEvent(new Event("change", { bubbles: true }));
+        open(false); render(); button.focus();
+      }
+      button.addEventListener("click", () => open(!box.hasAttribute("data-open")));
+      list.addEventListener("click", (event) => { const item = event.target.closest("li"); if (item) choose(Number(item.dataset.index)); });
+      button.addEventListener("keydown", (event) => {
+        const isOpen = box.hasAttribute("data-open");
+        if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+          event.preventDefault();
+          if (!isOpen) return open(true);
+          active = Math.max(0, Math.min(items.length - 1, active + (event.key === "ArrowDown" ? 1 : -1)));
+          render(); items[active].scrollIntoView({ block: "nearest" });
+        } else if ((event.key === "Enter" || event.key === " ") && isOpen) { event.preventDefault(); choose(active); }
+        else if (event.key === "Escape" && isOpen) { event.preventDefault(); open(false); }
+      });
+      document.addEventListener("click", (event) => { if (event.target.isConnected && !box.contains(event.target)) open(false); });
+      render();
+    });
+  })();
+  </script>
+  <script>
+  (function () {
+    const clock = document.querySelector("[data-clock]");
+    if (!clock) return;
+    const tick = () => { clock.textContent = new Date().toLocaleTimeString("ru-RU", { timeZone: "Europe/Moscow" }) + " МСК"; };
+    tick(); setInterval(tick, 1000);
+  })();
+  </script>
+  <script>
+  (function () {
+    const box = document.querySelector("[data-toasts]");
+    if (!box) return;
+    const hide = () => box.setAttribute("data-hidden", "");
+    box.addEventListener("click", (event) => { if (event.target.closest("[data-close]")) hide(); });
+    setTimeout(hide, 7000);
+  })();
+  </script>
+  
+<script src="/kod-prozrachnosti/static/vendor/ol/ol.js"></script>
+<script>
+(function () {
+  const features = JSON.parse(document.getElementById("features").textContent);
+  const center = JSON.parse(document.getElementById("center").textContent);
+  const BLUE = "#0000e8";
+  const density = { high: 0.62, normal: 0.36, low: 0.2, insufficient: 0.08, none: 0.06, not_run: 0.06 };
+  const lonLat = (point) => ol.proj.fromLonLat([point[1], point[0]]);
+
+  // 2GIS basemap: Russian names and borders. A dropped tile is retried on the next server
+  // before it is handed to the map, so no grey holes are left.
+  const source = new ol.source.XYZ({
+    url: "https://tile{0-3}.maps.2gis.com/tiles?x={x}&y={y}&z={z}&v=1",
+    attributions: "Подложка © 2ГИС",
+    maxZoom: 18,
+    tileLoadFunction(tile, src) {
+      let tries = 0;
+      const probe = new Image();
+      probe.onload = () => { tile.getImage().src = probe.src; };
+      probe.onerror = () => {
+        if (tries++ >= 4) { tile.getImage().src = src; return; }
+        setTimeout(() => { probe.src = src.replace(/tile(\d)\./, (_, n) => "tile" + ((Number(n) + tries) % 4) + ".") + "&r=" + tries; }, 350 * tries);
+      };
+      probe.src = src;
+    },
+  });
+  const shapes = new ol.source.Vector();
+  const olFeatures = features.map((f, i) => {
+    const ring = f.points.map(lonLat);
+    ring.push(ring[0]);
+    const feature = new ol.Feature({ geometry: new ol.geom.Polygon([ring]), index: i });
+    const zone = f.kind === "zone";
+    feature.setStyle([
+      new ol.style.Style({
+        fill: new ol.style.Fill({ color: `rgba(0, 0, 232, ${zone ? 0.06 : (density[f.attention] ?? 0.1)})` }),
+        stroke: new ol.style.Stroke({ color: BLUE, width: zone ? 1.5 : 2, lineDash: zone ? [6, 6] : undefined }),
+      }),
+      new ol.style.Style({
+        geometry: (feat) => feat.getGeometry().getInteriorPoint(),
+        image: new ol.style.RegularShape({
+          points: 4, radius: 7, angle: Math.PI / 4,
+          fill: new ol.style.Fill({ color: f.attention === "high" || f.attention === "normal" ? BLUE : "#ffffff" }),
+          stroke: new ol.style.Stroke({ color: BLUE, width: 2 }),
+        }),
+      }),
+    ]);
+    shapes.addFeature(feature);
+    return feature;
+  });
+
+  const pop = document.getElementById("map-pop");
+  const overlay = new ol.Overlay({ element: pop, positioning: "bottom-center", offset: [0, -14], autoPan: { margin: 40 } });
+  const map = new ol.Map({
+    target: "map",
+    layers: [new ol.layer.Tile({ source, className: "base-tiles" }), new ol.layer.Vector({ source: shapes })],
+    overlays: [overlay],
+    view: new ol.View({ center: ol.proj.fromLonLat([center[1], center[0]]), zoom: 8 }),
+    controls: ol.control.defaults.defaults({ rotate: false, attributionOptions: { collapsible: false } }),
+  });
+
+  const escape = (text) => String(text).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  function show(feature) {
+    const f = features[feature.get("index")];
+    pop.innerHTML = `<span class="eyebrow">${escape(f.reference)}</span><b>${escape(f.title)}</b><span>${escape(f.attention_label)}${f.codes.length ? " / " + f.codes.map(escape).join(", ") : ""}</span>` +
+      (f.id ? `<a href="/kod-prozrachnosti/cases/${f.id}/">Открыть карточку</a>` : "");
+    pop.hidden = false;
+    overlay.setPosition(feature.getGeometry().getInteriorPoint().getCoordinates());
+  }
+  map.on("singleclick", (event) => {
+    const feature = map.forEachFeatureAtPixel(event.pixel, (feat) => feat);
+    if (feature) show(feature); else { pop.hidden = true; overlay.setPosition(undefined); }
+  });
+  map.on("pointermove", (event) => { map.getTargetElement().style.cursor = map.hasFeatureAtPixel(event.pixel) ? "pointer" : ""; });
+
+  // open on the main cluster; objects in other regions stay reachable from the list
+  if (olFeatures.length) {
+    const centers = olFeatures.map((feat) => ol.proj.toLonLat(ol.extent.getCenter(feat.getGeometry().getExtent())));
+    const median = (values) => values.slice().sort((a, b) => a - b)[Math.floor(values.length / 2)];
+    const mid = [median(centers.map((c) => c[0])), median(centers.map((c) => c[1]))];
+    const near = olFeatures.filter((feat, i) => ol.sphere.getDistance(centers[i], mid) < 250000);
+    const extent = ol.extent.createEmpty();
+    (near.length ? near : olFeatures).forEach((feat) => ol.extent.extend(extent, feat.getGeometry().getExtent()));
+    map.getView().fit(extent, { padding: [48, 48, 48, 48] });
+  }
+  document.querySelectorAll("[data-feature]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const feature = olFeatures[Number(button.dataset.feature)];
+      map.getView().fit(feature.getGeometry().getExtent(), { maxZoom: 16, padding: [80, 80, 80, 80], duration: 400 });
+      setTimeout(() => show(feature), 420);
+      document.getElementById("map").scrollIntoView({ block: "center" });
+    });
+  });
+  const target = olFeatures.find((feat) => features[feat.get("index")].id === location.hash.slice(1) && features[feat.get("index")].kind !== "zone");
+  if (target) { map.getView().fit(target.getGeometry().getExtent(), { maxZoom: 16, padding: [80, 80, 80, 80] }); show(target); }
+})();
+</script>
+
+
+<script>
+(function () {
+  function note() {
+    let box = document.querySelector("[data-toasts]");
+    if (!box) { box = document.createElement("div"); box.className = "toasts"; box.dataset.toasts = ""; document.body.appendChild(box); }
+    box.innerHTML = '<div class="toast" role="status"><span class="body-s">Демо-версия: здесь только просмотр. Загрузка, анализ, проверка и фильтры работают в полной версии.</span></div>';
+    box.removeAttribute("data-hidden");
+    clearTimeout(window.__demoNote); window.__demoNote = setTimeout(() => box.setAttribute("data-hidden", ""), 4500);
+  }
+  document.addEventListener("submit", (event) => { event.preventDefault(); note(); }, true);
+})();
+</script>
+</body>
+</html>
