@@ -243,6 +243,8 @@ a.code:hover { filter: brightness(0.82); }
 .tbl td.mid { vertical-align: middle; }
 .tbl tr.row { position: relative; }
 .tbl tr.row:hover td { background-color: var(--fill); }
+/* a hovered row is one filled rectangle: its top and bottom hairlines run the full width of the fill */
+.tbl tr.row:hover > td, .tbl tr.row:hover + tr > td { background-size: 100% 1px; }
 .tbl td > .code:first-child { margin-right: 0.35em; }
 .row-link { font-weight: 300; }
 .row-link::after { content: ""; position: absolute; inset: 0; }
@@ -385,6 +387,7 @@ p, li, dd, .body-s, .lede, .notice { text-align: justify; hyphens: none; }
   .tbl td, .tbl td:first-child, .tbl td:last-child { border: 0; background: none; padding: var(--s1) 0; width: auto !important; overflow-wrap: anywhere; }
   .tbl tr.row:hover td { background-color: transparent; }
   .tbl tr.row:hover { background-color: var(--fill); }
+  .tbl tr.row:hover, .tbl tr.row:hover + tr { background-size: 100% 1px; }
   .tbl tr.mismatch-row { background-image: none; padding-top: 0; }
   .tbl td:first-child { padding-bottom: var(--s3); }
   .tbl td.arrow { display: none; }
