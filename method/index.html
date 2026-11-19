@@ -38,11 +38,11 @@
       <a class="sheet-link" href="/kod-prozrachnosti/officials/" >Должностные лица</a>
       <a class="sheet-link" href="/kod-prozrachnosti/sources/" >Источники</a>
       <a class="sheet-link" href="/kod-prozrachnosti/method/" aria-current="page">Методика</a>
-      <a class="sheet-link" href="/kod-prozrachnosti/imports/" >Загрузка</a>
+      
       <div class="sheet-foot eyebrow">
-        <span>head / Руководитель</span>
+        <span>демо-просмотр</span>
         
-        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="5DEtvmdP2Ck1mF8hzaL1E508Be4gMk8M8b5cGABuSWbCX5wzXtGG8HW4uOGcPN8w"><button class="btn-plain" type="submit">Выйти</button></form>
+        
       </div>
     </nav>
     <figure class="sheet-plate"><img src="/kod-prozrachnosti/static/img/band-map.jpg" alt="" loading="lazy"></figure>
@@ -237,8 +237,8 @@
       <div class="foot-meta body-s">
         <span>ЕГРН / НСПД / ЕГРЮЛ / ГИС «Торги»</span>
         <span>правила 1.0</span>
-        <span>анализ 19.11.2026 07:15</span>
-        <span class="nowrap" data-clock>07:15 МСК</span>
+        <span>анализ 19.11.2026 21:51</span>
+        <span class="nowrap" data-clock>21:51 МСК</span>
       </div>
     </div>
   </footer>
@@ -386,18 +386,5 @@
   })();
   </script>
   
-
-<script>
-(function () {
-  function note() {
-    let box = document.querySelector("[data-toasts]");
-    if (!box) { box = document.createElement("div"); box.className = "toasts"; box.dataset.toasts = ""; document.body.appendChild(box); }
-    box.innerHTML = '<div class="toast" role="status"><span class="body-s">Демо-версия: здесь только просмотр. Загрузка, анализ, проверка и фильтры работают в полной версии.</span></div>';
-    box.removeAttribute("data-hidden");
-    clearTimeout(window.__demoNote); window.__demoNote = setTimeout(() => box.setAttribute("data-hidden", ""), 4500);
-  }
-  document.addEventListener("submit", (event) => { event.preventDefault(); note(); }, true);
-})();
-</script>
 </body>
 </html>
