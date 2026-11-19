@@ -42,7 +42,7 @@
       <div class="sheet-foot eyebrow">
         <span>head / Руководитель</span>
         
-        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="zaQRRR22XCn2ervffrJJnTc7qTel9wl3KDhYHM2kz5dhFyJ9o9sbeK5APKxX2PpQ"><button class="btn-plain" type="submit">Выйти</button></form>
+        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="S8e9E6xFnfLlTgicH62AJReDHhPEEJwRgf0sT0DUHyLREzgaYs3aseqcaTeIGeHt"><button class="btn-plain" type="submit">Выйти</button></form>
       </div>
     </nav>
     <figure class="sheet-plate"><img src="/kod-prozrachnosti/static/img/band-map.jpg" alt="" loading="lazy"></figure>
@@ -133,10 +133,10 @@
   </div>
   
   <div class="block">
-    <div class="block-rail"><span class="eyebrow">И6 / v1.0 / основной</span><h2 class="h2">Приобретение связанным лицом до начала процедуры при участии должностного лица</h2><span class="code code-wrap">Р1.6 — основа правила</span></div>
+    <div class="block-rail"><span class="eyebrow">И6 / v1.1 / основной</span><h2 class="h2">Приобретение связанным лицом до начала процедуры при участии должностного лица</h2><span class="code code-wrap">Р1.6 — основа правила</span></div>
     <div class="block-body cols-3">
       <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Купило ли участок до начала процедуры лицо, связанное с должностным лицом, которое участвовало в решении?</p></div>
-      <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Право зарегистрировано раньше начала процедуры, связь покупателя с участником решения подтверждена совпадением ИНН в ЕГРЮЛ (в том числе через цепочку юрлиц или прежних учредителей).</p></div>
+      <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Право зарегистрировано раньше начала процедуры, и ИНН участника решения совпадает с ИНН покупателя, его учредителя или руководителя (текущих или прежних) — совпадение сервис ищет сам. Связь через цепочку юрлиц, которой нет в загруженных данных, берётся из отметки исследователя «Совпадение ИНН в ЕГРЮЛ».</p></div>
       <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Совпадение одной фамилии связь не подтверждает: результат — «недостаточно данных», пока связь не подтверждена документами (ЕГРЮЛ, анкета, ЗАГС). Корректная контрольная цифра ИНН не подтверждает существование лица.</p></div>
     </div>
   </div>
@@ -151,11 +151,11 @@
   </div>
   
   <div class="block">
-    <div class="block-rail"><span class="eyebrow">И10 / v1.0 / основной</span><h2 class="h2">Повторяемость должностного лица в других индикаторах</h2><span class="code code-wrap">Усиливает Р1.6: повтор участника решений</span></div>
+    <div class="block-rail"><span class="eyebrow">И10 / v1.1 / основной</span><h2 class="h2">Повторяемость должностного лица в других индикаторах</h2><span class="code code-wrap">Усиливает Р1.6: повтор участника решений</span></div>
     <div class="block-body cols-3">
       <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Встречается ли одно должностное лицо в эпизодах других индикаторов больше одного раза?</p></div>
       <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Лицо встречается в других индикаторах больше одного раза.</p></div>
-      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Все лица в наборе синтетические. Для расчёта на реальных данных нужны идентификаторы лиц; один эпизод нельзя считать дважды.</p></div>
+      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Сервис считает эпизоды из комментария исследователя, объекты которых есть в загруженных таблицах других индикаторов; один эпизод не считается дважды. Участие лица в эпизоде — по записи исследователя: в таблицах других индикаторов должностные лица не указаны. Все лица в наборе синтетические.</p></div>
     </div>
   </div>
   
@@ -237,8 +237,8 @@
       <div class="foot-meta body-s">
         <span>ЕГРН / НСПД / ЕГРЮЛ / ГИС «Торги»</span>
         <span>правила 1.0</span>
-        <span>анализ 19.11.2026 06:04</span>
-        <span class="nowrap" data-clock>06:04 МСК</span>
+        <span>анализ 19.11.2026 06:25</span>
+        <span class="nowrap" data-clock>06:25 МСК</span>
       </div>
     </div>
   </footer>
