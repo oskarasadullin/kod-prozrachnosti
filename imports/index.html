@@ -42,7 +42,7 @@
       <div class="sheet-foot eyebrow">
         <span>head / Руководитель</span>
         
-        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="qwa0vcpIW8FZXYfBsjudn1HSdhbsY3BfepSIJE209kKqQyygS0So0tEB9vbecCth"><button class="btn-plain" type="submit">Выйти</button></form>
+        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="sGr5csmn2Lr6V3aNRCOfxjJZvLcN58ROQaNlys0lXTFLpaN26sLMmjg3uEsYk6bu"><button class="btn-plain" type="submit">Выйти</button></form>
       </div>
     </nav>
     <figure class="sheet-plate"><img src="/kod-prozrachnosti/static/img/band-map.jpg" alt="" loading="lazy"></figure>
@@ -57,7 +57,7 @@
     <div class="band-plate">
       <span class="eyebrow">Импорт данных</span>
       <h1 class="display-l">Загрузка таблиц</h1>
-      <p class="lede">Таблицы индикаторов в том виде, как их готовит исследование: Excel или CSV. Тип таблицы определяется по заголовкам, жёлтая заливка сохраняется как «реальное по маркировке автора».</p>
+      <p class="lede">Загрузите таблицы индикаторов в формате Excel или CSV. Сервис определяет тип таблицы по заголовкам и сохраняет жёлтую заливку как «реальное по маркировке автора».</p>
     </div>
   </div>
 </section>
@@ -67,10 +67,10 @@
       
 <section class="section">
   <div class="block">
-    <div class="block-rail"><span class="eyebrow">Новый файл</span><h2 class="h1">Загрузить и проверить</h2><p class="small soft">Файл проверяется целиком до записи: при любой ошибке ничего не сохраняется. Повторная загрузка обновляет записи, а не дублирует их.</p></div>
+    <div class="block-rail"><span class="eyebrow">Новый файл</span><h2 class="h1">Загрузить и проверить</h2><p class="small soft">Сервис проверяет файл целиком до записи: при любой ошибке ничего не сохраняет. Повторная загрузка обновляет записи без дублей.</p></div>
     <div class="block-body">
       
-      <form method="post" enctype="multipart/form-data" style="display:grid;gap:1px"><input type="hidden" name="csrfmiddlewaretoken" value="qwa0vcpIW8FZXYfBsjudn1HSdhbsY3BfepSIJE209kKqQyygS0So0tEB9vbecCth">
+      <form method="post" enctype="multipart/form-data" style="display:grid;gap:1px"><input type="hidden" name="csrfmiddlewaretoken" value="sGr5csmn2Lr6V3aNRCOfxjJZvLcN58ROQaNlys0lXTFLpaN26sLMmjg3uEsYk6bu">
         <div class="file-pick"><input id="file" type="file" name="file" accept=".xlsx,.csv" required><label class="btn" for="file" data-lbl="Выбрать файл">Выбрать файл</label><span class="file-name small" id="file-name">Файл .xlsx или .csv не выбран</span></div>
         <button class="btn btn-primary" type="submit" data-lbl="Загрузить и проверить">Загрузить и проверить</button>
       </form>
@@ -148,8 +148,8 @@
       <div class="foot-meta body-s">
         <span>ЕГРН / НСПД / ЕГРЮЛ / ГИС «Торги»</span>
         <span>правила 1.0</span>
-        <span>анализ 19.11.2026 01:23</span>
-        <span class="nowrap" data-clock>01:23 МСК</span>
+        <span>анализ 19.11.2026 05:18</span>
+        <span class="nowrap" data-clock>05:18 МСК</span>
       </div>
     </div>
   </footer>

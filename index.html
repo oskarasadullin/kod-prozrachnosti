@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0000e8">
-  <title>Код прозрачности — коррупционные риски в кадастре</title>
+  <title>Код прозрачности — проверка земельных решений по данным реестров</title>
   <link rel="preload" href="/kod-prozrachnosti/static/fonts/science-gothic-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/kod-prozrachnosti/static/css/app.css">
   <link rel="icon" href="/kod-prozrachnosti/static/img/favicon.png" type="image/png">
@@ -42,7 +42,7 @@
       <div class="sheet-foot eyebrow">
         <span>head / Руководитель</span>
         
-        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="ZvOm0ly5TuIUHhMhVJqY1EERG23ZwkmCNow4eNbn6GNlAR5WlqO9E6BACg3LKTeE"><button class="btn-plain" type="submit">Выйти</button></form>
+        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="ya86lHbuPXK8UveGaFEYR0ht1ocm33KVWEumHHPsK5YNoCRVpvBvG0Ox0hsxi14B"><button class="btn-plain" type="submit">Выйти</button></form>
       </div>
     </nav>
     <figure class="sheet-plate"><img src="/kod-prozrachnosti/static/img/band-map.jpg" alt="" loading="lazy"></figure>
@@ -56,11 +56,11 @@
   <div class="wrap hero-in">
     <div class="hero-copy">
       <div class="hero-rail eyebrow"><span>Рабочее место специалиста</span><span class="nowrap">ЕГРН / НСПД / ЕГРЮЛ / ГИС «Торги»</span></div>
-      <h1 class="display-xl fit"><span class="sr-only">Где в кадастре прячется риск</span><span class="fit-line" aria-hidden="true">Где в кадастре</span><span class="fit-line" aria-hidden="true">прячется риск</span></h1>
-      <p class="body-s j">Система сопоставляет сделки, смену категорий, правки ПЗЗ и связи с должностными лицами, объясняет каждый сигнал и хранит ход проверки. Решение принимает сотрудник: индикатор — повод проверить, а не вывод о нарушении.</p>
+      <h1 class="display-xl fit"><span class="sr-only">Земельные решения по данным реестров</span><span class="fit-line" aria-hidden="true">Земельные решения</span><span class="fit-line" aria-hidden="true">по данным реестров</span></h1>
+      <p class="body-s j">Сервис сопоставляет сделки с землёй, смену категории, правки ПЗЗ и связи с должностными лицами, показывает основания для проверки по каждому объекту. Индикатор — повод для проверки. Решение принимает сотрудник.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" data-lbl="Открыть реестр" href="/kod-prozrachnosti/cases/">Открыть реестр</a>
-        <form method="post" action="/analysis/run/"><input type="hidden" name="csrfmiddlewaretoken" value="ZvOm0ly5TuIUHhMhVJqY1EERG23ZwkmCNow4eNbn6GNlAR5WlqO9E6BACg3LKTeE"><input type="hidden" name="next" value="/"><button class="btn" type="submit" data-lbl="Запустить анализ">Запустить анализ</button></form>
+        <form method="post" action="/analysis/run/"><input type="hidden" name="csrfmiddlewaretoken" value="ya86lHbuPXK8UveGaFEYR0ht1ocm33KVWEumHHPsK5YNoCRVpvBvG0Ox0hsxi14B"><input type="hidden" name="next" value="/"><button class="btn" type="submit" data-lbl="Запустить анализ">Запустить анализ</button></form>
         
       </div>
       <div class="stats">
@@ -82,7 +82,7 @@
     <div class="block-rail">
       <span class="eyebrow">Индикаторы</span>
       <h2 class="h1">Семь правил исследования</h2>
-      <p class="small soft">Последний анализ 19.11.2026 01:23: 70 записей, 50 объектов, 18 мс.</p>
+      <p class="small soft">Последний анализ 19.11.2026 05:18: 70 записей, 50 объектов, 18 мс.</p>
       <div class="legend small"><span class="state"><span class="bar" style="min-width:1.4rem"><span class="b-trig" style="width:100%"></span></span>сработал</span><span class="state"><span class="bar" style="min-width:1.4rem"><span class="b-insuf" style="width:100%"></span></span>нет данных</span></div>
     </div>
     <div class="block-body tbl-wrap">
@@ -238,24 +238,24 @@
 </section>
 
 <section class="section">
-  <div class="section-head"><span class="eyebrow">Что мы ищем</span><h2 class="display-l">Три механизма риска</h2></div>
+  <div class="section-head"><span class="eyebrow">Что ищут правила</span><h2 class="display-l">Три механизма риска</h2></div>
   <div class="feat-grid">
     <article class="feat">
       <span class="eyebrow">#1 / И1, И3, И6</span>
       <h3 class="h2">Сделка перед решением</h3>
-      <p class="body-s j">Участок покупают незадолго до смены категории или правки зоны, покупатель связан с чиновником, который участвует в решении, а после — продажа с выгодой.</p>
+      <p class="body-s j">Участок покупают незадолго до смены категории или правки зоны. Покупатель связан с должностным лицом, которое участвует в решении. После решения участок продают дороже.</p>
       <figure class="feat-plate plate"><img src="/kod-prozrachnosti/static/img/m1.jpg" alt="Теодолит в поле: гравюра" width="1000" height="1000"></figure>
     </article>
     <article class="feat">
       <span class="eyebrow">#2 / И2, И4, И10</span>
-      <h3 class="h2">Решение под владельца</h3>
-      <p class="body-s j">Зону ПЗЗ меняют ради участков одного правообладателя, торги проходят с единственным участником, одно и то же должностное лицо повторяется в разных эпизодах.</p>
+      <h3 class="h2">Решение в пользу владельца</h3>
+      <p class="body-s j">Изменённую зону ПЗЗ почти целиком занимают участки одного правообладателя, торги проходят с единственным участником, одно должностное лицо повторяется в разных эпизодах.</p>
       <figure class="feat-plate plate"><img src="/kod-prozrachnosti/static/img/m2.jpg" alt="Документы и печать: гравюра" width="1000" height="1000"></figure>
     </article>
     <article class="feat">
       <span class="eyebrow">#3 / И8</span>
       <h3 class="h2">Граница с изломом</h3>
-      <p class="body-s j">Контур участка с «хвостом», вырезом или прирезанной полосой. Коэффициент заполнения считается по координатам, а не берётся из таблицы.</p>
+      <p class="body-s j">Контур участка с узким выступом, вырезом или прирезанной полосой. Коэффициент заполнения сервис считает по координатам.</p>
       <figure class="feat-plate plate"><img src="/kod-prozrachnosti/static/img/m3.jpg" alt="Кадастровый план: гравюра" width="1000" height="1000"></figure>
     </article>
   </div>
@@ -270,8 +270,8 @@
       <div class="foot-meta body-s">
         <span>ЕГРН / НСПД / ЕГРЮЛ / ГИС «Торги»</span>
         <span>правила 1.0</span>
-        <span>анализ 19.11.2026 01:23</span>
-        <span class="nowrap" data-clock>01:23 МСК</span>
+        <span>анализ 19.11.2026 05:18</span>
+        <span class="nowrap" data-clock>05:18 МСК</span>
       </div>
     </div>
   </footer>

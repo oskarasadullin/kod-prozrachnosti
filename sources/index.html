@@ -42,7 +42,7 @@
       <div class="sheet-foot eyebrow">
         <span>head / Руководитель</span>
         
-        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="cTw6FF7DL53ILBap6PUrl9mhnytT4soO0MeOT7KVYh89Ebt4wwiCYBj0jMtFi1gQ"><button class="btn-plain" type="submit">Выйти</button></form>
+        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="8QZJZWi4uiB8iARhfSDqxIcN6yYATj1nwklZlWW2pqPNMHuwuIAXmIJR5reL8hl3"><button class="btn-plain" type="submit">Выйти</button></form>
       </div>
     </nav>
     <figure class="sheet-plate"><img src="/kod-prozrachnosti/static/img/band-map.jpg" alt="" loading="lazy"></figure>
@@ -57,7 +57,7 @@
     <div class="band-plate">
       <span class="eyebrow">Откуда данные</span>
       <h1 class="display-l">Источники</h1>
-      <p class="lede">Из каких государственных систем взяты сведения, на какие индикаторы они опираются и что в каждом наборе реальное, а что синтетика.</p>
+      <p class="lede">Государственные системы, из которых взяты сведения, индикаторы, которые их используют, и число реальных и синтетических ячеек в каждом наборе.</p>
     </div>
   </div>
 </section>
@@ -70,7 +70,7 @@
     <div class="block-rail">
       <span class="eyebrow">Реестр источников</span>
       <h2 class="h1">Государственные системы</h2>
-      <p class="small soft">Индикаторы справа — те, в паспортах загруженных таблиц которых источник назван. Прямых подключений к системам нет: команда работает с подготовленными из них таблицами.</p>
+      <p class="small soft">В столбце «Индикаторы» — те, в паспорте таблицы которых источник назван. Прямых подключений к системам нет: сервис работает с таблицами, подготовленными из них.</p>
     </div>
     <div class="block-body tbl-wrap">
       <table class="tbl">
@@ -115,8 +115,8 @@
   <div class="block">
     <div class="block-rail">
       <span class="eyebrow">Паспорта наборов</span>
-      <h2 class="h1">Что реально, что синтетика</h2>
-      <p class="small soft">Последняя загрузка по каждому индикатору: 70 записей. Жёлтая ячейка автора исследования стала атрибутом «реальное».</p>
+      <h2 class="h1">Реальное и синтетика</h2>
+      <p class="small soft">Последняя загрузка по каждому индикатору: 70 записей. Жёлтую заливку ячейки сервис сохраняет как «реальное по маркировке автора».</p>
       <div class="legend small"><span class="org o-real">реальные ячейки</span><span class="org o-synth">синтетические</span></div>
     </div>
     <div class="block-body tbl-wrap">
@@ -172,9 +172,9 @@
   <div class="block">
     <div class="block-rail"><span class="eyebrow">Ограничения</span><h2 class="h1">Чего здесь нет</h2></div>
     <div class="block-body"><ul class="list">
-      <li class="body-s">Наличие названия реестра или реквизитов акта в таблице не подтверждает доступ к API, полным выпискам и архивным редакциям.</li>
-      <li class="body-s">Реальность кадастрового номера не делает реальными добавленных к нему правообладателя, дату покупки или связь с должностным лицом — такие поля помечены синтетикой.</li>
-      <li class="body-s">Перед подключением реальных данных нужен паспорт набора: поставщик, основание получения, период, полнота истории и ограничения использования персональных данных.</li>
+      <li class="body-s">Название реестра или реквизиты акта в таблице не означают, что у сервиса есть доступ к API, полным выпискам и архивным редакциям.</li>
+      <li class="body-s">При реальном кадастровом номере правообладатель, дата покупки и связь с должностным лицом могут быть синтетическими. Такие поля помечены как синтетика.</li>
+      <li class="body-s">Перед подключением реальных данных нужен паспорт набора: поставщик, основание получения, период, полнота истории и ограничения на использование персональных данных.</li>
     </ul></div>
   </div>
 </section>
@@ -188,8 +188,8 @@
       <div class="foot-meta body-s">
         <span>ЕГРН / НСПД / ЕГРЮЛ / ГИС «Торги»</span>
         <span>правила 1.0</span>
-        <span>анализ 19.11.2026 01:23</span>
-        <span class="nowrap" data-clock>01:23 МСК</span>
+        <span>анализ 19.11.2026 05:18</span>
+        <span class="nowrap" data-clock>05:18 МСК</span>
       </div>
     </div>
   </footer>

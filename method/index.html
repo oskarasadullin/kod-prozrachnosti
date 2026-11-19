@@ -42,7 +42,7 @@
       <div class="sheet-foot eyebrow">
         <span>head / Руководитель</span>
         
-        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="M6DX5d3I9iEeEcDVzDdVbELkrBScBQh3AZlFjFG0muJFxMWAZkB6O6I3nPSYPp95"><button class="btn-plain" type="submit">Выйти</button></form>
+        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="PpR3JIZSfznygBtzFqiizHENJfGJ1XTMdTdj5IDQaHBdKI6OUgfPoHbRI8WUgVds"><button class="btn-plain" type="submit">Выйти</button></form>
       </div>
     </nav>
     <figure class="sheet-plate"><img src="/kod-prozrachnosti/static/img/band-map.jpg" alt="" loading="lazy"></figure>
@@ -55,9 +55,9 @@
   <img class="band-bg" src="/kod-prozrachnosti/static/img/band-method.jpg" alt="" aria-hidden="true" width="1500" height="844" fetchpriority="high">
   <div class="wrap band-in">
     <div class="band-plate">
-      <span class="eyebrow">Как работает система</span>
+      <span class="eyebrow">Как работает сервис</span>
       <h1 class="display-l">Методика</h1>
-      <p class="lede">Каждый индикатор — отдельное правило с версией. Правило берёт только исходные факты и само пересчитывает всё, что в таблице было формулой. Результат — один из четырёх статусов, объяснение и список недостающих сведений.</p>
+      <p class="lede">Каждый индикатор — отдельное правило с версией. Правило берёт исходные факты и заново считает значения, которые в таблице заданы формулой. Результат правила: один из четырёх статусов, объяснение и список недостающих сведений.</p>
     </div>
   </div>
 </section>
@@ -67,30 +67,30 @@
       
 <section class="section">
   <div class="block">
-    <div class="block-rail"><span class="eyebrow">Статусы правила</span><h2 class="h1">Четыре ответа, без «процента коррупции»</h2></div>
+    <div class="block-rail"><span class="eyebrow">Статусы правила</span><h2 class="h1">Четыре ответа правила</h2></div>
     <div class="block-body">
       <ul class="list">
-        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="tag tag-blue">Сработал</span></span><span class="body-s">Сочетание обстоятельств найдено — повод для проверки.</span></li>
-        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="tag">Не сработал</span></span><span class="body-s">Только для проверенных правил и имеющихся сведений.</span></li>
-        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="4.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="8.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="12.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="16.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/></svg><span class="tag">Недостаточно данных</span></span><span class="body-s">Вывод невозможен. Это не «риска нет».</span></li>
+        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="tag tag-blue">Сработал</span></span><span class="body-s">Условие правила выполнено. Индикатор — повод для проверки.</span></li>
+        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="tag">Не сработал</span></span><span class="body-s">Условие правила не выполнено на имеющихся сведениях.</span></li>
+        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="4.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="8.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="12.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="16.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/></svg><span class="tag">Недостаточно данных</span></span><span class="body-s">Сведений для вывода не хватает. Нет данных — значит, не проверено.</span></li>
         <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="4.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="8.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="12.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="16.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/></svg><span class="tag">Не применим</span></span><span class="body-s">Правило не относится к объекту.</span></li>
       </ul>
     </div>
   </div>
   <div class="block">
-    <div class="block-rail"><span class="eyebrow">Итог по объекту</span><h2 class="h1">Приоритет проверки</h2></div>
+    <div class="block-rail"><span class="eyebrow">Итог по объекту</span><h2 class="h1">Приоритет проверки</h2><p class="small soft">Объекты разложены по пяти уровням приоритета; вероятность коррупции сервис не считает.</p></div>
     <div class="block-body">
       <ul class="list">
         <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg><span class="eyebrow">Высокий приоритет</span></span><span class="body-s">Подтверждённая связь с должностным лицом (И6), повтор лица (И10) или два основных индикатора сразу.</span></li>
         <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="eyebrow">Требует проверки</span></span><span class="body-s">Сработал один основной индикатор.</span></li>
-        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="eyebrow">Контекстный признак</span></span><span class="body-s">Только И3: показывает механизм выгоды, сам приоритет не поднимает.</span></li>
-        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="4.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="8.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="12.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="16.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/></svg><span class="eyebrow">Недостаточно данных</span></span><span class="body-s">Ничего не сработало, но где-то не хватило сведений.</span></li>
+        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="eyebrow">Контекстный признак</span></span><span class="body-s">Сработал только И3. Он показывает, как могла быть получена выгода; приоритет не повышает.</span></li>
+        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="4.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="8.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="12.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="16.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/></svg><span class="eyebrow">Недостаточно данных</span></span><span class="body-s">Ни одно правило не сработало, хотя бы одному не хватило сведений.</span></li>
         <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="eyebrow">Сигналов нет</span></span><span class="body-s">Ни одно правило не сработало на имеющихся данных.</span></li>
       </ul>
     </div>
   </div>
   <div class="block">
-    <div class="block-rail"><span class="eyebrow">Происхождение</span><h2 class="h1">Текстура вместо цвета</h2></div>
+    <div class="block-rail"><span class="eyebrow">Происхождение</span><h2 class="h1">Метки происхождения</h2></div>
     <div class="block-body"><div class="legend body-s"><span class="org o-real">реальное по маркировке автора (жёлтая ячейка)</span><span class="org o-synth">синтетическое</span><span class="org o-calc">расчёт в исходной таблице</span><span class="org o-unknown">происхождение уточнить (CSV без разметки)</span><span class="org o-missing">нет данных</span></div></div>
   </div>
 </section>
@@ -99,76 +99,76 @@
   <div class="block">
     <div class="block-rail"><span class="eyebrow">И1 / v1.0 / основной</span><h2 class="h2">Приобретение участка не более чем за 12 месяцев до смены категории</h2><span class="code code-wrap">Часть Р1.6: временное окно, без связи с должностным лицом</span></div>
     <div class="block-body cols-3">
-      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Не приобретён ли участок незадолго до перевода в более «дорогую» категорию?</p></div>
-      <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Смена категории не раньше регистрации права и не позднее 12 месяцев после неё. Окно 12 месяцев — настройка пилота, не правовая норма.</p></div>
-      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Дата присвоения кадастрового номера не заменяет дату приобретения права. Близость дат сама по себе не доказывает осведомлённость покупателя.</p></div>
+      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Куплен ли участок не более чем за 12 месяцев до смены категории?</p></div>
+      <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Смена категории не раньше регистрации права и не позднее 12 месяцев после неё. Окно 12 месяцев — настройка пилота; правовой нормой оно не установлено.</p></div>
+      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Дата присвоения кадастрового номера не заменяет дату приобретения права. Близость дат не доказывает, что покупатель знал о решении.</p></div>
     </div>
   </div>
   
   <div class="block">
     <div class="block-rail"><span class="eyebrow">И2 / v1.0 / основной</span><h2 class="h2">Адресная правка ПЗЗ или генплана под участки одного владельца</h2><span class="code code-wrap">Кандидат вне Р1; к Р1.2 не сводится</span></div>
     <div class="block-body cols-3">
-      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Не изменена ли зона ради участков одного правообладателя?</p></div>
+      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Занимают ли участки одного правообладателя не меньше 80 % изменённой зоны?</p></div>
       <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Участки основного владельца занимают не меньше 80 % площади изменённой зоны. Порог 80 % — допущение исследования.</p></div>
-      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Индикатор передан «под вопросом»: нужны приложения к актам (границы зоны, правообладатели). Пример генплана не переносится автоматически на ПЗЗ.</p></div>
+      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Индикатор передан с пометкой «под вопросом»: нужны приложения к актам (границы зоны, правообладатели). Вывод по примеру генплана на ПЗЗ не распространяется без отдельной проверки.</p></div>
     </div>
   </div>
   
   <div class="block">
     <div class="block-rail"><span class="eyebrow">И3 / v1.0 / контекстный</span><h2 class="h2">Рост кадастровой стоимости после смены категории и продажа с выгодой</h2><span class="code code-wrap">Р1.8 — последующая реализация выгоды</span></div>
     <div class="block-body cols-3">
-      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Не реализована ли выгода от смены категории последующей продажей?</p></div>
+      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Продан ли участок после смены категории и роста кадастровой стоимости?</p></div>
       <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">КС после смены категории выше прежней, новая КС применяется не раньше смены категории, продажа — не раньше смены категории.</p></div>
-      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Контекстный признак: помогает восстановить механизм выгоды, но сам не формирует сигнал высокого приоритета. Рост КС — изменение оценки, а не доказательство прибыли.</p></div>
+      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Контекстный признак: показывает, как могла быть получена выгода; приоритет не повышает. Рост КС — изменение оценки, прибыль он не доказывает.</p></div>
     </div>
   </div>
   
   <div class="block">
     <div class="block-rail"><span class="eyebrow">И4 / v1.0 / основной</span><h2 class="h2">Единственный участник или обход обязательных условий предоставления</h2><span class="code code-wrap">Вне Р1: конкурентность предоставления</span></div>
     <div class="block-body cols-3">
-      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Не получено ли имущество без реальной конкуренции или в обход условий?</p></div>
-      <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Один участник торгов либо описанные признаки обхода обязательных условий. Рост цены на торгах — отрицательный признак.</p></div>
-      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Один участник сам по себе не доказывает обход условий. Для помещений и зданий применимость к земельному сценарию проверяется отдельно.</p></div>
+      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Получено ли имущество на торгах с одним участником или в обход обязательных условий?</p></div>
+      <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Один участник торгов либо описанные признаки обхода обязательных условий. Рост цены на торгах — признак конкуренции.</p></div>
+      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Один участник не доказывает обход условий. Применимость правила к помещениям и зданиям проверяйте отдельно.</p></div>
     </div>
   </div>
   
   <div class="block">
     <div class="block-rail"><span class="eyebrow">И6 / v1.0 / основной</span><h2 class="h2">Приобретение связанным лицом до начала процедуры при участии должностного лица</h2><span class="code code-wrap">Р1.6 — основа правила</span></div>
     <div class="block-body cols-3">
-      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Не купил ли участок человек, связанный с чиновником, который потом участвовал в решении?</p></div>
+      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Купило ли участок до начала процедуры лицо, связанное с должностным лицом, которое участвовало в решении?</p></div>
       <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Право зарегистрировано раньше начала процедуры, связь покупателя с участником решения подтверждена совпадением ИНН в ЕГРЮЛ (в том числе через цепочку юрлиц или прежних учредителей).</p></div>
-      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Совпадение одной фамилии — гипотеза, а не связь: результат «недостаточно данных» до подтверждения документами (ЕГРЮЛ, анкета, ЗАГС). Корректная контрольная цифра ИНН не подтверждает существование лица.</p></div>
+      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Совпадение одной фамилии связь не подтверждает: результат — «недостаточно данных», пока связь не подтверждена документами (ЕГРЮЛ, анкета, ЗАГС). Корректная контрольная цифра ИНН не подтверждает существование лица.</p></div>
     </div>
   </div>
   
   <div class="block">
     <div class="block-rail"><span class="eyebrow">И8 / v1.0 / основной</span><h2 class="h2">Аномалия формы границ участка</h2><span class="code code-wrap">Вне Р1: форма границ</span></div>
     <div class="block-body cols-3">
-      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Нет ли у участка «хвостов», выступов или вклиниваний, выдающих прирезку?</p></div>
-      <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Коэффициент заполнения = площадь контура / площадь наименьшего описанного прямоугольника (с поворотом). Меньше 0,85 — аномалия. Считается по координатам, а не по площадям из таблицы.</p></div>
-      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Порог 0,85 — методическое допущение, требует калибровки. Изломанность границ (п. 6 ст. 11.9 ЗК РФ) — признак для проверки, а не нарушение.</p></div>
+      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Есть ли у контура участка узкие выступы, вырезы или вклинивания?</p></div>
+      <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Коэффициент заполнения = площадь контура / площадь наименьшего описанного прямоугольника (с поворотом). Меньше 0,85 — аномалия. Сервис считает коэффициент по координатам.</p></div>
+      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Порог 0,85 — методическое допущение, требует калибровки. Изломанность границ (п. 6 ст. 11.9 ЗК РФ) — повод для проверки.</p></div>
     </div>
   </div>
   
   <div class="block">
     <div class="block-rail"><span class="eyebrow">И10 / v1.0 / основной</span><h2 class="h2">Повторяемость должностного лица в других индикаторах</h2><span class="code code-wrap">Усиливает Р1.6: повтор участника решений</span></div>
     <div class="block-body cols-3">
-      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Не встречается ли одно и то же должностное лицо в нескольких подозрительных эпизодах?</p></div>
-      <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Лицо фигурирует в иных индикаторах больше одного раза.</p></div>
-      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Все лица в наборе синтетические. Для расчёта на реальных данных нужны идентификаторы лиц и исключение повторного счёта одного эпизода.</p></div>
+      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Встречается ли одно должностное лицо в эпизодах других индикаторов больше одного раза?</p></div>
+      <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Лицо встречается в других индикаторах больше одного раза.</p></div>
+      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Все лица в наборе синтетические. Для расчёта на реальных данных нужны идентификаторы лиц; один эпизод нельзя считать дважды.</p></div>
     </div>
   </div>
   
 </section>
 <section class="section" id="tz">
   <div class="block">
-    <div class="block-rail"><span class="eyebrow">Правила ТЗ</span><h2 class="h1">Соответствие Р1.2, Р1.6, Р1.8</h2><p class="small soft">Полностью — в docs/indicator-mapping.md</p></div>
+    <div class="block-rail"><span class="eyebrow">Правила ТЗ</span><h2 class="h1">Соответствие Р1.2, Р1.6, Р1.8</h2><p class="small soft">Полная таблица: docs/indicator-mapping.md</p></div>
     <div class="block-body tbl-wrap"><table class="tbl">
       <thead><tr><th>Правило ТЗ</th><th>Чем покрыто</th><th>Статус</th></tr></thead>
       <tbody>
         <tr><td>Р1.6 — приобретение связанным лицом до начала процедуры</td><td data-label="Покрыто"><div class="codes"><span class="code">И6</span><span class="code">И1</span><span class="code">И10</span></div></td><td data-label="Статус" class="small">Реализовано как И6; одна фамилия — «недостаточно данных»</td></tr>
-        <tr><td>Р1.8 — последующая реализация выгоды, контекст</td><td data-label="Покрыто"><div class="codes"><span class="code">И3</span></div></td><td data-label="Статус" class="small">Реализовано как И3; приоритет не поднимает</td></tr>
-        <tr><td>Р1.2 — новый ВРИ не соответствует регламенту</td><td data-label="Покрыто"><span class="soft">—</span></td><td data-label="Статус" class="small">Нет данных: в таблицах нет истории ВРИ и редакций ПЗЗ. И2 — другой кандидат</td></tr>
+        <tr><td>Р1.8 — последующая реализация выгоды, контекст</td><td data-label="Покрыто"><div class="codes"><span class="code">И3</span></div></td><td data-label="Статус" class="small">Реализовано как И3; приоритет не повышает</td></tr>
+        <tr><td>Р1.2 — новый ВРИ не соответствует регламенту</td><td data-label="Покрыто"><span class="soft">—</span></td><td data-label="Статус" class="small">Нет данных: в таблицах нет истории ВРИ и редакций ПЗЗ. И2 проверяет другое условие</td></tr>
       </tbody>
     </table></div>
   </div>
@@ -177,7 +177,7 @@
   <div class="block">
     <div class="block-rail"><span class="eyebrow">Контрольный набор</span><h2 class="h1">Сверка с разметкой исследования</h2><span class="num-xl">69/70</span></div>
     <div class="block-body">
-      <p class="body-s j">В каждой таблице исследования есть колонка с ответом автора. Правила системы считают ответ заново по исходным фактам, и мы сравниваем. Это показывает работу правил на тестовых примерах, а не качество выявления коррупции на реальных данных. Расхождения намеренные: совпадение одной фамилии система не считает доказанной связью и требует документов — временная близость событий и совпадение фамилий не заменяют подтверждения связи участников.</p>
+      <p class="body-s j">В каждой таблице исследования есть колонка с ответом автора. Правила считают ответ заново по исходным фактам, сервис сравнивает оба ответа. Сверка показывает работу правил на тестовых примерах. Качество выявления коррупции на реальных данных она не измеряет. Расхождения заложены в правило: при совпадении одной фамилии сервис отвечает «недостаточно данных», пока связь не подтверждена документами.</p>
       <div class="tbl-wrap"><table class="tbl quality">
         <thead><tr><th>Индикатор</th><th>Совпадение</th><th class="r">Совпало</th></tr></thead>
         <tbody><tr>
@@ -209,7 +209,7 @@
           <td style="vertical-align:middle"><div class="bar"><span class="b-trig" style="width:90%"></span></div></td>
           <td class="r nowrap" data-label="Совпало">9 из 10</td>
         </tr>
-        <tr class="mismatch-row"><td colspan="3"><div class="notice small"><span class="eyebrow">Расхождение / Земельный участок 15 200 кв. м, Ростовская обл., Мясниковск…</span><p style="margin-top:var(--s2)">У автора — «Да», у правила — недостаточно данных. Покупка за 151 дн. до процедуры, с участником решения (Кравченко Михаил Петрович) совпадает только фамилия. Это гипотеза, а не связь: нужна проверка документами.</p></div></td></tr>
+        <tr class="mismatch-row"><td colspan="3"><div class="notice small"><span class="eyebrow">Расхождение / Земельный участок 15 200 кв. м, Ростовская обл., Мясниковск…</span><p style="margin-top:var(--s2)">Ответ автора: «Да». Ответ правила: недостаточно данных. Покупка за 151 дн. до процедуры. С участником решения (Кравченко Михаил Петрович) совпадает только фамилия. Связь не подтверждена: нужны документы.</p></div></td></tr>
         <tr>
           <td><span class="code">И8</span> Аномалия границ</td>
           <td style="vertical-align:middle"><div class="bar"><span class="b-trig" style="width:100%"></span></div></td>
@@ -237,8 +237,8 @@
       <div class="foot-meta body-s">
         <span>ЕГРН / НСПД / ЕГРЮЛ / ГИС «Торги»</span>
         <span>правила 1.0</span>
-        <span>анализ 19.11.2026 01:23</span>
-        <span class="nowrap" data-clock>01:23 МСК</span>
+        <span>анализ 19.11.2026 05:18</span>
+        <span class="nowrap" data-clock>05:18 МСК</span>
       </div>
     </div>
   </footer>

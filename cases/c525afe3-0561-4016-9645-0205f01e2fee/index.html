@@ -42,7 +42,7 @@
       <div class="sheet-foot eyebrow">
         <span>head / Руководитель</span>
         
-        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="EGf2LCWLl2CNrmN7dibNqpd3rPfqLZevszXKZ4z3yeHekW6MDZzY3RaMn3fcZy6x"><button class="btn-plain" type="submit">Выйти</button></form>
+        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="TVt1jggmuWobelYekdHYOPBfmbzuY286hpPhFgUkp4CQIsBtz3EvDP8jl4PFd0sM"><button class="btn-plain" type="submit">Выйти</button></form>
       </div>
     </nav>
     <figure class="sheet-plate"><img src="/kod-prozrachnosti/static/img/band-map.jpg" alt="" loading="lazy"></figure>
@@ -64,7 +64,7 @@
         <span class="eyebrow">Нижегородская обл.</span>
         
       </div>
-      <p class="small" style="max-width:60ch">Демонстрационные данные: часть сведений синтетическая. Сигналы показывают работу правил и не являются выявленными нарушениями.</p>
+      <p class="small" style="max-width:60ch">Данные демонстрационные: часть сведений синтетическая. Сработавшие индикаторы показывают работу правил, нарушений они не устанавливают.</p>
     </div>
     <aside class="head-side">
       
@@ -84,7 +84,7 @@
       
 <section class="section">
   <div class="block">
-    <div class="block-rail"><span class="eyebrow">Анализ</span><h2 class="h1">Почему объект в реестре</h2><p class="small soft">Каждый индикатор — отдельное правило: статус, объяснение, расчёт и чего не хватает.</p></div>
+    <div class="block-rail"><span class="eyebrow">Анализ</span><h2 class="h1">Почему объект в реестре</h2><p class="small soft">По каждому индикатору: статус, объяснение, расчёт и недостающие сведения.</p></div>
     <div class="block-body">
       
       <article class="finding">
@@ -92,14 +92,14 @@
           <h3 class="h2"><span class="code">И4</span> Единственный участник торгов</h3>
           <span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="tag tag-blue">Сработал</span></span>
         </div>
-        <p class="small soft">Не получено ли имущество без реальной конкуренции или в обход условий?</p>
+        <p class="small soft">Получено ли имущество на торгах с одним участником или в обход обязательных условий?</p>
         
         <p class="body-s j">Признаки обхода обязательных условий: В период приема заявлений поступило второе заявление о намерении участвовать в аукционе, однако аукцион не проведён, участок предоставлен первому заявителю</p>
         
         
         
-        <p class="small soft j">Что учесть: Один участник сам по себе не доказывает обход условий. Для помещений и зданий применимость к земельному сценарию проверяется отдельно.</p>
-        <span class="eyebrow soft">Правило И4 v1.0 / запуск 19.11.2026 01:23 / демонстрационные данные</span>
+        <p class="small soft j">Что учесть: Один участник не доказывает обход условий. Применимость правила к помещениям и зданиям проверяйте отдельно.</p>
+        <span class="eyebrow soft">Правило И4 v1.0 / запуск 19.11.2026 05:18 / демонстрационные данные</span>
         
       </article>
       
@@ -134,7 +134,7 @@
         
         <details class="facts add-doc"  style="margin-top:var(--s4)">
           <summary><span class="h3">Добавить документ или ссылку</span><svg class="icon chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
-          <form method="post" enctype="multipart/form-data" action="/kod-prozrachnosti/cases/c525afe3-0561-4016-9645-0205f01e2fee/evidence/" class="doc-form"><input type="hidden" name="csrfmiddlewaretoken" value="EGf2LCWLl2CNrmN7dibNqpd3rPfqLZevszXKZ4z3yeHekW6MDZzY3RaMn3fcZy6x">
+          <form method="post" enctype="multipart/form-data" action="/kod-prozrachnosti/cases/c525afe3-0561-4016-9645-0205f01e2fee/evidence/" class="doc-form"><input type="hidden" name="csrfmiddlewaretoken" value="TVt1jggmuWobelYekdHYOPBfmbzuY286hpPhFgUkp4CQIsBtz3EvDP8jl4PFd0sM">
             
             <div class="doc-grid">
               <div><label class="field-label eyebrow" for="id_title">Название</label><input type="text" name="title" class="input" placeholder="Например: выписка ЕГРН от 12.02.2026" maxlength="200" required id="id_title"></div>
@@ -149,7 +149,7 @@
 
 </select></div>
             </div>
-            <div class="file-pick"><input id="doc-file" type="file" name="file" accept=".pdf,.png,.jpg,.jpeg,.docx,.xlsx,.txt"><label class="btn" for="doc-file" data-lbl="Выбрать файл">Выбрать файл</label><span class="file-name small" id="doc-file-name">PDF, изображение, DOCX, XLSX или TXT до 5 МБ — либо только ссылка</span></div>
+            <div class="file-pick"><input id="doc-file" type="file" name="file" accept=".pdf,.png,.jpg,.jpeg,.docx,.xlsx,.txt"><label class="btn" for="doc-file" data-lbl="Выбрать файл">Выбрать файл</label><span class="file-name small" id="doc-file-name">PDF, изображение, DOCX, XLSX или TXT до 5 МБ. Можно только ссылку</span></div>
             <button class="btn btn-primary" type="submit" data-lbl="Добавить к объекту">Добавить к объекту</button>
           </form>
         </details>
@@ -159,10 +159,10 @@
   </div>
 
   <div class="block" id="review">
-    <div class="block-rail"><span class="eyebrow">Решение человека</span><h2 class="h1">Проверка сотрудника</h2><p class="small soft">Хранится отдельно: не меняет исходные факты и сигнал системы.</p></div>
+    <div class="block-rail"><span class="eyebrow">Проверка</span><h2 class="h1">Решение сотрудника</h2><p class="small soft">Запись хранится отдельно и не меняет исходные факты и итог анализа.</p></div>
     <div class="block-body">
       
-      <form method="post" action="/kod-prozrachnosti/cases/c525afe3-0561-4016-9645-0205f01e2fee/reviews/" style="display:grid;gap:var(--s4)"><input type="hidden" name="csrfmiddlewaretoken" value="EGf2LCWLl2CNrmN7dibNqpd3rPfqLZevszXKZ4z3yeHekW6MDZzY3RaMn3fcZy6x">
+      <form method="post" action="/kod-prozrachnosti/cases/c525afe3-0561-4016-9645-0205f01e2fee/reviews/" style="display:grid;gap:var(--s4)"><input type="hidden" name="csrfmiddlewaretoken" value="TVt1jggmuWobelYekdHYOPBfmbzuY286hpPhFgUkp4CQIsBtz3EvDP8jl4PFd0sM">
         
         <ul class="choice"><li><label><input type="radio" name="outcome" value="confirmed" id="id_outcome_0" required><span class="body-s">Основания для дальнейшей проверки подтверждены</span></label></li><li><label><input type="radio" name="outcome" value="not_confirmed" id="id_outcome_1" required><span class="body-s">Предположение не подтвердилось</span></label></li><li><label><input type="radio" name="outcome" value="needs_information" id="id_outcome_2" required><span class="body-s">Нужны дополнительные сведения</span></label></li></ul>
         <div><label class="field-label eyebrow" for="id_comment">Обоснование и реквизиты документов</label><textarea name="comment" cols="40" rows="4" class="input" placeholder="Что проверено, какие документы открыты, к какому выводу пришли" maxlength="4000" required id="id_comment">
@@ -175,7 +175,7 @@
   </div>
 
   <div class="block">
-    <div class="block-rail"><span class="eyebrow">Первоисточник</span><h2 class="h1">Исходные факты</h2><p class="small soft">Каждое поле — с ячейкой файла и происхождением. Жирным — то, на что опирается правило.</p></div>
+    <div class="block-rail"><span class="eyebrow">Первоисточник</span><h2 class="h1">Исходные факты</h2><p class="small soft">У каждого значения есть источник: ячейка файла и происхождение. Жирным выделены поля, которые использует правило.</p></div>
     <div class="block-body" style="gap:0">
       
       <details class="facts" open>
@@ -198,8 +198,8 @@
       <div class="foot-meta body-s">
         <span>ЕГРН / НСПД / ЕГРЮЛ / ГИС «Торги»</span>
         <span>правила 1.0</span>
-        <span>анализ 19.11.2026 01:23</span>
-        <span class="nowrap" data-clock>01:23 МСК</span>
+        <span>анализ 19.11.2026 05:18</span>
+        <span class="nowrap" data-clock>05:18 МСК</span>
       </div>
     </div>
   </footer>

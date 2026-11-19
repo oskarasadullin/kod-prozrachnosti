@@ -42,7 +42,7 @@
       <div class="sheet-foot eyebrow">
         <span>head / Руководитель</span>
         
-        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="d1rUFardNiny6cyybM10QQ6s44FBzDes1U9CTC4v0usZZMRdBtpbti3b0iFnNc6u"><button class="btn-plain" type="submit">Выйти</button></form>
+        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="ypmFu7zwMGgQypjEn3tHhSodAFSUFSd2WTIVQ7duHOuv2wWTCTqe6SVhzy85UQxI"><button class="btn-plain" type="submit">Выйти</button></form>
       </div>
     </nav>
     <figure class="sheet-plate"><img src="/kod-prozrachnosti/static/img/band-map.jpg" alt="" loading="lazy"></figure>
@@ -64,7 +64,7 @@
         <span class="eyebrow">Ростовская обл.</span>
         
       </div>
-      <p class="small" style="max-width:60ch">Демонстрационные данные: часть сведений синтетическая. Сигналы показывают работу правил и не являются выявленными нарушениями.</p>
+      <p class="small" style="max-width:60ch">Данные демонстрационные: часть сведений синтетическая. Сработавшие индикаторы показывают работу правил, нарушений они не устанавливают.</p>
     </div>
     <aside class="head-side">
       
@@ -84,7 +84,7 @@
       
 <section class="section">
   <div class="block">
-    <div class="block-rail"><span class="eyebrow">Анализ</span><h2 class="h1">Почему объект в реестре</h2><p class="small soft">Каждый индикатор — отдельное правило: статус, объяснение, расчёт и чего не хватает.</p></div>
+    <div class="block-rail"><span class="eyebrow">Анализ</span><h2 class="h1">Почему объект в реестре</h2><p class="small soft">По каждому индикатору: статус, объяснение, расчёт и недостающие сведения.</p></div>
     <div class="block-body">
       
       <article class="finding">
@@ -92,14 +92,14 @@
           <h3 class="h2"><span class="code">И10</span> Повтор должностного лица</h3>
           <span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg><span class="tag tag-blue">Сработал</span></span>
         </div>
-        <p class="small soft">Не встречается ли одно и то же должностное лицо в нескольких подозрительных эпизодах?</p>
+        <p class="small soft">Встречается ли одно должностное лицо в эпизодах других индикаторов больше одного раза?</p>
         
-        <p class="body-s j">Ветров Андрей Николаевич фигурирует в 5 эпизодах других индикаторов — повторяющийся участник решений.</p>
+        <p class="body-s j">Ветров Андрей Николаевич встречается в 5 эпизодах других индикаторов.</p>
         <div class="metrics"><div class="metric"><span class="eyebrow">Эпизодов с участием лица</span><b>5</b></div></div>
         
         
-        <p class="small soft j">Что учесть: Все лица в наборе синтетические. Для расчёта на реальных данных нужны идентификаторы лиц и исключение повторного счёта одного эпизода.</p>
-        <span class="eyebrow soft">Правило И10 v1.0 / запуск 19.11.2026 01:23 / демонстрационные данные</span>
+        <p class="small soft j">Что учесть: Все лица в наборе синтетические. Для расчёта на реальных данных нужны идентификаторы лиц; один эпизод нельзя считать дважды.</p>
+        <span class="eyebrow soft">Правило И10 v1.0 / запуск 19.11.2026 05:18 / демонстрационные данные</span>
         
       </article>
       
@@ -108,14 +108,14 @@
           <h3 class="h2"><span class="code">И2</span> Точечная правка ПЗЗ / генплана</h3>
           <span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="tag tag-blue">Сработал</span></span>
         </div>
-        <p class="small soft">Не изменена ли зона ради участков одного правообладателя?</p>
+        <p class="small soft">Занимают ли участки одного правообладателя не меньше 80 % изменённой зоны?</p>
         
-        <p class="body-s j">Участки одного владельца занимают 4,2 из 4,2 га изменённой зоны (100 %) — зону перевели в «Ж-3 Зона многоэтажной жилой застройки» практически под него.</p>
+        <p class="body-s j">Участки одного владельца занимают 4,2 из 4,2 га изменённой зоны (100 %). Порог 80 % достигнут. Зона после изменений: «Ж-3 Зона многоэтажной жилой застройки».</p>
         <div class="metrics"><div class="metric"><span class="eyebrow">Доля основного владельца в зоне</span><b>100,0 %</b></div></div>
         
         
-        <p class="small soft j">Что учесть: Индикатор передан «под вопросом»: нужны приложения к актам (границы зоны, правообладатели). Пример генплана не переносится автоматически на ПЗЗ.</p>
-        <span class="eyebrow soft">Правило И2 v1.0 / запуск 19.11.2026 01:23 / демонстрационные данные</span>
+        <p class="small soft j">Что учесть: Индикатор передан с пометкой «под вопросом»: нужны приложения к актам (границы зоны, правообладатели). Вывод по примеру генплана на ПЗЗ не распространяется без отдельной проверки.</p>
+        <span class="eyebrow soft">Правило И2 v1.0 / запуск 19.11.2026 05:18 / демонстрационные данные</span>
         
       </article>
       
@@ -150,7 +150,7 @@
         
         <details class="facts add-doc"  style="margin-top:var(--s4)">
           <summary><span class="h3">Добавить документ или ссылку</span><svg class="icon chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
-          <form method="post" enctype="multipart/form-data" action="/kod-prozrachnosti/cases/41f96bae-ff6b-4b3a-bc68-971f49ae3663/evidence/" class="doc-form"><input type="hidden" name="csrfmiddlewaretoken" value="d1rUFardNiny6cyybM10QQ6s44FBzDes1U9CTC4v0usZZMRdBtpbti3b0iFnNc6u">
+          <form method="post" enctype="multipart/form-data" action="/kod-prozrachnosti/cases/41f96bae-ff6b-4b3a-bc68-971f49ae3663/evidence/" class="doc-form"><input type="hidden" name="csrfmiddlewaretoken" value="ypmFu7zwMGgQypjEn3tHhSodAFSUFSd2WTIVQ7duHOuv2wWTCTqe6SVhzy85UQxI">
             
             <div class="doc-grid">
               <div><label class="field-label eyebrow" for="id_title">Название</label><input type="text" name="title" class="input" placeholder="Например: выписка ЕГРН от 12.02.2026" maxlength="200" required id="id_title"></div>
@@ -165,7 +165,7 @@
 
 </select></div>
             </div>
-            <div class="file-pick"><input id="doc-file" type="file" name="file" accept=".pdf,.png,.jpg,.jpeg,.docx,.xlsx,.txt"><label class="btn" for="doc-file" data-lbl="Выбрать файл">Выбрать файл</label><span class="file-name small" id="doc-file-name">PDF, изображение, DOCX, XLSX или TXT до 5 МБ — либо только ссылка</span></div>
+            <div class="file-pick"><input id="doc-file" type="file" name="file" accept=".pdf,.png,.jpg,.jpeg,.docx,.xlsx,.txt"><label class="btn" for="doc-file" data-lbl="Выбрать файл">Выбрать файл</label><span class="file-name small" id="doc-file-name">PDF, изображение, DOCX, XLSX или TXT до 5 МБ. Можно только ссылку</span></div>
             <button class="btn btn-primary" type="submit" data-lbl="Добавить к объекту">Добавить к объекту</button>
           </form>
         </details>
@@ -175,10 +175,10 @@
   </div>
 
   <div class="block" id="review">
-    <div class="block-rail"><span class="eyebrow">Решение человека</span><h2 class="h1">Проверка сотрудника</h2><p class="small soft">Хранится отдельно: не меняет исходные факты и сигнал системы.</p></div>
+    <div class="block-rail"><span class="eyebrow">Проверка</span><h2 class="h1">Решение сотрудника</h2><p class="small soft">Запись хранится отдельно и не меняет исходные факты и итог анализа.</p></div>
     <div class="block-body">
       
-      <form method="post" action="/kod-prozrachnosti/cases/41f96bae-ff6b-4b3a-bc68-971f49ae3663/reviews/" style="display:grid;gap:var(--s4)"><input type="hidden" name="csrfmiddlewaretoken" value="d1rUFardNiny6cyybM10QQ6s44FBzDes1U9CTC4v0usZZMRdBtpbti3b0iFnNc6u">
+      <form method="post" action="/kod-prozrachnosti/cases/41f96bae-ff6b-4b3a-bc68-971f49ae3663/reviews/" style="display:grid;gap:var(--s4)"><input type="hidden" name="csrfmiddlewaretoken" value="ypmFu7zwMGgQypjEn3tHhSodAFSUFSd2WTIVQ7duHOuv2wWTCTqe6SVhzy85UQxI">
         
         <ul class="choice"><li><label><input type="radio" name="outcome" value="confirmed" id="id_outcome_0" required><span class="body-s">Основания для дальнейшей проверки подтверждены</span></label></li><li><label><input type="radio" name="outcome" value="not_confirmed" id="id_outcome_1" required><span class="body-s">Предположение не подтвердилось</span></label></li><li><label><input type="radio" name="outcome" value="needs_information" id="id_outcome_2" required><span class="body-s">Нужны дополнительные сведения</span></label></li></ul>
         <div><label class="field-label eyebrow" for="id_comment">Обоснование и реквизиты документов</label><textarea name="comment" cols="40" rows="4" class="input" placeholder="Что проверено, какие документы открыты, к какому выводу пришли" maxlength="4000" required id="id_comment">
@@ -191,7 +191,7 @@
   </div>
 
   <div class="block">
-    <div class="block-rail"><span class="eyebrow">Первоисточник</span><h2 class="h1">Исходные факты</h2><p class="small soft">Каждое поле — с ячейкой файла и происхождением. Жирным — то, на что опирается правило.</p></div>
+    <div class="block-rail"><span class="eyebrow">Первоисточник</span><h2 class="h1">Исходные факты</h2><p class="small soft">У каждого значения есть источник: ячейка файла и происхождение. Жирным выделены поля, которые использует правило.</p></div>
     <div class="block-body" style="gap:0">
       
       <details class="facts" open>
@@ -221,8 +221,8 @@
       <div class="foot-meta body-s">
         <span>ЕГРН / НСПД / ЕГРЮЛ / ГИС «Торги»</span>
         <span>правила 1.0</span>
-        <span>анализ 19.11.2026 01:23</span>
-        <span class="nowrap" data-clock>01:23 МСК</span>
+        <span>анализ 19.11.2026 05:18</span>
+        <span class="nowrap" data-clock>05:18 МСК</span>
       </div>
     </div>
   </footer>

@@ -42,7 +42,7 @@
       <div class="sheet-foot eyebrow">
         <span>head / Руководитель</span>
         
-        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="PcjSJ2FeYhL9azs8UJW1twO654HnuupJD51AXuiwbtQA39LNkqkc6YLP1iH9I3hL"><button class="btn-plain" type="submit">Выйти</button></form>
+        <form method="post" action="/accounts/logout/"><input type="hidden" name="csrfmiddlewaretoken" value="2vEdmgaMgWdoymdG68E7N3p50QrP4X24qZ0tIgOKb4r32tQVlYBEC3W9ZJH0jVmK"><button class="btn-plain" type="submit">Выйти</button></form>
       </div>
     </nav>
     <figure class="sheet-plate"><img src="/kod-prozrachnosti/static/img/band-map.jpg" alt="" loading="lazy"></figure>
@@ -64,7 +64,7 @@
         <span class="eyebrow">Ростовская обл.</span>
         
       </div>
-      <p class="small" style="max-width:60ch">Демонстрационные данные: часть сведений синтетическая. Сигналы показывают работу правил и не являются выявленными нарушениями.</p>
+      <p class="small" style="max-width:60ch">Данные демонстрационные: часть сведений синтетическая. Сработавшие индикаторы показывают работу правил, нарушений они не устанавливают.</p>
     </div>
     <aside class="head-side">
       
@@ -84,7 +84,7 @@
       
 <section class="section">
   <div class="block">
-    <div class="block-rail"><span class="eyebrow">Анализ</span><h2 class="h1">Почему объект в реестре</h2><p class="small soft">Каждый индикатор — отдельное правило: статус, объяснение, расчёт и чего не хватает.</p></div>
+    <div class="block-rail"><span class="eyebrow">Анализ</span><h2 class="h1">Почему объект в реестре</h2><p class="small soft">По каждому индикатору: статус, объяснение, расчёт и недостающие сведения.</p></div>
     <div class="block-body">
       
       <article class="finding">
@@ -92,14 +92,14 @@
           <h3 class="h2"><span class="code">И1</span> Покупка до смены категории</h3>
           <span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="tag tag-blue">Сработал</span></span>
         </div>
-        <p class="small soft">Не приобретён ли участок незадолго до перевода в более «дорогую» категорию?</p>
+        <p class="small soft">Куплен ли участок не более чем за 12 месяцев до смены категории?</p>
         
-        <p class="body-s j">Право зарегистрировано 19.02.2026, а через 90 дн. (20.05.2026) категорию изменили — внутри окна 12 месяцев (до 19.02.2027).</p>
+        <p class="body-s j">Право зарегистрировано 19.02.2026. Категорию изменили 20.05.2026, через 90 дн.: это в пределах окна 12 месяцев (до 19.02.2027).</p>
         <div class="metrics"><div class="metric"><span class="eyebrow">Дней от регистрации права до смены категории</span><b>90</b></div></div>
         
         
-        <p class="small soft j">Что учесть: Дата присвоения кадастрового номера не заменяет дату приобретения права. Близость дат сама по себе не доказывает осведомлённость покупателя.</p>
-        <span class="eyebrow soft">Правило И1 v1.0 / запуск 19.11.2026 01:23 / демонстрационные данные</span>
+        <p class="small soft j">Что учесть: Дата присвоения кадастрового номера не заменяет дату приобретения права. Близость дат не доказывает, что покупатель знал о решении.</p>
+        <span class="eyebrow soft">Правило И1 v1.0 / запуск 19.11.2026 05:18 / демонстрационные данные</span>
         
       </article>
       
@@ -108,14 +108,14 @@
           <h3 class="h2"><span class="code">И3</span> Выгода после смены категории</h3>
           <span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="4.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="8.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="12.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="16.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/></svg><span class="tag">Недостаточно данных</span></span>
         </div>
-        <p class="small soft">Не реализована ли выгода от смены категории последующей продажей?</p>
+        <p class="small soft">Продан ли участок после смены категории и роста кадастровой стоимости?</p>
         
-        <p class="body-s j">Нельзя проверить выгоду от смены категории: не хватает сведений — дата перепродажи (перехода права).</p>
+        <p class="body-s j">Нельзя проверить выгоду от смены категории. Не хватает сведений: дата перепродажи (перехода права).</p>
         
         <div class="notice small"><span class="eyebrow">Чего не хватает</span><ul style="margin:var(--s2) 0 0;padding-left:1.1rem"><li>Дата перепродажи (перехода права)</li></ul></div>
         
-        <p class="small soft j">Что учесть: Контекстный признак: помогает восстановить механизм выгоды, но сам не формирует сигнал высокого приоритета. Рост КС — изменение оценки, а не доказательство прибыли.</p>
-        <span class="eyebrow soft">Правило И3 v1.0 / запуск 19.11.2026 01:23 / демонстрационные данные</span>
+        <p class="small soft j">Что учесть: Контекстный признак: показывает, как могла быть получена выгода; приоритет не повышает. Рост КС — изменение оценки, прибыль он не доказывает.</p>
+        <span class="eyebrow soft">Правило И3 v1.0 / запуск 19.11.2026 05:18 / демонстрационные данные</span>
         
       </article>
       
@@ -124,14 +124,14 @@
           <h3 class="h2"><span class="code">И6</span> Связанное лицо до процедуры</h3>
           <span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="4.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="8.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="12.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="16.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/></svg><span class="tag">Недостаточно данных</span></span>
         </div>
-        <p class="small soft">Не купил ли участок человек, связанный с чиновником, который потом участвовал в решении?</p>
+        <p class="small soft">Купило ли участок до начала процедуры лицо, связанное с должностным лицом, которое участвовало в решении?</p>
         
-        <p class="body-s j">Нельзя проверить очерёдность покупки и процедуры: не хватает сведений — дата начала процедуры.</p>
+        <p class="body-s j">Нельзя проверить очерёдность покупки и процедуры. Не хватает сведений: дата начала процедуры.</p>
         
         <div class="notice small"><span class="eyebrow">Чего не хватает</span><ul style="margin:var(--s2) 0 0;padding-left:1.1rem"><li>Дата начала процедуры</li></ul></div>
         
-        <p class="small soft j">Что учесть: Совпадение одной фамилии — гипотеза, а не связь: результат «недостаточно данных» до подтверждения документами (ЕГРЮЛ, анкета, ЗАГС). Корректная контрольная цифра ИНН не подтверждает существование лица.</p>
-        <span class="eyebrow soft">Правило И6 v1.0 / запуск 19.11.2026 01:23 / демонстрационные данные</span>
+        <p class="small soft j">Что учесть: Совпадение одной фамилии связь не подтверждает: результат — «недостаточно данных», пока связь не подтверждена документами (ЕГРЮЛ, анкета, ЗАГС). Корректная контрольная цифра ИНН не подтверждает существование лица.</p>
+        <span class="eyebrow soft">Правило И6 v1.0 / запуск 19.11.2026 05:18 / демонстрационные данные</span>
         
       </article>
       
@@ -166,7 +166,7 @@
         
         <details class="facts add-doc"  style="margin-top:var(--s4)">
           <summary><span class="h3">Добавить документ или ссылку</span><svg class="icon chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
-          <form method="post" enctype="multipart/form-data" action="/kod-prozrachnosti/cases/7f5aec16-1fae-4acb-8949-cf5ccd6e7730/evidence/" class="doc-form"><input type="hidden" name="csrfmiddlewaretoken" value="PcjSJ2FeYhL9azs8UJW1twO654HnuupJD51AXuiwbtQA39LNkqkc6YLP1iH9I3hL">
+          <form method="post" enctype="multipart/form-data" action="/kod-prozrachnosti/cases/7f5aec16-1fae-4acb-8949-cf5ccd6e7730/evidence/" class="doc-form"><input type="hidden" name="csrfmiddlewaretoken" value="2vEdmgaMgWdoymdG68E7N3p50QrP4X24qZ0tIgOKb4r32tQVlYBEC3W9ZJH0jVmK">
             
             <div class="doc-grid">
               <div><label class="field-label eyebrow" for="id_title">Название</label><input type="text" name="title" class="input" placeholder="Например: выписка ЕГРН от 12.02.2026" maxlength="200" required id="id_title"></div>
@@ -181,7 +181,7 @@
 
 </select></div>
             </div>
-            <div class="file-pick"><input id="doc-file" type="file" name="file" accept=".pdf,.png,.jpg,.jpeg,.docx,.xlsx,.txt"><label class="btn" for="doc-file" data-lbl="Выбрать файл">Выбрать файл</label><span class="file-name small" id="doc-file-name">PDF, изображение, DOCX, XLSX или TXT до 5 МБ — либо только ссылка</span></div>
+            <div class="file-pick"><input id="doc-file" type="file" name="file" accept=".pdf,.png,.jpg,.jpeg,.docx,.xlsx,.txt"><label class="btn" for="doc-file" data-lbl="Выбрать файл">Выбрать файл</label><span class="file-name small" id="doc-file-name">PDF, изображение, DOCX, XLSX или TXT до 5 МБ. Можно только ссылку</span></div>
             <button class="btn btn-primary" type="submit" data-lbl="Добавить к объекту">Добавить к объекту</button>
           </form>
         </details>
@@ -191,10 +191,10 @@
   </div>
 
   <div class="block" id="review">
-    <div class="block-rail"><span class="eyebrow">Решение человека</span><h2 class="h1">Проверка сотрудника</h2><p class="small soft">Хранится отдельно: не меняет исходные факты и сигнал системы.</p></div>
+    <div class="block-rail"><span class="eyebrow">Проверка</span><h2 class="h1">Решение сотрудника</h2><p class="small soft">Запись хранится отдельно и не меняет исходные факты и итог анализа.</p></div>
     <div class="block-body">
       
-      <form method="post" action="/kod-prozrachnosti/cases/7f5aec16-1fae-4acb-8949-cf5ccd6e7730/reviews/" style="display:grid;gap:var(--s4)"><input type="hidden" name="csrfmiddlewaretoken" value="PcjSJ2FeYhL9azs8UJW1twO654HnuupJD51AXuiwbtQA39LNkqkc6YLP1iH9I3hL">
+      <form method="post" action="/kod-prozrachnosti/cases/7f5aec16-1fae-4acb-8949-cf5ccd6e7730/reviews/" style="display:grid;gap:var(--s4)"><input type="hidden" name="csrfmiddlewaretoken" value="2vEdmgaMgWdoymdG68E7N3p50QrP4X24qZ0tIgOKb4r32tQVlYBEC3W9ZJH0jVmK">
         
         <ul class="choice"><li><label><input type="radio" name="outcome" value="confirmed" id="id_outcome_0" required><span class="body-s">Основания для дальнейшей проверки подтверждены</span></label></li><li><label><input type="radio" name="outcome" value="not_confirmed" id="id_outcome_1" required><span class="body-s">Предположение не подтвердилось</span></label></li><li><label><input type="radio" name="outcome" value="needs_information" id="id_outcome_2" required><span class="body-s">Нужны дополнительные сведения</span></label></li></ul>
         <div><label class="field-label eyebrow" for="id_comment">Обоснование и реквизиты документов</label><textarea name="comment" cols="40" rows="4" class="input" placeholder="Что проверено, какие документы открыты, к какому выводу пришли" maxlength="4000" required id="id_comment">
@@ -207,7 +207,7 @@
   </div>
 
   <div class="block">
-    <div class="block-rail"><span class="eyebrow">Первоисточник</span><h2 class="h1">Исходные факты</h2><p class="small soft">Каждое поле — с ячейкой файла и происхождением. Жирным — то, на что опирается правило.</p></div>
+    <div class="block-rail"><span class="eyebrow">Первоисточник</span><h2 class="h1">Исходные факты</h2><p class="small soft">У каждого значения есть источник: ячейка файла и происхождение. Жирным выделены поля, которые использует правило.</p></div>
     <div class="block-body" style="gap:0">
       
       <details class="facts" open>
@@ -244,8 +244,8 @@
       <div class="foot-meta body-s">
         <span>ЕГРН / НСПД / ЕГРЮЛ / ГИС «Торги»</span>
         <span>правила 1.0</span>
-        <span>анализ 19.11.2026 01:23</span>
-        <span class="nowrap" data-clock>01:23 МСК</span>
+        <span>анализ 19.11.2026 05:18</span>
+        <span class="nowrap" data-clock>05:18 МСК</span>
       </div>
     </div>
   </footer>
