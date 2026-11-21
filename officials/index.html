@@ -3,375 +3,281 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0000e8">
+  <meta name="theme-color" content="#eff3f7">
   <title>Должностные лица · Код прозрачности</title>
-  <link rel="preload" href="/kod-prozrachnosti/static/fonts/science-gothic-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/kod-prozrachnosti/static/fonts/onest-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/kod-prozrachnosti/static/css/app.css">
   <link rel="icon" href="/kod-prozrachnosti/static/img/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/kod-prozrachnosti/static/img/apple-touch-icon.png">
-  <script>document.documentElement.classList.add("fit-wait")</script>
-  
+  <link rel="stylesheet" href="/kod-prozrachnosti/static/css/pages.css">
 <meta name="robots" content="noindex">
 </head>
 <body class="">
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-    <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
-    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m5 9 7 7 7-7"/></symbol>
-  </svg>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
+  <symbol id="i-check2" viewBox="0 0 24 24"><path d="m2 12 5 5L17 7M12 16l1 1 9-10"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-expand" viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></symbol>
+  <symbol id="i-line" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-5 4 3 5-6"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></symbol>
+  <symbol id="i-repeat" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14M7 22l-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-exit" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></symbol>
+  <symbol id="i-area" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="m4 14 6-6 10 10M4 9l5-5"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></symbol>
+  <symbol id="i-review" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-import" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+  <symbol id="i-analysis" viewBox="0 0 24 24"><path d="m13 17 5-5-5-5M6 17l5-5-5-5"/></symbol>
+  <symbol id="i-logo" viewBox="0 0 24 24"><rect x="3" y="13" width="4" height="8" rx="1.5" fill="#b6d3f0" stroke="none"/><rect x="10" y="8" width="4" height="13" rx="1.5" fill="#c2f0b6" stroke="none"/><rect x="17" y="3" width="4" height="18" rx="1.5" fill="#c2f0b6" stroke="none"/></symbol>
+</svg>
+
   
-  <header class="hdr" data-hdr>
-    <div class="hdr-in">
-      <a class="hdr-logo" href="/kod-prozrachnosti/"><span class="mark hdr-mark" aria-hidden="true"></span><span>Код прозрачности</span></a>
-      
-      <div class="hdr-user">
-        <button class="hdr-burger" type="button" aria-expanded="false" aria-controls="sheet" data-burger>Разделы <span class="hdr-burger-box"><i></i><i></i><i></i></span></button>
-      </div>
-      
-    </div>
-  </header>
   
-  <div class="sheet" id="sheet" data-sheet>
-    <nav class="sheet-nav" aria-label="Разделы">
-      <a class="sheet-link" href="/kod-prozrachnosti/" >Обзор</a>
-      <a class="sheet-link" href="/kod-prozrachnosti/cases/" >Реестр</a>
-      <a class="sheet-link" href="/kod-prozrachnosti/map/" >Карта</a>
-      <a class="sheet-link" href="/kod-prozrachnosti/officials/" aria-current="page">Должностные лица</a>
-      <a class="sheet-link" href="/kod-prozrachnosti/sources/" >Источники</a>
-      <a class="sheet-link" href="/kod-prozrachnosti/method/" >Методика</a>
-      
-      <div class="sheet-foot eyebrow">
-        <span>демо-просмотр</span>
+  <div class="app">
+    
+    <header class="top">
+      <div class="who">
+        <span class="avatar" aria-hidden="true">Д</span>
+        <span class="who-name">демо-просмотр</span>
         
         
       </div>
-    </nav>
-    <figure class="sheet-plate"><img src="/kod-prozrachnosti/static/img/band-map.jpg" alt="" loading="lazy"></figure>
-  </div>
-  
-  
+      <nav class="nav" aria-label="Разделы">
+        <a class="nav-item" href="/kod-prozrachnosti/" >Главная</a>
+        <a class="nav-item" href="/kod-prozrachnosti/cases/" >Объекты <span class="badge">38</span></a>
+        <a class="nav-item" href="/kod-prozrachnosti/analytics/" aria-current="page">Аналитика</a>
+        <a class="nav-item" href="/kod-prozrachnosti/history/" >История изменений</a>
+        <button class="nav-item" type="button" data-search-open><svg class="icon"><use href="#i-search"/></svg>Поиск по данным</button>
+        <div class="bell-wrap">
+          <button class="nav-item nav-bell" type="button" data-bell aria-expanded="false" aria-label="Уведомления"><svg class="icon"><use href="#i-bell"/></svg><span class="badge">6</span></button>
+          <div class="notif" data-notif>
+            <div class="notif-head"><span>Уведомления</span><svg class="icon" aria-hidden="true"><use href="#i-check2"/></svg></div>
+            <div class="notif-list">
+              <span class="soft t-label">Последние события</span>
+              
+              <a class="notif-item" href="/kod-prozrachnosti/analytics/">
+                <span class="notif-dot info" aria-hidden="true"><svg class="icon"><use href="#i-analysis"/></svg></span>
+                <span><span class="t-compact">Анализ выполнен</span><span class="soft t-label notif-text">Записей 83, сработало 40, объектов 63, 21 мс</span><br><span class="t-period">21.11.2026 21:31</span></span>
+              </a>
+              
+              <a class="notif-item" href="/kod-prozrachnosti/analytics/">
+                <span class="notif-dot info" aria-hidden="true"><svg class="icon"><use href="#i-analysis"/></svg></span>
+                <span><span class="t-compact">Анализ выполнен</span><span class="soft t-label notif-text">Записей 83, сработало 40, объектов 63, 21 мс</span><br><span class="t-period">21.11.2026 21:31</span></span>
+              </a>
+              
+              <a class="notif-item" href="/kod-prozrachnosti/cases/5828f20a-a894-41c9-98cb-8e6385e6bca7/">
+                <span class="notif-dot info" aria-hidden="true"><svg class="icon"><use href="#i-review"/></svg></span>
+                <span><span class="t-compact">specialist: «Нужны сведения»</span><span class="soft t-label notif-text">Ростовская обл., Аксайский р-н, Щепкинское с/п, 1,5 км севернее п. Щепкин. Демонстрационная запись. Нужна выписка о переходе прав и дата первого проекта изменения категории.</span><br><span class="t-period">21.11.2026 21:31</span></span>
+              </a>
+              
+              <a class="notif-item" href="/kod-prozrachnosti/cases/08575912-075f-4b75-b507-9ffa1c80c832/">
+                <span class="notif-dot ok" aria-hidden="true"><svg class="icon"><use href="#i-review"/></svg></span>
+                <span><span class="t-compact">specialist: «Не подтверждено»</span><span class="soft t-label notif-text">Земельный участок 61:02:0600012:1388. Демонстрационная запись. Повтор должностного лица объясняется распределением дел по должности; связи с приобретателем не найдено.</span><br><span class="t-period">21.11.2026 21:31</span></span>
+              </a>
+              
+              <a class="notif-item" href="/kod-prozrachnosti/cases/4b3041b0-a208-4d56-a8ee-edd096a658f2/">
+                <span class="notif-dot high" aria-hidden="true"><svg class="icon"><use href="#i-review"/></svg></span>
+                <span><span class="t-compact">controller: «Подтверждено»</span><span class="soft t-label notif-text">Ярославская обл., г. Углич, ул. Ростовская, д. 6-8. Демонстрационная запись. Торги с одним участником, договор по начальной цене; основания для проверки подтверждены, материалы переданы руководителю.</span><br><span class="t-period">21.11.2026 21:31</span></span>
+              </a>
+              
+              <a class="notif-item" href="/kod-prozrachnosti/analytics/">
+                <span class="notif-dot info" aria-hidden="true"><svg class="icon"><use href="#i-analysis"/></svg></span>
+                <span><span class="t-compact">Анализ выполнен</span><span class="soft t-label notif-text">Записей 83, сработало 40, объектов 63, 21 мс</span><br><span class="t-period">21.11.2026 21:31</span></span>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+<h1 class="sr-only">Аналитика: должностные лица</h1>
+<div class="pg-bar">
+  <nav class="switch" aria-label="Разделы аналитики">
+    <a href="/kod-prozrachnosti/analytics/">Индикаторы</a>
+    <a href="/kod-prozrachnosti/officials/" aria-current="true">Должностные лица</a>
+    <a href="/kod-prozrachnosti/sources/">Источники</a>
+    <a href="/kod-prozrachnosti/method/">Методика</a>
+  </nav>
+  <span class="t-period">последний анализ 21.11.2026 21:31</span>
+</div>
 
-  
-  <section class="band band-short">
-  <img class="band-bg" src="/kod-prozrachnosti/static/img/band-officials.jpg" alt="" aria-hidden="true" width="1500" height="844" fetchpriority="high">
-  <div class="wrap band-in">
-    <div class="band-plate">
-      <span class="eyebrow">Индикатор И10</span>
-      <h1 class="display-l">Должностные лица</h1>
-      <p class="lede">Должностные лица из таблицы И10 и эпизоды с их участием. Повтор лица — повод проверить его решения вместе. Все лица в наборе синтетические.</p>
+<div class="pg-page">
+  <div class="grid g-4">
+    <div class="card kpi">
+      <div><div class="t-mono">Должностных лиц</div><div class="t-period">в таблице И10</div></div>
+      <div class="kpi-row"><span class="t-kpi">10</span></div>
     </div>
+    <div class="card kpi">
+      <div><div class="t-mono">Повторяются</div><div class="t-period">индикатор И10 сработал</div></div>
+      <div class="kpi-row"><span class="t-kpi">4</span></div>
+    </div>
+    <div class="card kpi">
+      <div><div class="t-mono">Эпизодов</div><div class="t-period">с участием этих лиц</div></div>
+      <div class="kpi-row"><span class="t-kpi">17</span></div>
+    </div>
+    <a class="card kpi card-link" href="/kod-prozrachnosti/cases/q/indicator-I10/">
+      <div><div class="t-mono">Объектов</div><div class="t-period">связаны с таблицей И10</div></div>
+      <div class="kpi-row"><span class="t-kpi">19</span></div>
+    </a>
   </div>
-</section>
 
-  <main class="paper">
-    <div class="wrap">
+  <section class="card" aria-labelledby="people-h">
+    <div class="card-head"><div><h2 class="t-mono" id="people-h">Должностные лица и эпизоды</h2><div class="t-period">повтор лица — повод проверить его решения вместе. Все лица в наборе синтетические</div></div></div>
+    <div>
       
-<section class="section">
+      <article class="pg-person">
+        <div class="pg-person-name">
+          <h3 class="t-nav">В. А. Н.</h3>
+          <span class="risk high">Повторяется: эпизодов 5</span>
+          
+        </div>
+        <div class="pg-person-body">
+          <ol class="pg-episodes"><li>Покупка связанным лицом до начала процедуры при участии должностного лица в решении — 61:02:0600010:2843</li><li>Покупка связанным лицом за 12 месяцев до смены категории/ВРИ — 61:02:0600010:2843</li><li>Точечная правка ПЗЗ под участки одного владельца — 61:02:0120102:1543, :1544</li><li>Обход условий публичной земли (выкуп без законного основания) — 61:02:0600012:1388</li><li>Аномалия геометрии и границ участка — 61:02:0120105:331</li></ol>
+          <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/5828f20a-a894-41c9-98cb-8e6385e6bca7/">61:02:0600010:2843</a><a class="code" href="/kod-prozrachnosti/cases/e196998f-68af-4054-b547-f7b8ce415445/">61:02:0120102:1543</a><a class="code" href="/kod-prozrachnosti/cases/243b022b-a1bc-4b0d-8ab6-50b259654572/">61:02:0120102:1544</a><a class="code" href="/kod-prozrachnosti/cases/1fe310d2-f9ed-4548-9c4a-de1c7aba60ea/">61:02:0120105:331</a><a class="code" href="/kod-prozrachnosti/cases/08575912-075f-4b75-b507-9ffa1c80c832/">61:02:0600012:1388</a></div>
+        </div>
+      </article>
+      
+      <article class="pg-person">
+        <div class="pg-person-name">
+          <h3 class="t-nav">Т. О. В.</h3>
+          <span class="risk high">Повторяется: эпизодов 2</span>
+          
+        </div>
+        <div class="pg-person-body">
+          <ol class="pg-episodes"><li>Точечная правка ПЗЗ под участок одного владельца — 61:28:0600016:3061</li><li>Покупка связанным лицом за 12 месяцев до смены категории/ВРИ — 61:28:0600016:3061</li></ol>
+          <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/12df1309-5622-45d0-bf0f-7d1914a3692d/">61:28:0600016:3061</a></div>
+        </div>
+      </article>
+      
+      <article class="pg-person">
+        <div class="pg-person-name">
+          <h3 class="t-nav">З. Н. В.</h3>
+          <span class="risk high">Повторяется: эпизодов 2</span>
+          
+        </div>
+        <div class="pg-person-body">
+          <ol class="pg-episodes"><li>Покупка связанным лицом до начала процедуры при участии должностного лица в решении — 61:44:0072201:356</li><li>Точечная правка ПЗЗ под участок одного владельца — 61:44:0072201:356</li></ol>
+          <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/35ddf9be-381b-4aba-89b1-a8b05d802d41/">61:44:0072201:356</a></div>
+        </div>
+      </article>
+      
+      <article class="pg-person">
+        <div class="pg-person-name">
+          <h3 class="t-nav">Ш. И. О.</h3>
+          <span class="risk high">Повторяется: эпизодов 2</span>
+          
+        </div>
+        <div class="pg-person-body">
+          <ol class="pg-episodes"><li>Покупка связанным лицом за 12 месяцев до смены категории/ВРИ — 61:10:0600002:854</li><li>Рост кадастровой стоимости и продажа с выгодой после смены категории — 61:10:0600002:854</li></ol>
+          <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/8a8ba134-d360-43d0-89ef-1f4a1300c269/">61:10:0600002:854</a></div>
+        </div>
+      </article>
+      
+      <article class="pg-person">
+        <div class="pg-person-name">
+          <h3 class="t-nav">К. М. П.</h3>
+          <span class="risk pg-none">Один эпизод</span>
+          
+        </div>
+        <div class="pg-person-body">
+          <ol class="pg-episodes"><li>Покупка связанным лицом до начала процедуры при участии должностного лица в решении (связь только по фамилии, требует проверки) — 61:25:0600301:4127</li></ol>
+          <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/c10de5d0-207d-4b6b-b02d-0f862df13786/">61:25:0600301:4127</a></div>
+        </div>
+      </article>
+      
+      <article class="pg-person">
+        <div class="pg-person-name">
+          <h3 class="t-nav">М. Т. В.</h3>
+          <span class="risk pg-none">Один эпизод</span>
+          
+        </div>
+        <div class="pg-person-body">
+          <ol class="pg-episodes"><li>Покупка связанным лицом за 12 месяцев до смены категории/ВРИ — 61:26:0050201:987</li></ol>
+          <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/01e7f5a6-9f5b-4c98-8ba3-a1eb6a79f674/">61:26:0050201:987</a></div>
+        </div>
+      </article>
+      
+      <article class="pg-person">
+        <div class="pg-person-name">
+          <h3 class="t-nav">Ш. П. А.</h3>
+          <span class="risk pg-none">Один эпизод</span>
+          
+        </div>
+        <div class="pg-person-body">
+          <ol class="pg-episodes"><li>Точечная правка генплана под участки одного владельца — 61:01:0600005:3352 – :3356</li></ol>
+          <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/e649998d-5f63-4f77-994a-8af4a24e3ef1/">61:01:0600005:3352</a><a class="code" href="/kod-prozrachnosti/cases/b7ffa325-2afd-4d08-96b0-e0dd5bae2eb8/">61:01:0600005:3353</a><a class="code" href="/kod-prozrachnosti/cases/bc25333e-b941-4d13-aa78-64c4885710cd/">61:01:0600005:3354</a><a class="code" href="/kod-prozrachnosti/cases/151c5ebc-427c-44af-8808-6915157ee41c/">61:01:0600005:3355</a><a class="code" href="/kod-prozrachnosti/cases/ffafa963-3307-4d79-907d-253a82a19812/">61:01:0600005:3356</a></div>
+        </div>
+      </article>
+      
+      <article class="pg-person">
+        <div class="pg-person-name">
+          <h3 class="t-nav">Ф. С. Н.</h3>
+          <span class="risk pg-none">Один эпизод</span>
+          
+        </div>
+        <div class="pg-person-body">
+          <ol class="pg-episodes"><li>Аномалия геометрии и границ участка — 61:33:0600008:1517</li></ol>
+          <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/00083f7a-59d4-4e78-a256-a77080eb09c9/">61:33:0600008:1517</a></div>
+        </div>
+      </article>
+      
+      <article class="pg-person">
+        <div class="pg-person-name">
+          <h3 class="t-nav">А. Л. Р.</h3>
+          <span class="risk pg-none">Один эпизод</span>
+          
+        </div>
+        <div class="pg-person-body">
+          <ol class="pg-episodes"><li>Точечная правка генплана под участки одного владельца — 61:55:0011201:2210, :2214</li></ol>
+          <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/de3e43aa-a600-4f39-a95c-3355fa4d0f4d/">61:55:0011201:2210</a><a class="code" href="/kod-prozrachnosti/cases/229f5bd1-f590-4945-b672-f19dccdc3402/">61:55:0011201:2214</a></div>
+        </div>
+      </article>
+      
+      <article class="pg-person">
+        <div class="pg-person-name">
+          <h3 class="t-nav">Г. Р. Е.</h3>
+          <span class="risk pg-none">Один эпизод</span>
+          
+        </div>
+        <div class="pg-person-body">
+          <ol class="pg-episodes"><li>Обход условий публичной земли (смена ВРИ вопреки договору) — 61:44:0081505:212</li></ol>
+          <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/e2761441-50b1-480f-893c-b18f83ddc380/">61:44:0081505:212</a></div>
+        </div>
+      </article>
+      
+    </div>
+  </section>
+</div>
+</main>
+  </div>
+  <button class="search-fab" type="button" data-search-open><svg class="icon"><use href="#i-search"/></svg>Найти объект, документ или событие…</button>
+  <div class="scrim" data-scrim></div>
+  <div class="palette" data-palette data-index="/kod-prozrachnosti/search.json" role="dialog" aria-label="Поиск">
+    <div class="palette-tabs">
+      <button type="button" data-tab="all" aria-pressed="true">Все</button>
+      <button type="button" data-tab="object" aria-pressed="false">Объекты</button>
+      <button type="button" data-tab="document" aria-pressed="false">Документы</button>
+      <button type="button" data-tab="event" aria-pressed="false">События</button>
+    </div>
+    <div class="palette-body" data-results></div>
+    <input class="palette-input" type="search" placeholder="Найти объект, документ или событие…" aria-label="Поиск" autocomplete="off">
+  </div>
   
-  <article class="person">
-    <div class="block-rail">
-      <h2 class="h2">В. А. Н.</h2>
-      <span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg><span class="tag tag-blue">Повторяется / 5</span></span>
-    </div>
-    <div class="block-body" style="gap:var(--s4)">
-      <ol class="episodes body-s"><li>Покупка связанным лицом до начала процедуры при участии должностного лица в решении — 61:02:0600010:2843</li><li>Покупка связанным лицом за 12 месяцев до смены категории/ВРИ — 61:02:0600010:2843</li><li>Точечная правка ПЗЗ под участки одного владельца — 61:02:0120102:1543, :1544</li><li>Обход условий публичной земли (выкуп без законного основания) — 61:02:0600012:1388</li><li>Аномалия геометрии и границ участка — 61:02:0120105:331</li></ol>
-      <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/caaa1a30-feb5-44d7-be8a-6c6370c46156/">61:02:0600010:2843</a><a class="code" href="/kod-prozrachnosti/cases/c859dc0a-15e1-41f3-82ff-f00716218f24/">61:02:0120102:1543</a><a class="code" href="/kod-prozrachnosti/cases/b4562d73-0715-4cb8-86dd-e9331fa5eed5/">61:02:0120102:1544</a><a class="code" href="/kod-prozrachnosti/cases/fb2600a4-367f-41eb-beb6-ad343eb6e9a6/">61:02:0120105:331</a><a class="code" href="/kod-prozrachnosti/cases/8316f6e9-4e17-47a5-bbdd-06670195a374/">61:02:0600012:1388</a></div>
-    </div>
-  </article>
-  
-  <article class="person">
-    <div class="block-rail">
-      <h2 class="h2">Т. О. В.</h2>
-      <span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg><span class="tag tag-blue">Повторяется / 2</span></span>
-    </div>
-    <div class="block-body" style="gap:var(--s4)">
-      <ol class="episodes body-s"><li>Точечная правка ПЗЗ под участок одного владельца — 61:28:0600016:3061</li><li>Покупка связанным лицом за 12 месяцев до смены категории/ВРИ — 61:28:0600016:3061</li></ol>
-      <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/76f10a9b-4d20-40e8-85f6-b80df371bdd5/">61:28:0600016:3061</a></div>
-    </div>
-  </article>
-  
-  <article class="person">
-    <div class="block-rail">
-      <h2 class="h2">З. Н. В.</h2>
-      <span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg><span class="tag tag-blue">Повторяется / 2</span></span>
-    </div>
-    <div class="block-body" style="gap:var(--s4)">
-      <ol class="episodes body-s"><li>Покупка связанным лицом до начала процедуры при участии должностного лица в решении — 61:44:0072201:356</li><li>Точечная правка ПЗЗ под участок одного владельца — 61:44:0072201:356</li></ol>
-      <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/f89d4da8-5ca9-4e53-9dc7-32278a6fc1cc/">61:44:0072201:356</a></div>
-    </div>
-  </article>
-  
-  <article class="person">
-    <div class="block-rail">
-      <h2 class="h2">Ш. И. О.</h2>
-      <span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg><span class="tag tag-blue">Повторяется / 2</span></span>
-    </div>
-    <div class="block-body" style="gap:var(--s4)">
-      <ol class="episodes body-s"><li>Покупка связанным лицом за 12 месяцев до смены категории/ВРИ — 61:10:0600002:854</li><li>Рост кадастровой стоимости и продажа с выгодой после смены категории — 61:10:0600002:854</li></ol>
-      <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/af25c61c-114c-4fea-ade2-4df548a19bcb/">61:10:0600002:854</a></div>
-    </div>
-  </article>
-  
-  <article class="person">
-    <div class="block-rail">
-      <h2 class="h2">К. М. П.</h2>
-      <span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="tag">Один эпизод</span></span>
-    </div>
-    <div class="block-body" style="gap:var(--s4)">
-      <ol class="episodes body-s"><li>Покупка связанным лицом до начала процедуры при участии должностного лица в решении (связь только по фамилии, требует проверки) — 61:25:0600301:4127</li></ol>
-      <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/98ca8f75-bfbb-4f67-82bd-38652216c8bb/">61:25:0600301:4127</a></div>
-    </div>
-  </article>
-  
-  <article class="person">
-    <div class="block-rail">
-      <h2 class="h2">М. Т. В.</h2>
-      <span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="tag">Один эпизод</span></span>
-    </div>
-    <div class="block-body" style="gap:var(--s4)">
-      <ol class="episodes body-s"><li>Покупка связанным лицом за 12 месяцев до смены категории/ВРИ — 61:26:0050201:987</li></ol>
-      <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/0cd0fb6e-0e49-4de5-8f4b-b0cfb1140ed4/">61:26:0050201:987</a></div>
-    </div>
-  </article>
-  
-  <article class="person">
-    <div class="block-rail">
-      <h2 class="h2">Ш. П. А.</h2>
-      <span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="tag">Один эпизод</span></span>
-    </div>
-    <div class="block-body" style="gap:var(--s4)">
-      <ol class="episodes body-s"><li>Точечная правка генплана под участки одного владельца — 61:01:0600005:3352 – :3356</li></ol>
-      <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/64a90f77-e45e-4116-9298-b7bf6e646198/">61:01:0600005:3352</a><a class="code" href="/kod-prozrachnosti/cases/95b5f471-a5bf-4a40-8e06-e3df98f24306/">61:01:0600005:3353</a><a class="code" href="/kod-prozrachnosti/cases/b0972982-55f3-4fb2-9bdc-ae71620e7910/">61:01:0600005:3354</a><a class="code" href="/kod-prozrachnosti/cases/984c817b-8c81-46e6-98cf-e298f6e6ede2/">61:01:0600005:3355</a><a class="code" href="/kod-prozrachnosti/cases/1ad24a70-588f-45a5-abe8-3a062ca3c9ef/">61:01:0600005:3356</a></div>
-    </div>
-  </article>
-  
-  <article class="person">
-    <div class="block-rail">
-      <h2 class="h2">Ф. С. Н.</h2>
-      <span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="tag">Один эпизод</span></span>
-    </div>
-    <div class="block-body" style="gap:var(--s4)">
-      <ol class="episodes body-s"><li>Аномалия геометрии и границ участка — 61:33:0600008:1517</li></ol>
-      <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/f2868934-7bfe-4429-afb3-c9547bf3afbd/">61:33:0600008:1517</a></div>
-    </div>
-  </article>
-  
-  <article class="person">
-    <div class="block-rail">
-      <h2 class="h2">А. Л. Р.</h2>
-      <span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="tag">Один эпизод</span></span>
-    </div>
-    <div class="block-body" style="gap:var(--s4)">
-      <ol class="episodes body-s"><li>Точечная правка генплана под участки одного владельца — 61:55:0011201:2210, :2214</li></ol>
-      <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/8fcd54e6-cfd3-4600-8abc-8b49bd292b7c/">61:55:0011201:2210</a><a class="code" href="/kod-prozrachnosti/cases/3d6333e0-67bd-4448-9d78-eff0d5419f5e/">61:55:0011201:2214</a></div>
-    </div>
-  </article>
-  
-  <article class="person">
-    <div class="block-rail">
-      <h2 class="h2">Г. Р. Е.</h2>
-      <span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="tag">Один эпизод</span></span>
-    </div>
-    <div class="block-body" style="gap:var(--s4)">
-      <ol class="episodes body-s"><li>Обход условий публичной земли (смена ВРИ вопреки договору) — 61:44:0081505:212</li></ol>
-      <div class="codes"><a class="code" href="/kod-prozrachnosti/cases/2568de1d-c816-4cab-8346-e978c1acceef/">61:44:0081505:212</a></div>
-    </div>
-  </article>
-  
-</section>
-
-    </div>
-  </main>
-  
-  <footer class="foot">
-    <div class="wrap foot-in">
-      <a class="foot-mark" href="/kod-prozrachnosti/"><span class="mark" aria-hidden="true"></span>Код прозрачности</a>
-      <div class="foot-meta body-s">
-        <span>ЕГРН / НСПД / ЕГРЮЛ / ГИС «Торги»</span>
-        <span>правила 1.0</span>
-        <span>анализ 20.11.2026 00:17</span>
-        <span class="nowrap" data-clock>00:17 МСК</span>
-      </div>
-    </div>
-  </footer>
-  
-  <script>
-  // every page opens at its top after a link or a reload; only an #anchor opens at the anchor
-  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
-  if (!location.hash) window.scrollTo(0, 0);
-  </script>
-  <script>
-  // Each line of a heading is scaled to the full width of its block, so a heading lies as one
-  // rectangle (like FitLine on ЭВА-РИСК) instead of a ragged staircase. Hand-set .fit headings
-  // keep their lines; every other heading is broken where the browser breaks it at its own
-  // size, and those lines are fitted. Headings stay hidden until fitted (see .fit-wait).
-  (function () {
-    const AUTO = ".display-xl:not(.fit), .display-l:not(.break), .block-rail > .h1, .section-head > .h1";
-    const GROW = 2.6;  // a line never grows past this multiple of the heading's own size
-    function lines(h) {
-      const text = h.dataset.text || (h.dataset.text = h.textContent.trim().replace(/\s+/g, " "));
-      h.classList.remove("fit", "fitted");
-      h.textContent = text;
-      h.dataset.base = parseFloat(getComputedStyle(h).fontSize);
-      const node = h.firstChild, range = document.createRange(), out = [];
-      let top = null, pos = 0;
-      for (const word of text.split(" ")) {
-        range.setStart(node, pos); range.setEnd(node, pos + word.length);
-        const y = Math.round(range.getClientRects()[0]?.top ?? 0);
-        if (top === null || Math.abs(y - top) > 2) { out.push([]); top = y; }
-        out[out.length - 1].push(word);
-        pos += word.length + 1;
-      }
-      h.textContent = "";
-      const sr = document.createElement("span");
-      sr.className = "sr-only"; sr.textContent = text; h.append(sr);
-      for (const words of out) {
-        const line = document.createElement("span");
-        line.className = "fit-line"; line.setAttribute("aria-hidden", "true");
-        line.textContent = words.join(" "); h.append(line);
-      }
-      h.classList.add("fit");
-    }
-    const autos = [...document.querySelectorAll(AUTO)];  // taken once: fitting adds .fit to them
-    function fit(force) {
-      autos.forEach((h) => {
-        const width = Math.round(h.parentElement.getBoundingClientRect().width);
-        if (force || h.dataset.width !== String(width)) { h.dataset.width = width; lines(h); h.dataset.max = h.dataset.base * GROW; }
-      });
-      document.querySelectorAll(".fit").forEach((box) => {
-        const width = box.getBoundingClientRect().width;
-        box.querySelectorAll(".fit-line").forEach((line) => {
-          // measure the glyphs themselves: a grid item always stretches to its column
-          line.style.fontSize = "100px";
-          const range = document.createRange();
-          range.selectNodeContents(line);
-          const natural = range.getBoundingClientRect().width || 1;
-          line.style.fontSize = Math.min((width / natural) * 100 * 0.995, box.dataset.max || 999) + "px";
-        });
-        box.classList.add("fitted");
-      });
-      document.documentElement.classList.remove("fit-wait");
-    }
-    const ready = document.fonts ? document.fonts.ready : Promise.resolve();
-    ready.then(() => fit(true));
-    setTimeout(() => document.documentElement.classList.remove("fit-wait"), 1500);
-    let pending;
-    window.addEventListener("resize", () => { cancelAnimationFrame(pending); pending = requestAnimationFrame(() => fit(false)); });
-  })();
-  (function () {
-    const hdr = document.querySelector("[data-hdr]");
-    const burger = document.querySelector("[data-burger]");
-    const sheet = document.querySelector("[data-sheet]");
-    let open = false;
-    function paint() {
-      if (open) { hdr.removeAttribute("data-solid"); hdr.removeAttribute("data-hidden"); return; }
-      const y = hdr.offsetHeight + 1;
-      const below = document.elementFromPoint(window.innerWidth / 2, y);
-      const onPaper = below && below.closest(".paper");
-      hdr.toggleAttribute("data-solid", !!onPaper);
-      hdr.toggleAttribute("data-hidden", !onPaper && window.scrollY > 40);
-    }
-    let ticking = false;
-    window.addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { paint(); ticking = false; }); } }, { passive: true });
-    window.addEventListener("resize", paint);
-    paint();
-    if (burger && sheet) {
-      burger.addEventListener("click", () => {
-        open = !open;
-        sheet.toggleAttribute("data-open", open);
-        burger.setAttribute("aria-expanded", String(open));
-        document.documentElement.style.overflow = open ? "hidden" : "";
-        paint();
-      });
-      document.addEventListener("keydown", (event) => { if (event.key === "Escape" && open) burger.click(); });
-    }
-  })();
-  </script>
-  <script>
-  // One dropdown for every list: the native select stays in the form (hidden) and is driven
-  // by a button and a listbox in the site's own style. Keyboard: Enter/Space, arrows, Esc.
-  (function () {
-    const chev = '<svg class="icon chev" aria-hidden="true"><use href="#i-chev"/></svg>';
-    document.querySelectorAll("select.input").forEach((select, n) => {
-      const box = document.createElement("div");
-      box.className = "dd";
-      select.parentNode.insertBefore(box, select);
-      box.appendChild(select);
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "input dd-btn";
-      button.setAttribute("aria-haspopup", "listbox");
-      button.setAttribute("aria-expanded", "false");
-      if (select.getAttribute("aria-label")) button.setAttribute("aria-label", select.getAttribute("aria-label"));
-      if (select.id) { button.id = select.id; select.removeAttribute("id"); }
-      const list = document.createElement("ul");
-      list.className = "dd-list";
-      list.setAttribute("role", "listbox");
-      list.id = "dd-list-" + n;
-      button.setAttribute("aria-controls", list.id);
-      [...select.options].forEach((option, i) => {
-        const item = document.createElement("li");
-        item.setAttribute("role", "option");
-        item.textContent = option.textContent;
-        item.dataset.index = i;
-        list.appendChild(item);
-      });
-      box.append(button, list);
-      let active = select.selectedIndex;
-      const items = [...list.children];
-      button.innerHTML = "<span></span>" + chev;  // built once: re-rendering inside a click detached its target
-      const label = button.firstChild;
-      function render() {
-        label.textContent = select.options[select.selectedIndex]?.textContent || "";
-        items.forEach((item, i) => {
-          item.setAttribute("aria-selected", String(i === select.selectedIndex));
-          item.toggleAttribute("data-active", i === active);
-        });
-      }
-      function open(state) {
-        box.toggleAttribute("data-open", state);
-        button.setAttribute("aria-expanded", String(state));
-        if (state) { active = select.selectedIndex; render(); items[active]?.scrollIntoView({ block: "nearest" }); }
-      }
-      function choose(i) {
-        select.selectedIndex = i;
-        select.dispatchEvent(new Event("change", { bubbles: true }));
-        open(false); render(); button.focus();
-      }
-      button.addEventListener("click", () => open(!box.hasAttribute("data-open")));
-      list.addEventListener("click", (event) => { const item = event.target.closest("li"); if (item) choose(Number(item.dataset.index)); });
-      button.addEventListener("keydown", (event) => {
-        const isOpen = box.hasAttribute("data-open");
-        if (event.key === "ArrowDown" || event.key === "ArrowUp") {
-          event.preventDefault();
-          if (!isOpen) return open(true);
-          active = Math.max(0, Math.min(items.length - 1, active + (event.key === "ArrowDown" ? 1 : -1)));
-          render(); items[active].scrollIntoView({ block: "nearest" });
-        } else if ((event.key === "Enter" || event.key === " ") && isOpen) { event.preventDefault(); choose(active); }
-        else if (event.key === "Escape" && isOpen) { event.preventDefault(); open(false); }
-      });
-      document.addEventListener("click", (event) => { if (event.target.isConnected && !box.contains(event.target)) open(false); });
-      render();
-    });
-  })();
-  </script>
-  <script>
-  (function () {
-    const clock = document.querySelector("[data-clock]");
-    if (!clock) return;
-    const tick = () => { clock.textContent = new Date().toLocaleTimeString("ru-RU", { timeZone: "Europe/Moscow" }) + " МСК"; };
-    tick(); setInterval(tick, 1000);
-  })();
-  </script>
-  <script>
-  (function () {
-    const box = document.querySelector("[data-toasts]");
-    if (!box) return;
-    const hide = () => box.setAttribute("data-hidden", "");
-    box.addEventListener("click", (event) => { if (event.target.closest("[data-close]")) hide(); });
-    setTimeout(hide, 7000);
-  })();
-  </script>
+  <script src="/kod-prozrachnosti/static/js/app.js"></script>
   
 </body>
 </html>

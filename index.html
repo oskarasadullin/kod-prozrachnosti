@@ -3,456 +3,208 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0000e8">
-  <title>Код прозрачности — проверка земельных решений по данным реестров</title>
-  <link rel="preload" href="/kod-prozrachnosti/static/fonts/science-gothic-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <meta name="theme-color" content="#eff3f7">
+  <title>Главная · Код прозрачности</title>
+  <link rel="preload" href="/kod-prozrachnosti/static/fonts/onest-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/kod-prozrachnosti/static/css/app.css">
   <link rel="icon" href="/kod-prozrachnosti/static/img/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/kod-prozrachnosti/static/img/apple-touch-icon.png">
-  <script>document.documentElement.classList.add("fit-wait")</script>
   
 <meta name="robots" content="noindex">
 </head>
 <body class="">
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-    <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
-    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m5 9 7 7 7-7"/></symbol>
-  </svg>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
+  <symbol id="i-check2" viewBox="0 0 24 24"><path d="m2 12 5 5L17 7M12 16l1 1 9-10"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-expand" viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></symbol>
+  <symbol id="i-line" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-5 4 3 5-6"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></symbol>
+  <symbol id="i-repeat" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14M7 22l-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-exit" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></symbol>
+  <symbol id="i-area" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="m4 14 6-6 10 10M4 9l5-5"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></symbol>
+  <symbol id="i-review" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-import" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+  <symbol id="i-analysis" viewBox="0 0 24 24"><path d="m13 17 5-5-5-5M6 17l5-5-5-5"/></symbol>
+  <symbol id="i-logo" viewBox="0 0 24 24"><rect x="3" y="13" width="4" height="8" rx="1.5" fill="#b6d3f0" stroke="none"/><rect x="10" y="8" width="4" height="13" rx="1.5" fill="#c2f0b6" stroke="none"/><rect x="17" y="3" width="4" height="18" rx="1.5" fill="#c2f0b6" stroke="none"/></symbol>
+</svg>
+
   
-  <header class="hdr" data-hdr>
-    <div class="hdr-in">
-      <a class="hdr-logo" href="/kod-prozrachnosti/"><span class="mark hdr-mark" aria-hidden="true"></span><span>Код прозрачности</span></a>
+  
+  <div class="app">
+    
+    <header class="top">
+      <div class="who">
+        <span class="avatar" aria-hidden="true">Д</span>
+        <span class="who-name">демо-просмотр</span>
+        
+        
+      </div>
+      <nav class="nav" aria-label="Разделы">
+        <a class="nav-item" href="/kod-prozrachnosti/" aria-current="page">Главная</a>
+        <a class="nav-item" href="/kod-prozrachnosti/cases/" >Объекты <span class="badge">38</span></a>
+        <a class="nav-item" href="/kod-prozrachnosti/analytics/" >Аналитика</a>
+        <a class="nav-item" href="/kod-prozrachnosti/history/" >История изменений</a>
+        <button class="nav-item" type="button" data-search-open><svg class="icon"><use href="#i-search"/></svg>Поиск по данным</button>
+        <div class="bell-wrap">
+          <button class="nav-item nav-bell" type="button" data-bell aria-expanded="false" aria-label="Уведомления"><svg class="icon"><use href="#i-bell"/></svg><span class="badge">6</span></button>
+          <div class="notif" data-notif>
+            <div class="notif-head"><span>Уведомления</span><svg class="icon" aria-hidden="true"><use href="#i-check2"/></svg></div>
+            <div class="notif-list">
+              <span class="soft t-label">Последние события</span>
+              
+              <a class="notif-item" href="/kod-prozrachnosti/analytics/">
+                <span class="notif-dot info" aria-hidden="true"><svg class="icon"><use href="#i-analysis"/></svg></span>
+                <span><span class="t-compact">Анализ выполнен</span><span class="soft t-label notif-text">Записей 83, сработало 40, объектов 63, 21 мс</span><br><span class="t-period">21.11.2026 21:31</span></span>
+              </a>
+              
+              <a class="notif-item" href="/kod-prozrachnosti/analytics/">
+                <span class="notif-dot info" aria-hidden="true"><svg class="icon"><use href="#i-analysis"/></svg></span>
+                <span><span class="t-compact">Анализ выполнен</span><span class="soft t-label notif-text">Записей 83, сработало 40, объектов 63, 21 мс</span><br><span class="t-period">21.11.2026 21:31</span></span>
+              </a>
+              
+              <a class="notif-item" href="/kod-prozrachnosti/cases/5828f20a-a894-41c9-98cb-8e6385e6bca7/">
+                <span class="notif-dot info" aria-hidden="true"><svg class="icon"><use href="#i-review"/></svg></span>
+                <span><span class="t-compact">specialist: «Нужны сведения»</span><span class="soft t-label notif-text">Ростовская обл., Аксайский р-н, Щепкинское с/п, 1,5 км севернее п. Щепкин. Демонстрационная запись. Нужна выписка о переходе прав и дата первого проекта изменения категории.</span><br><span class="t-period">21.11.2026 21:31</span></span>
+              </a>
+              
+              <a class="notif-item" href="/kod-prozrachnosti/cases/08575912-075f-4b75-b507-9ffa1c80c832/">
+                <span class="notif-dot ok" aria-hidden="true"><svg class="icon"><use href="#i-review"/></svg></span>
+                <span><span class="t-compact">specialist: «Не подтверждено»</span><span class="soft t-label notif-text">Земельный участок 61:02:0600012:1388. Демонстрационная запись. Повтор должностного лица объясняется распределением дел по должности; связи с приобретателем не найдено.</span><br><span class="t-period">21.11.2026 21:31</span></span>
+              </a>
+              
+              <a class="notif-item" href="/kod-prozrachnosti/cases/4b3041b0-a208-4d56-a8ee-edd096a658f2/">
+                <span class="notif-dot high" aria-hidden="true"><svg class="icon"><use href="#i-review"/></svg></span>
+                <span><span class="t-compact">controller: «Подтверждено»</span><span class="soft t-label notif-text">Ярославская обл., г. Углич, ул. Ростовская, д. 6-8. Демонстрационная запись. Торги с одним участником, договор по начальной цене; основания для проверки подтверждены, материалы переданы руководителю.</span><br><span class="t-period">21.11.2026 21:31</span></span>
+              </a>
+              
+              <a class="notif-item" href="/kod-prozrachnosti/analytics/">
+                <span class="notif-dot info" aria-hidden="true"><svg class="icon"><use href="#i-analysis"/></svg></span>
+                <span><span class="t-compact">Анализ выполнен</span><span class="soft t-label notif-text">Записей 83, сработало 40, объектов 63, 21 мс</span><br><span class="t-period">21.11.2026 21:31</span></span>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+<h1 class="sr-only">Главная: сводка по всем объектам</h1>
+<div class="grid g-main">
+  <div class="stack">
+    <div class="grid g-2 kpi-pair" style="--o:1">
+      <a class="card kpi card-link" href="/kod-prozrachnosti/cases/">
+        <div><div class="t-mono">Всего объектов</div><div class="t-period">в текущей базе</div></div>
+        <div class="kpi-row"><span class="t-kpi">63</span><span class="delta up">+13</span></div>
+      </a>
+      <a class="card kpi card-link" href="/kod-prozrachnosti/cases/q/attention-high/">
+        <div><div class="t-mono">Требуют проверки</div><div class="t-period">есть основания для внимания</div></div>
+        <div class="kpi-row"><span class="t-kpi">38</span><span class="delta down">21 высокий</span></div>
+      </a>
+    </div>
+    <section class="card" aria-labelledby="funnel-h" style="--o:6">
+      <div class="card-head"><div><h2 class="t-mono" id="funnel-h">Воронка анализа объектов</h2><div class="t-period">анализ 21.11.2026 21:31</div></div></div>
+      <div class="chart" style="height:150px" data-chart="funnel" data-src="funnel-data" role="img" aria-label="Записи таблиц: 83; Объекты: 63; Проверены правилами: 63; Выявлены сигналы: 40"></div>
+      <div class="grid g-4 t-label soft"><span>Записи таблиц</span><span>Объекты</span><span>Проверены правилами</span><span>Выявлены сигналы</span></div>
+    </section>
+    <section class="card" aria-labelledby="struct-h" style="--o:7">
+      <div class="card-head"><div><h2 class="t-mono" id="struct-h">Структура срабатываний</h2><div class="t-period">по индикаторам</div></div><a class="icon-btn" href="/kod-prozrachnosti/analytics/" aria-label="Подробнее"><svg class="icon"><use href="#i-expand"/></svg></a></div>
+      <div class="split">
+        <div class="chart" style="height:240px" data-chart="polar" data-src="structure-data" role="img" aria-label="Срабатывания по индикаторам"></div>
+        <ul class="legend"><li style="--c:#b6d3f0"><span>И1 — Покупка до смены категории</span><span class="legend-n">6</span></li><li style="--c:#c2f0b6"><span>И2 — Точечная правка ПЗЗ / генплана</span><span class="legend-n">6</span></li><li style="--c:#d2b7f0"><span>И3 — Выгода после смены категории</span><span class="legend-n">3</span></li><li style="--c:#f0eab6"><span>И4 — Единственный участник торгов</span><span class="legend-n">15</span></li><li style="--c:#9ed9cf"><span>И6 — Связанное лицо до процедуры</span><span class="legend-n">2</span></li><li style="--c:#f5c6b8"><span>И8 — Аномалия границ</span><span class="legend-n">4</span></li><li style="--c:#c9cfd8"><span>И10 — Повтор должностного лица</span><span class="legend-n">4</span></li></ul>
+      </div>
+    </section>
+  </div>
+
+  <div class="stack">
+    <div class="grid g-2 kpi-pair" style="--o:2">
+      <a class="card kpi card-link" href="/kod-prozrachnosti/cases/q/review-needs_information/">
+        <div><div class="t-mono">В работе</div><div class="t-period">запрошены сведения</div></div>
+        <div class="kpi-row"><span class="t-kpi">1</span></div>
+      </a>
+      <a class="card kpi card-link" href="/kod-prozrachnosti/cases/q/review-confirmed/">
+        <div><div class="t-mono">Завершено проверок</div><div class="t-period">решение записано</div></div>
+        <div class="kpi-row"><span class="t-kpi">2</span><span class="delta flat">подтверждено: 1</span></div>
+      </a>
+    </div>
+    <section class="card" aria-labelledby="eff-h" style="--o:5">
+      <div class="card-head"><div><h2 class="t-mono" id="eff-h">Точность индикаторов</h2><div class="t-period">совпадение с разметкой исследования</div></div></div>
       
-      <div class="hdr-user">
-        <button class="hdr-burger" type="button" aria-expanded="false" aria-controls="sheet" data-burger>Разделы <span class="hdr-burger-box"><i></i><i></i><i></i></span></button>
+      <p class="t-value">Высокая <span class="soft t-compact">69 из 70</span></p>
+      <div class="scale">
+        <div class="scale-bars" aria-hidden="true"><i style="background:hsl(0,88%,48%)"></i><i style="background:hsl(2,88%,48%)"></i><i style="background:hsl(4,88%,48%)"></i><i style="background:hsl(6,88%,48%)"></i><i style="background:hsl(8,88%,48%)"></i><i style="background:hsl(10,88%,48%)"></i><i style="background:hsl(12,88%,48%)"></i><i style="background:hsl(14,88%,48%)"></i><i style="background:hsl(16,88%,48%)"></i><i style="background:hsl(18,88%,48%)"></i><i style="background:hsl(20,88%,48%)"></i><i style="background:hsl(22,88%,48%)"></i><i style="background:hsl(24,88%,48%)"></i><i style="background:hsl(26,88%,48%)"></i><i style="background:hsl(28,88%,48%)"></i><i style="background:hsl(30,88%,48%)"></i><i style="background:hsl(32,88%,48%)"></i><i style="background:hsl(34,88%,48%)"></i><i style="background:hsl(36,88%,48%)"></i><i style="background:hsl(38,88%,48%)"></i><i style="background:hsl(40,88%,48%)"></i><i style="background:hsl(42,88%,48%)"></i><i style="background:hsl(44,88%,48%)"></i><i style="background:hsl(46,88%,48%)"></i><i style="background:hsl(48,88%,48%)"></i><i style="background:hsl(50,88%,48%)"></i><i style="background:hsl(52,88%,48%)"></i><i style="background:hsl(54,88%,48%)"></i><i style="background:hsl(56,88%,48%)"></i><i style="background:hsl(58,88%,48%)"></i><i style="background:hsl(60,88%,48%)"></i><i style="background:hsl(62,88%,48%)"></i><i style="background:hsl(64,88%,48%)"></i><i style="background:hsl(66,88%,48%)"></i><i style="background:hsl(68,88%,48%)"></i><i style="background:hsl(70,88%,48%)"></i><i style="background:hsl(72,88%,48%)"></i><i style="background:hsl(74,88%,48%)"></i><i style="background:hsl(76,88%,48%)"></i><i style="background:hsl(78,88%,48%)"></i><i style="background:hsl(80,88%,48%)"></i><i style="background:hsl(82,88%,48%)"></i><i style="background:hsl(84,88%,48%)"></i><i style="background:hsl(86,88%,48%)"></i><i style="background:hsl(88,88%,48%)"></i><i style="background:hsl(90,88%,48%)"></i><i style="background:hsl(92,88%,48%)"></i><i style="background:hsl(94,88%,48%)"></i><i style="background:hsl(96,88%,48%)"></i><i style="background:hsl(98,88%,48%)"></i><i style="background:hsl(100,88%,48%)"></i><i style="background:hsl(102,88%,48%)"></i><i style="background:hsl(104,88%,48%)"></i><i style="background:hsl(106,88%,48%)"></i><i style="background:hsl(108,88%,48%)"></i><i style="background:hsl(110,88%,48%)"></i><i style="background:hsl(112,88%,48%)"></i><i style="background:hsl(114,88%,48%)"></i><i style="background:hsl(116,88%,48%)"></i><i style="background:hsl(118,88%,48%)"></i><span class="scale-mark" style="left:calc(99% - 1.5px)"></span></div>
+        <div class="scale-axis"><span>Низкая</span><span>Средняя</span><span>Высокая</span></div>
       </div>
       
-    </div>
-  </header>
-  
-  <div class="sheet" id="sheet" data-sheet>
-    <nav class="sheet-nav" aria-label="Разделы">
-      <a class="sheet-link" href="/kod-prozrachnosti/" aria-current="page">Обзор</a>
-      <a class="sheet-link" href="/kod-prozrachnosti/cases/" >Реестр</a>
-      <a class="sheet-link" href="/kod-prozrachnosti/map/" >Карта</a>
-      <a class="sheet-link" href="/kod-prozrachnosti/officials/" >Должностные лица</a>
-      <a class="sheet-link" href="/kod-prozrachnosti/sources/" >Источники</a>
-      <a class="sheet-link" href="/kod-prozrachnosti/method/" >Методика</a>
-      
-      <div class="sheet-foot eyebrow">
-        <span>демо-просмотр</span>
+    </section>
+    <section class="card" aria-labelledby="reco-h" style="--o:4">
+      <div class="card-head"><div><h2 class="t-mono" id="reco-h">Рекомендации</h2><div class="t-period">что сделать сейчас</div></div></div>
+      <div class="rows">
         
+        <a class="row-item" href="/kod-prozrachnosti/cases/q/attention-high/"><span class="risk high t-compact" style="white-space:normal">21 объект(ов) высокого риска ждут решения. Начните с них.</span></a>
+        
+        <a class="row-item" href="/kod-prozrachnosti/cases/q/review-needs_information/"><span class="risk medium t-compact" style="white-space:normal">По 1 объект(ам) запрошены сведения. Проверьте, пришли ли документы.</span></a>
+        
+        <a class="row-item" href="/kod-prozrachnosti/cases/q/amp-3Battention-insufficient-indicator-I6/"><span class="risk unknown t-compact" style="white-space:normal">И6: у 2 записей нет данных для вывода. Нужны выписки и документы из источников индикатора.</span></a>
+        
+        <a class="row-item" href="/kod-prozrachnosti/cases/q/amp-3Battention-insufficient-indicator-I2/"><span class="risk unknown t-compact" style="white-space:normal">И2: у 1 записей нет данных для вывода. Нужны выписки и документы из источников индикатора.</span></a>
+        
+        <a class="row-item" href="/kod-prozrachnosti/method/"><span class="risk unknown t-compact" style="white-space:normal">Сверка с разметкой исследования: 69 из 70. Расхождения разобраны в методике.</span></a>
         
       </div>
-    </nav>
-    <figure class="sheet-plate"><img src="/kod-prozrachnosti/static/img/band-map.jpg" alt="" loading="lazy"></figure>
+    </section>
   </div>
-  
-  
 
-  
-  
-<section class="hero">
-  <div class="wrap hero-in">
-    <div class="hero-copy">
-      <div class="hero-rail eyebrow"><span>Рабочее место специалиста</span><span class="nowrap">ЕГРН / НСПД / ЕГРЮЛ / ГИС «Торги»</span></div>
-      <h1 class="display-xl fit"><span class="sr-only">Земельные решения по данным реестров</span><span class="fit-line" aria-hidden="true">Земельные решения</span><span class="fit-line" aria-hidden="true">по данным реестров</span></h1>
-      <p class="body-s j">Сервис сопоставляет сделки с землёй, смену категории, правки ПЗЗ и связи с должностными лицами, показывает основания для проверки по каждому объекту. Индикатор — повод для проверки. Решение принимает сотрудник.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" data-lbl="Открыть реестр" href="/kod-prozrachnosti/cases/">Открыть реестр</a>
-        <a class="btn" data-lbl="Как считается" href="/kod-prozrachnosti/method/">Как считается</a>
+  <div class="stack col-3">
+    <section class="card" aria-labelledby="prio-h" style="--o:3">
+      <div class="card-head"><div><h2 class="t-mono" id="prio-h">Приоритетные случаи</h2><div class="t-period">ждут решения сотрудника</div></div><a class="pill" href="/kod-prozrachnosti/cases/">Смотреть все <svg class="icon"><use href="#i-arrow"/></svg></a></div>
+      <div class="prio">
+        <a class="prio-item high" href="/kod-prozrachnosti/cases/q/attention-high/"><span class="t-kpi">21</span><span class="t-label">высокий риск</span></a>
+        <a class="prio-item medium" href="/kod-prozrachnosti/cases/q/attention-medium/"><span class="t-kpi">17</span><span class="t-label">средний риск</span></a>
+        <a class="prio-item low" href="/kod-prozrachnosti/cases/q/attention-low/"><span class="t-kpi">0</span><span class="t-label">низкий риск</span></a>
+        <a class="prio-item unknown" href="/kod-prozrachnosti/cases/q/attention-insufficient/"><span class="t-kpi">1</span><span class="t-label soft">нет данных</span></a>
       </div>
-      <div class="stats">
-        <a class="stat" href="/kod-prozrachnosti/cases/q/attention-high/"><span class="eyebrow">Высокий приоритет</span><span class="num-xl">8</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>объектов</span></a>
-        <a class="stat" href="/kod-prozrachnosti/cases/q/attention-normal/"><span class="eyebrow">Требуют проверки</span><span class="num-xl">32</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg>объектов</span></a>
-        <a class="stat" href="/kod-prozrachnosti/cases/q/attention-insufficient/"><span class="eyebrow">Недостаточно данных</span><span class="num-xl">1</span><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="4.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="8.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="12.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="16.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/></svg>объектов</span></a>
-        <a class="stat" href="/kod-prozrachnosti/method/#quality"><span class="eyebrow">Сверка с исследованием</span><span class="num-xl">69/70</span><span class="small">записей совпало</span></a>
-      </div>
-    </div>
-    <figure class="hero-plate"><img src="/kod-prozrachnosti/static/img/hero.jpg" alt="Поля, разделённые на участки: гравюра" width="1000" height="1000" fetchpriority="high"></figure>
+    </section>
+    <section class="card" aria-labelledby="bars-h" style="--o:8">
+      <div class="card-head"><div><h2 class="t-mono" id="bars-h">Срабатывания по индикаторам</h2><div class="t-period">последний анализ</div></div><a class="icon-btn" href="/kod-prozrachnosti/analytics/" aria-label="Подробнее"><svg class="icon"><use href="#i-expand"/></svg></a></div>
+      <div class="chart" style="height:300px" data-chart="bars" data-src="bars-data" role="img" aria-label="И1: 6; И2: 6; И3: 3; И4: 15; И6: 2; И8: 4; И10: 4"></div>
+    </section>
   </div>
-</section>
-
-  <main class="paper">
-    <div class="wrap">
-      
-<section class="section">
-  <div class="block">
-    <div class="block-rail">
-      <span class="eyebrow">Индикаторы</span>
-      <h2 class="h1">Семь правил исследования</h2>
-      <p class="small soft">Последний анализ 20.11.2026 00:17: 83 записей, 63 объектов, 20 мс.</p>
-      <div class="legend small"><span class="state"><span class="bar" style="min-width:1.4rem"><span class="b-trig" style="width:100%"></span></span>сработал</span><span class="state"><span class="bar" style="min-width:1.4rem"><span class="b-insuf" style="width:100%"></span></span>нет данных</span></div>
-    </div>
-    <div class="block-body tbl-wrap">
-      <table class="tbl">
-        <thead><tr><th>Индикатор</th><th class="hide-s">Результаты</th><th class="r">Сработал</th><th class="r">Нет данных</th><th class="r">Сверка</th><th></th></tr></thead>
-        <tbody>
-          <tr class="row">
-            <td><a class="row-link" href="/kod-prozrachnosti/cases/q/indicator-I1/"><span class="code">И1</span> Покупка до смены категории</a></td>
-            <td class="hide-s mid"><div class="bar"><span class="b-trig" style="width:60%"></span><span class="b-insuf" style="width:0%"></span></div></td>
-            <td class="r" data-label="Сработал">6 из 10</td>
-            <td class="r" data-label="Нет данных">0</td>
-            <td class="r" data-label="Сверка">10/10</td>
-            <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
-          </tr>
-        
-          <tr class="row">
-            <td><a class="row-link" href="/kod-prozrachnosti/cases/q/indicator-I2/"><span class="code">И2</span> Точечная правка ПЗЗ / генплана</a></td>
-            <td class="hide-s mid"><div class="bar"><span class="b-trig" style="width:60%"></span><span class="b-insuf" style="width:10%"></span></div></td>
-            <td class="r" data-label="Сработал">6 из 10</td>
-            <td class="r" data-label="Нет данных">1</td>
-            <td class="r" data-label="Сверка">10/10</td>
-            <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
-          </tr>
-        
-          <tr class="row">
-            <td><a class="row-link" href="/kod-prozrachnosti/cases/q/indicator-I3/"><span class="code">И3</span> Выгода после смены категории</a><span class="sub">контекстный признак</span></td>
-            <td class="hide-s mid"><div class="bar"><span class="b-trig" style="width:30%"></span><span class="b-insuf" style="width:10%"></span></div></td>
-            <td class="r" data-label="Сработал">3 из 10</td>
-            <td class="r" data-label="Нет данных">1</td>
-            <td class="r" data-label="Сверка">10/10</td>
-            <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
-          </tr>
-        
-          <tr class="row">
-            <td><a class="row-link" href="/kod-prozrachnosti/cases/q/indicator-I4/"><span class="code">И4</span> Единственный участник торгов</a></td>
-            <td class="hide-s mid"><div class="bar"><span class="b-trig" style="width:65%"></span><span class="b-insuf" style="width:0%"></span></div></td>
-            <td class="r" data-label="Сработал">15 из 23</td>
-            <td class="r" data-label="Нет данных">0</td>
-            <td class="r" data-label="Сверка">10/10</td>
-            <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
-          </tr>
-        
-          <tr class="row">
-            <td><a class="row-link" href="/kod-prozrachnosti/cases/q/indicator-I6/"><span class="code">И6</span> Связанное лицо до процедуры</a></td>
-            <td class="hide-s mid"><div class="bar"><span class="b-trig" style="width:20%"></span><span class="b-insuf" style="width:20%"></span></div></td>
-            <td class="r" data-label="Сработал">2 из 10</td>
-            <td class="r" data-label="Нет данных">2</td>
-            <td class="r" data-label="Сверка">9/10</td>
-            <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
-          </tr>
-        
-          <tr class="row">
-            <td><a class="row-link" href="/kod-prozrachnosti/cases/q/indicator-I8/"><span class="code">И8</span> Аномалия границ</a></td>
-            <td class="hide-s mid"><div class="bar"><span class="b-trig" style="width:40%"></span><span class="b-insuf" style="width:0%"></span></div></td>
-            <td class="r" data-label="Сработал">4 из 10</td>
-            <td class="r" data-label="Нет данных">0</td>
-            <td class="r" data-label="Сверка">10/10</td>
-            <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
-          </tr>
-        
-          <tr class="row">
-            <td><a class="row-link" href="/kod-prozrachnosti/cases/q/indicator-I10/"><span class="code">И10</span> Повтор должностного лица</a></td>
-            <td class="hide-s mid"><div class="bar"><span class="b-trig" style="width:40%"></span><span class="b-insuf" style="width:0%"></span></div></td>
-            <td class="r" data-label="Сработал">4 из 10</td>
-            <td class="r" data-label="Нет данных">0</td>
-            <td class="r" data-label="Сверка">10/10</td>
-            <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+</div>
+<script id="funnel-data" type="application/json">[{"label": "\u0417\u0430\u043f\u0438\u0441\u0438 \u0442\u0430\u0431\u043b\u0438\u0446", "value": 83}, {"label": "\u041e\u0431\u044a\u0435\u043a\u0442\u044b", "value": 63}, {"label": "\u041f\u0440\u043e\u0432\u0435\u0440\u0435\u043d\u044b \u043f\u0440\u0430\u0432\u0438\u043b\u0430\u043c\u0438", "value": 63}, {"label": "\u0412\u044b\u044f\u0432\u043b\u0435\u043d\u044b \u0441\u0438\u0433\u043d\u0430\u043b\u044b", "value": 40}]</script>
+<script id="structure-data" type="application/json">[{"label": "\u04181 \u2014 \u041f\u043e\u043a\u0443\u043f\u043a\u0430 \u0434\u043e \u0441\u043c\u0435\u043d\u044b \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u0438", "value": 6, "color": "#b6d3f0"}, {"label": "\u04182 \u2014 \u0422\u043e\u0447\u0435\u0447\u043d\u0430\u044f \u043f\u0440\u0430\u0432\u043a\u0430 \u041f\u0417\u0417 / \u0433\u0435\u043d\u043f\u043b\u0430\u043d\u0430", "value": 6, "color": "#c2f0b6"}, {"label": "\u04183 \u2014 \u0412\u044b\u0433\u043e\u0434\u0430 \u043f\u043e\u0441\u043b\u0435 \u0441\u043c\u0435\u043d\u044b \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u0438", "value": 3, "color": "#d2b7f0"}, {"label": "\u04184 \u2014 \u0415\u0434\u0438\u043d\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0443\u0447\u0430\u0441\u0442\u043d\u0438\u043a \u0442\u043e\u0440\u0433\u043e\u0432", "value": 15, "color": "#f0eab6"}, {"label": "\u04186 \u2014 \u0421\u0432\u044f\u0437\u0430\u043d\u043d\u043e\u0435 \u043b\u0438\u0446\u043e \u0434\u043e \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u044b", "value": 2, "color": "#9ed9cf"}, {"label": "\u04188 \u2014 \u0410\u043d\u043e\u043c\u0430\u043b\u0438\u044f \u0433\u0440\u0430\u043d\u0438\u0446", "value": 4, "color": "#f5c6b8"}, {"label": "\u041810 \u2014 \u041f\u043e\u0432\u0442\u043e\u0440 \u0434\u043e\u043b\u0436\u043d\u043e\u0441\u0442\u043d\u043e\u0433\u043e \u043b\u0438\u0446\u0430", "value": 4, "color": "#c9cfd8"}]</script>
+<script id="bars-data" type="application/json">[{"label": "\u04181", "value": 6, "unit": "\u0441\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u043d\u0438\u0439", "url": "/cases/?indicator=I1"}, {"label": "\u04182", "value": 6, "unit": "\u0441\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u043d\u0438\u0439", "url": "/cases/?indicator=I2"}, {"label": "\u04183", "value": 3, "unit": "\u0441\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u043d\u0438\u0439", "url": "/cases/?indicator=I3"}, {"label": "\u04184", "value": 15, "unit": "\u0441\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u043d\u0438\u0439", "url": "/cases/?indicator=I4"}, {"label": "\u04186", "value": 2, "unit": "\u0441\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u043d\u0438\u0439", "url": "/cases/?indicator=I6"}, {"label": "\u04188", "value": 4, "unit": "\u0441\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u043d\u0438\u0439", "url": "/cases/?indicator=I8"}, {"label": "\u041810", "value": 4, "unit": "\u0441\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u043d\u0438\u0439", "url": "/cases/?indicator=I10"}]</script>
+</main>
   </div>
-
-  
-  <div class="block">
-    <div class="block-rail">
-      <span class="eyebrow">Очередь проверки</span>
-      <h2 class="h1">Требуют внимания</h2>
-      <a class="btn" data-lbl="Весь реестр" href="/kod-prozrachnosti/cases/">Весь реестр</a>
+  <button class="search-fab" type="button" data-search-open><svg class="icon"><use href="#i-search"/></svg>Найти объект, документ или событие…</button>
+  <div class="scrim" data-scrim></div>
+  <div class="palette" data-palette data-index="/kod-prozrachnosti/search.json" role="dialog" aria-label="Поиск">
+    <div class="palette-tabs">
+      <button type="button" data-tab="all" aria-pressed="true">Все</button>
+      <button type="button" data-tab="object" aria-pressed="false">Объекты</button>
+      <button type="button" data-tab="document" aria-pressed="false">Документы</button>
+      <button type="button" data-tab="event" aria-pressed="false">События</button>
     </div>
-    <div class="block-body tbl-wrap">
-      <table class="tbl">
-        <thead><tr><th>Объект</th><th>Индикаторы</th><th>Итог</th><th class="hide-s">Проверка</th><th></th></tr></thead>
-        <tbody>
-          <tr class="row">
-            <td><a class="row-link" href="/kod-prozrachnosti/cases/caaa1a30-feb5-44d7-be8a-6c6370c46156/">Ростовская обл., Аксайский р-н, Щепкинское с/п, 1,5 км севернее п. Щепкин</a><span class="sub">61:02:0600010:2843 / демонстрация</span></td>
-            <td data-label="Индикаторы"><div class="codes"><span class="code">И1</span><span class="code">И6</span><span class="code">И10</span></div></td>
-            <td data-label="Итог"><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Высокий приоритет проверки</span></td>
-            <td class="hide-s small nowrap" data-label="Проверка"><span class="soft">не проверялся</span></td>
-            <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
-          </tr>
-        
-          <tr class="row">
-            <td><a class="row-link" href="/kod-prozrachnosti/cases/af25c61c-114c-4fea-ade2-4df548a19bcb/">Ростовская обл., Егорлыкский р-н, ст. Егорлыкская, северная окраина</a><span class="sub">61:10:0600002:854 / демонстрация</span></td>
-            <td data-label="Индикаторы"><div class="codes"><span class="code">И1</span><span class="code">И3</span><span class="code">И10</span></div></td>
-            <td data-label="Итог"><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Высокий приоритет проверки</span></td>
-            <td class="hide-s small nowrap" data-label="Проверка"><span class="soft">не проверялся</span></td>
-            <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
-          </tr>
-        
-          <tr class="row">
-            <td><a class="row-link" href="/kod-prozrachnosti/cases/76f10a9b-4d20-40e8-85f6-b80df371bdd5/">Ростовская обл., Октябрьский р-н, р.п. Каменоломни, пер. Шоссейный, 2а</a><span class="sub">61:28:0600016:3061 / демонстрация</span></td>
-            <td data-label="Индикаторы"><div class="codes"><span class="code">И1</span><span class="code">И2</span><span class="code">И10</span></div></td>
-            <td data-label="Итог"><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Высокий приоритет проверки</span></td>
-            <td class="hide-s small nowrap" data-label="Проверка"><span class="soft">не проверялся</span></td>
-            <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
-          </tr>
-        
-          <tr class="row">
-            <td><a class="row-link" href="/kod-prozrachnosti/cases/f89d4da8-5ca9-4e53-9dc7-32278a6fc1cc/">Ростовская обл., г. Ростов-на-Дону, Советский р-н</a><span class="sub">61:44:0072201:356 / демонстрация</span></td>
-            <td data-label="Индикаторы"><div class="codes"><span class="code">И2</span><span class="code">И6</span><span class="code">И10</span></div></td>
-            <td data-label="Итог"><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Высокий приоритет проверки</span></td>
-            <td class="hide-s small nowrap" data-label="Проверка"><span class="soft">не проверялся</span></td>
-            <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
-          </tr>
-        
-          <tr class="row">
-            <td><a class="row-link" href="/kod-prozrachnosti/cases/c859dc0a-15e1-41f3-82ff-f00716218f24/">Земельный участок 61:02:0120102:1543</a><span class="sub">61:02:0120102:1543 / демонстрация</span></td>
-            <td data-label="Индикаторы"><div class="codes"><span class="code">И2</span><span class="code">И10</span></div></td>
-            <td data-label="Итог"><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Высокий приоритет проверки</span></td>
-            <td class="hide-s small nowrap" data-label="Проверка"><span class="soft">не проверялся</span></td>
-            <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
-          </tr>
-        
-          <tr class="row">
-            <td><a class="row-link" href="/kod-prozrachnosti/cases/b4562d73-0715-4cb8-86dd-e9331fa5eed5/">Земельный участок 61:02:0120102:1544</a><span class="sub">61:02:0120102:1544 / демонстрация</span></td>
-            <td data-label="Индикаторы"><div class="codes"><span class="code">И2</span><span class="code">И10</span></div></td>
-            <td data-label="Итог"><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Высокий приоритет проверки</span></td>
-            <td class="hide-s small nowrap" data-label="Проверка"><span class="soft">не проверялся</span></td>
-            <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
-          </tr>
-        
-          <tr class="row">
-            <td><a class="row-link" href="/kod-prozrachnosti/cases/fb2600a4-367f-41eb-beb6-ad343eb6e9a6/">Земельный участок 61:02:0120105:331</a><span class="sub">61:02:0120105:331 / демонстрация</span></td>
-            <td data-label="Индикаторы"><div class="codes"><span class="code">И8</span><span class="code">И10</span></div></td>
-            <td data-label="Итог"><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Высокий приоритет проверки</span></td>
-            <td class="hide-s small nowrap" data-label="Проверка"><span class="soft">не проверялся</span></td>
-            <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
-          </tr>
-        
-          <tr class="row">
-            <td><a class="row-link" href="/kod-prozrachnosti/cases/8316f6e9-4e17-47a5-bbdd-06670195a374/">Земельный участок 61:02:0600012:1388</a><span class="sub">61:02:0600012:1388 / демонстрация</span></td>
-            <td data-label="Индикаторы"><div class="codes"><span class="code">И10</span></div></td>
-            <td data-label="Итог"><span class="state small"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg>Высокий приоритет проверки</span></td>
-            <td class="hide-s small nowrap" data-label="Проверка"><span class="soft">не проверялся</span></td>
-            <td class="arrow"><svg class="icon"><use href="#i-arrow"/></svg></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <div class="palette-body" data-results></div>
+    <input class="palette-input" type="search" placeholder="Найти объект, документ или событие…" aria-label="Поиск" autocomplete="off">
   </div>
   
-</section>
-
-<section class="section">
-  <div class="section-head"><span class="eyebrow">Что ищут правила</span><h2 class="display-l">Три механизма риска</h2></div>
-  <div class="feat-grid">
-    <article class="feat">
-      <span class="eyebrow">#1 / И1, И3, И6</span>
-      <h3 class="h2">Сделка перед решением</h3>
-      <p class="body-s j">Участок покупают незадолго до смены категории или правки зоны. Покупатель связан с должностным лицом, которое участвует в решении. После решения участок продают дороже.</p>
-      <figure class="feat-plate plate"><img src="/kod-prozrachnosti/static/img/m1.jpg" alt="Теодолит в поле: гравюра" width="1000" height="1000"></figure>
-    </article>
-    <article class="feat">
-      <span class="eyebrow">#2 / И2, И4, И10</span>
-      <h3 class="h2">Решение в пользу владельца</h3>
-      <p class="body-s j">Изменённую зону ПЗЗ почти целиком занимают участки одного правообладателя, торги проходят с единственным участником, одно должностное лицо повторяется в разных эпизодах.</p>
-      <figure class="feat-plate plate"><img src="/kod-prozrachnosti/static/img/m2.jpg" alt="Документы и печать: гравюра" width="1000" height="1000"></figure>
-    </article>
-    <article class="feat">
-      <span class="eyebrow">#3 / И8</span>
-      <h3 class="h2">Граница с изломом</h3>
-      <p class="body-s j">Контур участка с узким выступом, вырезом или прирезанной полосой. Коэффициент заполнения сервис считает по координатам.</p>
-      <figure class="feat-plate plate"><img src="/kod-prozrachnosti/static/img/m3.jpg" alt="Кадастровый план: гравюра" width="1000" height="1000"></figure>
-    </article>
-  </div>
-</section>
-
-    </div>
-  </main>
-  
-  <footer class="foot">
-    <div class="wrap foot-in">
-      <a class="foot-mark" href="/kod-prozrachnosti/"><span class="mark" aria-hidden="true"></span>Код прозрачности</a>
-      <div class="foot-meta body-s">
-        <span>ЕГРН / НСПД / ЕГРЮЛ / ГИС «Торги»</span>
-        <span>правила 1.0</span>
-        <span>анализ 20.11.2026 00:17</span>
-        <span class="nowrap" data-clock>00:17 МСК</span>
-      </div>
-    </div>
-  </footer>
-  
-  <script>
-  // every page opens at its top after a link or a reload; only an #anchor opens at the anchor
-  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
-  if (!location.hash) window.scrollTo(0, 0);
-  </script>
-  <script>
-  // Each line of a heading is scaled to the full width of its block, so a heading lies as one
-  // rectangle (like FitLine on ЭВА-РИСК) instead of a ragged staircase. Hand-set .fit headings
-  // keep their lines; every other heading is broken where the browser breaks it at its own
-  // size, and those lines are fitted. Headings stay hidden until fitted (see .fit-wait).
-  (function () {
-    const AUTO = ".display-xl:not(.fit), .display-l:not(.break), .block-rail > .h1, .section-head > .h1";
-    const GROW = 2.6;  // a line never grows past this multiple of the heading's own size
-    function lines(h) {
-      const text = h.dataset.text || (h.dataset.text = h.textContent.trim().replace(/\s+/g, " "));
-      h.classList.remove("fit", "fitted");
-      h.textContent = text;
-      h.dataset.base = parseFloat(getComputedStyle(h).fontSize);
-      const node = h.firstChild, range = document.createRange(), out = [];
-      let top = null, pos = 0;
-      for (const word of text.split(" ")) {
-        range.setStart(node, pos); range.setEnd(node, pos + word.length);
-        const y = Math.round(range.getClientRects()[0]?.top ?? 0);
-        if (top === null || Math.abs(y - top) > 2) { out.push([]); top = y; }
-        out[out.length - 1].push(word);
-        pos += word.length + 1;
-      }
-      h.textContent = "";
-      const sr = document.createElement("span");
-      sr.className = "sr-only"; sr.textContent = text; h.append(sr);
-      for (const words of out) {
-        const line = document.createElement("span");
-        line.className = "fit-line"; line.setAttribute("aria-hidden", "true");
-        line.textContent = words.join(" "); h.append(line);
-      }
-      h.classList.add("fit");
-    }
-    const autos = [...document.querySelectorAll(AUTO)];  // taken once: fitting adds .fit to them
-    function fit(force) {
-      autos.forEach((h) => {
-        const width = Math.round(h.parentElement.getBoundingClientRect().width);
-        if (force || h.dataset.width !== String(width)) { h.dataset.width = width; lines(h); h.dataset.max = h.dataset.base * GROW; }
-      });
-      document.querySelectorAll(".fit").forEach((box) => {
-        const width = box.getBoundingClientRect().width;
-        box.querySelectorAll(".fit-line").forEach((line) => {
-          // measure the glyphs themselves: a grid item always stretches to its column
-          line.style.fontSize = "100px";
-          const range = document.createRange();
-          range.selectNodeContents(line);
-          const natural = range.getBoundingClientRect().width || 1;
-          line.style.fontSize = Math.min((width / natural) * 100 * 0.995, box.dataset.max || 999) + "px";
-        });
-        box.classList.add("fitted");
-      });
-      document.documentElement.classList.remove("fit-wait");
-    }
-    const ready = document.fonts ? document.fonts.ready : Promise.resolve();
-    ready.then(() => fit(true));
-    setTimeout(() => document.documentElement.classList.remove("fit-wait"), 1500);
-    let pending;
-    window.addEventListener("resize", () => { cancelAnimationFrame(pending); pending = requestAnimationFrame(() => fit(false)); });
-  })();
-  (function () {
-    const hdr = document.querySelector("[data-hdr]");
-    const burger = document.querySelector("[data-burger]");
-    const sheet = document.querySelector("[data-sheet]");
-    let open = false;
-    function paint() {
-      if (open) { hdr.removeAttribute("data-solid"); hdr.removeAttribute("data-hidden"); return; }
-      const y = hdr.offsetHeight + 1;
-      const below = document.elementFromPoint(window.innerWidth / 2, y);
-      const onPaper = below && below.closest(".paper");
-      hdr.toggleAttribute("data-solid", !!onPaper);
-      hdr.toggleAttribute("data-hidden", !onPaper && window.scrollY > 40);
-    }
-    let ticking = false;
-    window.addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { paint(); ticking = false; }); } }, { passive: true });
-    window.addEventListener("resize", paint);
-    paint();
-    if (burger && sheet) {
-      burger.addEventListener("click", () => {
-        open = !open;
-        sheet.toggleAttribute("data-open", open);
-        burger.setAttribute("aria-expanded", String(open));
-        document.documentElement.style.overflow = open ? "hidden" : "";
-        paint();
-      });
-      document.addEventListener("keydown", (event) => { if (event.key === "Escape" && open) burger.click(); });
-    }
-  })();
-  </script>
-  <script>
-  // One dropdown for every list: the native select stays in the form (hidden) and is driven
-  // by a button and a listbox in the site's own style. Keyboard: Enter/Space, arrows, Esc.
-  (function () {
-    const chev = '<svg class="icon chev" aria-hidden="true"><use href="#i-chev"/></svg>';
-    document.querySelectorAll("select.input").forEach((select, n) => {
-      const box = document.createElement("div");
-      box.className = "dd";
-      select.parentNode.insertBefore(box, select);
-      box.appendChild(select);
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "input dd-btn";
-      button.setAttribute("aria-haspopup", "listbox");
-      button.setAttribute("aria-expanded", "false");
-      if (select.getAttribute("aria-label")) button.setAttribute("aria-label", select.getAttribute("aria-label"));
-      if (select.id) { button.id = select.id; select.removeAttribute("id"); }
-      const list = document.createElement("ul");
-      list.className = "dd-list";
-      list.setAttribute("role", "listbox");
-      list.id = "dd-list-" + n;
-      button.setAttribute("aria-controls", list.id);
-      [...select.options].forEach((option, i) => {
-        const item = document.createElement("li");
-        item.setAttribute("role", "option");
-        item.textContent = option.textContent;
-        item.dataset.index = i;
-        list.appendChild(item);
-      });
-      box.append(button, list);
-      let active = select.selectedIndex;
-      const items = [...list.children];
-      button.innerHTML = "<span></span>" + chev;  // built once: re-rendering inside a click detached its target
-      const label = button.firstChild;
-      function render() {
-        label.textContent = select.options[select.selectedIndex]?.textContent || "";
-        items.forEach((item, i) => {
-          item.setAttribute("aria-selected", String(i === select.selectedIndex));
-          item.toggleAttribute("data-active", i === active);
-        });
-      }
-      function open(state) {
-        box.toggleAttribute("data-open", state);
-        button.setAttribute("aria-expanded", String(state));
-        if (state) { active = select.selectedIndex; render(); items[active]?.scrollIntoView({ block: "nearest" }); }
-      }
-      function choose(i) {
-        select.selectedIndex = i;
-        select.dispatchEvent(new Event("change", { bubbles: true }));
-        open(false); render(); button.focus();
-      }
-      button.addEventListener("click", () => open(!box.hasAttribute("data-open")));
-      list.addEventListener("click", (event) => { const item = event.target.closest("li"); if (item) choose(Number(item.dataset.index)); });
-      button.addEventListener("keydown", (event) => {
-        const isOpen = box.hasAttribute("data-open");
-        if (event.key === "ArrowDown" || event.key === "ArrowUp") {
-          event.preventDefault();
-          if (!isOpen) return open(true);
-          active = Math.max(0, Math.min(items.length - 1, active + (event.key === "ArrowDown" ? 1 : -1)));
-          render(); items[active].scrollIntoView({ block: "nearest" });
-        } else if ((event.key === "Enter" || event.key === " ") && isOpen) { event.preventDefault(); choose(active); }
-        else if (event.key === "Escape" && isOpen) { event.preventDefault(); open(false); }
-      });
-      document.addEventListener("click", (event) => { if (event.target.isConnected && !box.contains(event.target)) open(false); });
-      render();
-    });
-  })();
-  </script>
-  <script>
-  (function () {
-    const clock = document.querySelector("[data-clock]");
-    if (!clock) return;
-    const tick = () => { clock.textContent = new Date().toLocaleTimeString("ru-RU", { timeZone: "Europe/Moscow" }) + " МСК"; };
-    tick(); setInterval(tick, 1000);
-  })();
-  </script>
-  <script>
-  (function () {
-    const box = document.querySelector("[data-toasts]");
-    if (!box) return;
-    const hide = () => box.setAttribute("data-hidden", "");
-    box.addEventListener("click", (event) => { if (event.target.closest("[data-close]")) hide(); });
-    setTimeout(hide, 7000);
-  })();
-  </script>
-  
+  <script src="/kod-prozrachnosti/static/js/app.js"></script>
+  <script src="/kod-prozrachnosti/static/js/charts.js"></script>
 </body>
 </html>

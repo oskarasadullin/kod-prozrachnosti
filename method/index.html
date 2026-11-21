@@ -3,424 +3,415 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0000e8">
+  <meta name="theme-color" content="#eff3f7">
   <title>Методика · Код прозрачности</title>
-  <link rel="preload" href="/kod-prozrachnosti/static/fonts/science-gothic-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/kod-prozrachnosti/static/fonts/onest-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/kod-prozrachnosti/static/css/app.css">
   <link rel="icon" href="/kod-prozrachnosti/static/img/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/kod-prozrachnosti/static/img/apple-touch-icon.png">
-  <script>document.documentElement.classList.add("fit-wait")</script>
-  
+  <link rel="stylesheet" href="/kod-prozrachnosti/static/css/pages.css">
 <meta name="robots" content="noindex">
 </head>
 <body class="">
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-    <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
-    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m5 9 7 7 7-7"/></symbol>
-  </svg>
-  
-  <header class="hdr" data-hdr>
-    <div class="hdr-in">
-      <a class="hdr-logo" href="/kod-prozrachnosti/"><span class="mark hdr-mark" aria-hidden="true"></span><span>Код прозрачности</span></a>
-      
-      <div class="hdr-user">
-        <button class="hdr-burger" type="button" aria-expanded="false" aria-controls="sheet" data-burger>Разделы <span class="hdr-burger-box"><i></i><i></i><i></i></span></button>
-      </div>
-      
-    </div>
-  </header>
-  
-  <div class="sheet" id="sheet" data-sheet>
-    <nav class="sheet-nav" aria-label="Разделы">
-      <a class="sheet-link" href="/kod-prozrachnosti/" >Обзор</a>
-      <a class="sheet-link" href="/kod-prozrachnosti/cases/" >Реестр</a>
-      <a class="sheet-link" href="/kod-prozrachnosti/map/" >Карта</a>
-      <a class="sheet-link" href="/kod-prozrachnosti/officials/" >Должностные лица</a>
-      <a class="sheet-link" href="/kod-prozrachnosti/sources/" >Источники</a>
-      <a class="sheet-link" href="/kod-prozrachnosti/method/" aria-current="page">Методика</a>
-      
-      <div class="sheet-foot eyebrow">
-        <span>демо-просмотр</span>
-        
-        
-      </div>
-    </nav>
-    <figure class="sheet-plate"><img src="/kod-prozrachnosti/static/img/band-map.jpg" alt="" loading="lazy"></figure>
-  </div>
-  
-  
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
+  <symbol id="i-check2" viewBox="0 0 24 24"><path d="m2 12 5 5L17 7M12 16l1 1 9-10"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-expand" viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></symbol>
+  <symbol id="i-line" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-5 4 3 5-6"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></symbol>
+  <symbol id="i-repeat" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14M7 22l-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-exit" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></symbol>
+  <symbol id="i-area" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="m4 14 6-6 10 10M4 9l5-5"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></symbol>
+  <symbol id="i-review" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-import" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+  <symbol id="i-analysis" viewBox="0 0 24 24"><path d="m13 17 5-5-5-5M6 17l5-5-5-5"/></symbol>
+  <symbol id="i-logo" viewBox="0 0 24 24"><rect x="3" y="13" width="4" height="8" rx="1.5" fill="#b6d3f0" stroke="none"/><rect x="10" y="8" width="4" height="13" rx="1.5" fill="#c2f0b6" stroke="none"/><rect x="17" y="3" width="4" height="18" rx="1.5" fill="#c2f0b6" stroke="none"/></symbol>
+</svg>
 
   
-  <section class="band band-short">
-  <img class="band-bg" src="/kod-prozrachnosti/static/img/band-method.jpg" alt="" aria-hidden="true" width="1500" height="844" fetchpriority="high">
-  <div class="wrap band-in">
-    <div class="band-plate">
-      <span class="eyebrow">Как работает сервис</span>
-      <h1 class="display-l">Методика</h1>
-      <p class="lede">Каждый индикатор — отдельное правило с версией. Правило берёт исходные факты и заново считает значения, которые в таблице заданы формулой. Результат правила: один из четырёх статусов, объяснение и список недостающих сведений.</p>
-    </div>
-  </div>
-</section>
+  
+  <div class="app">
+    
+    <header class="top">
+      <div class="who">
+        <span class="avatar" aria-hidden="true">Д</span>
+        <span class="who-name">демо-просмотр</span>
+        
+        
+      </div>
+      <nav class="nav" aria-label="Разделы">
+        <a class="nav-item" href="/kod-prozrachnosti/" >Главная</a>
+        <a class="nav-item" href="/kod-prozrachnosti/cases/" >Объекты <span class="badge">38</span></a>
+        <a class="nav-item" href="/kod-prozrachnosti/analytics/" aria-current="page">Аналитика</a>
+        <a class="nav-item" href="/kod-prozrachnosti/history/" >История изменений</a>
+        <button class="nav-item" type="button" data-search-open><svg class="icon"><use href="#i-search"/></svg>Поиск по данным</button>
+        <div class="bell-wrap">
+          <button class="nav-item nav-bell" type="button" data-bell aria-expanded="false" aria-label="Уведомления"><svg class="icon"><use href="#i-bell"/></svg><span class="badge">6</span></button>
+          <div class="notif" data-notif>
+            <div class="notif-head"><span>Уведомления</span><svg class="icon" aria-hidden="true"><use href="#i-check2"/></svg></div>
+            <div class="notif-list">
+              <span class="soft t-label">Последние события</span>
+              
+              <a class="notif-item" href="/kod-prozrachnosti/analytics/">
+                <span class="notif-dot info" aria-hidden="true"><svg class="icon"><use href="#i-analysis"/></svg></span>
+                <span><span class="t-compact">Анализ выполнен</span><span class="soft t-label notif-text">Записей 83, сработало 40, объектов 63, 21 мс</span><br><span class="t-period">21.11.2026 21:31</span></span>
+              </a>
+              
+              <a class="notif-item" href="/kod-prozrachnosti/analytics/">
+                <span class="notif-dot info" aria-hidden="true"><svg class="icon"><use href="#i-analysis"/></svg></span>
+                <span><span class="t-compact">Анализ выполнен</span><span class="soft t-label notif-text">Записей 83, сработало 40, объектов 63, 21 мс</span><br><span class="t-period">21.11.2026 21:31</span></span>
+              </a>
+              
+              <a class="notif-item" href="/kod-prozrachnosti/cases/5828f20a-a894-41c9-98cb-8e6385e6bca7/">
+                <span class="notif-dot info" aria-hidden="true"><svg class="icon"><use href="#i-review"/></svg></span>
+                <span><span class="t-compact">specialist: «Нужны сведения»</span><span class="soft t-label notif-text">Ростовская обл., Аксайский р-н, Щепкинское с/п, 1,5 км севернее п. Щепкин. Демонстрационная запись. Нужна выписка о переходе прав и дата первого проекта изменения категории.</span><br><span class="t-period">21.11.2026 21:31</span></span>
+              </a>
+              
+              <a class="notif-item" href="/kod-prozrachnosti/cases/08575912-075f-4b75-b507-9ffa1c80c832/">
+                <span class="notif-dot ok" aria-hidden="true"><svg class="icon"><use href="#i-review"/></svg></span>
+                <span><span class="t-compact">specialist: «Не подтверждено»</span><span class="soft t-label notif-text">Земельный участок 61:02:0600012:1388. Демонстрационная запись. Повтор должностного лица объясняется распределением дел по должности; связи с приобретателем не найдено.</span><br><span class="t-period">21.11.2026 21:31</span></span>
+              </a>
+              
+              <a class="notif-item" href="/kod-prozrachnosti/cases/4b3041b0-a208-4d56-a8ee-edd096a658f2/">
+                <span class="notif-dot high" aria-hidden="true"><svg class="icon"><use href="#i-review"/></svg></span>
+                <span><span class="t-compact">controller: «Подтверждено»</span><span class="soft t-label notif-text">Ярославская обл., г. Углич, ул. Ростовская, д. 6-8. Демонстрационная запись. Торги с одним участником, договор по начальной цене; основания для проверки подтверждены, материалы переданы руководителю.</span><br><span class="t-period">21.11.2026 21:31</span></span>
+              </a>
+              
+              <a class="notif-item" href="/kod-prozrachnosti/analytics/">
+                <span class="notif-dot info" aria-hidden="true"><svg class="icon"><use href="#i-analysis"/></svg></span>
+                <span><span class="t-compact">Анализ выполнен</span><span class="soft t-label notif-text">Записей 83, сработало 40, объектов 63, 21 мс</span><br><span class="t-period">21.11.2026 21:31</span></span>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+<h1 class="sr-only">Аналитика: методика работы с сервисом</h1>
+<div class="pg-bar">
+  <nav class="switch" aria-label="Разделы аналитики">
+    <a href="/kod-prozrachnosti/analytics/">Индикаторы</a>
+    <a href="/kod-prozrachnosti/officials/">Должностные лица</a>
+    <a href="/kod-prozrachnosti/sources/">Источники</a>
+    <a href="/kod-prozrachnosti/method/" aria-current="true">Методика</a>
+  </nav>
+  <span class="t-period">последний анализ 21.11.2026 21:31</span>
+</div>
 
-  <main class="paper">
-    <div class="wrap">
-      
-<section class="section">
-  <div class="block">
-    <div class="block-rail"><span class="eyebrow">Статусы правила</span><h2 class="h1">Четыре ответа правила</h2></div>
-    <div class="block-body">
-      <ul class="list">
-        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="tag tag-blue">Сработал</span></span><span class="body-s">Условие правила выполнено. Индикатор — повод для проверки.</span></li>
-        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="tag">Не сработал</span></span><span class="body-s">Условие правила не выполнено на имеющихся сведениях.</span></li>
-        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="4.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="8.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="12.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="16.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/></svg><span class="tag">Недостаточно данных</span></span><span class="body-s">Сведений для вывода не хватает. Нет данных — значит, не проверено.</span></li>
-        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="4.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="8.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="12.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="16.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/></svg><span class="tag">Не применим</span></span><span class="body-s">Правило не относится к объекту.</span></li>
-      </ul>
-    </div>
-  </div>
-  <div class="block">
-    <div class="block-rail"><span class="eyebrow">Итог по объекту</span><h2 class="h1">Приоритет проверки</h2><p class="small soft">Объекты разложены по пяти уровням приоритета; вероятность коррупции сервис не считает.</p></div>
-    <div class="block-body">
-      <ul class="list">
-        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/></svg><span class="eyebrow">Высокий приоритет</span></span><span class="body-s">Подтверждённая связь с должностным лицом (И6), повтор лица (И10) или два основных индикатора сразу.</span></li>
-        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="eyebrow">Требует проверки</span></span><span class="body-s">Сработал один основной индикатор.</span></li>
-        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="1"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="eyebrow">Контекстный признак</span></span><span class="body-s">Сработал только И3. Он показывает, как могла быть получена выгода; приоритет не повышает.</span></li>
-        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="4.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="8.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="12.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/><rect x="16.5" y="0.5" width="2" height="8" fill="none" stroke="currentColor" stroke-opacity="0.6"/></svg><span class="eyebrow">Недостаточно данных</span></span><span class="body-s">Ни одно правило не сработало, хотя бы одному не хватило сведений.</span></li>
-        <li><span class="state"><svg class="lv" viewBox="0 0 19 9" width="19" height="9" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="4" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="8" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="12" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/><rect x="16" y="0" width="3" height="9" fill="currentColor" fill-opacity="0.22"/></svg><span class="eyebrow">Сигналов нет</span></span><span class="body-s">Ни одно правило не сработало на имеющихся данных.</span></li>
-      </ul>
-    </div>
-  </div>
-  <div class="block">
-    <div class="block-rail"><span class="eyebrow">Происхождение</span><h2 class="h1">Метки происхождения</h2></div>
-    <div class="block-body"><div class="legend body-s"><span class="org o-real">реальное по маркировке автора (жёлтая ячейка)</span><span class="org o-synth">синтетическое</span><span class="org o-calc">расчёт в исходной таблице</span><span class="org o-unknown">происхождение уточнить (CSV без разметки)</span><span class="org o-missing">нет данных</span></div></div>
-  </div>
-</section>
-<section class="section">
-  
-  <div class="block">
-    <div class="block-rail"><span class="eyebrow">И1 / v1.0 / основной</span><h2 class="h2">Приобретение участка не более чем за 12 месяцев до смены категории</h2><span class="code code-wrap">Часть Р1.6: временное окно, без связи с должностным лицом</span></div>
-    <div class="block-body cols-3">
-      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Куплен ли участок не более чем за 12 месяцев до смены категории?</p></div>
-      <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Смена категории не раньше регистрации права и не позднее 12 месяцев после неё. Окно 12 месяцев — настройка пилота; правовой нормой оно не установлено.</p></div>
-      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Дата присвоения кадастрового номера не заменяет дату приобретения права. Близость дат не доказывает, что покупатель знал о решении.</p></div>
-    </div>
-  </div>
-  
-  <div class="block">
-    <div class="block-rail"><span class="eyebrow">И2 / v1.0 / основной</span><h2 class="h2">Адресная правка ПЗЗ или генплана под участки одного владельца</h2><span class="code code-wrap">Кандидат вне Р1; к Р1.2 не сводится</span></div>
-    <div class="block-body cols-3">
-      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Занимают ли участки одного правообладателя не меньше 80 % изменённой зоны?</p></div>
-      <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Участки основного владельца занимают не меньше 80 % площади изменённой зоны. Порог 80 % — допущение исследования.</p></div>
-      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Индикатор передан с пометкой «под вопросом»: нужны приложения к актам (границы зоны, правообладатели). Вывод по примеру генплана на ПЗЗ не распространяется без отдельной проверки.</p></div>
-    </div>
-  </div>
-  
-  <div class="block">
-    <div class="block-rail"><span class="eyebrow">И3 / v1.0 / контекстный</span><h2 class="h2">Рост кадастровой стоимости после смены категории и продажа с выгодой</h2><span class="code code-wrap">Р1.8 — последующая реализация выгоды</span></div>
-    <div class="block-body cols-3">
-      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Продан ли участок после смены категории и роста кадастровой стоимости?</p></div>
-      <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">КС после смены категории выше прежней, новая КС применяется не раньше смены категории, продажа — не раньше смены категории.</p></div>
-      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Контекстный признак: показывает, как могла быть получена выгода; приоритет не повышает. Рост КС — изменение оценки, прибыль он не доказывает.</p></div>
-    </div>
-  </div>
-  
-  <div class="block">
-    <div class="block-rail"><span class="eyebrow">И4 / v1.0 / основной</span><h2 class="h2">Единственный участник или обход обязательных условий предоставления</h2><span class="code code-wrap">Вне Р1: конкурентность предоставления</span></div>
-    <div class="block-body cols-3">
-      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Получено ли имущество на торгах с одним участником или в обход обязательных условий?</p></div>
-      <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Один участник торгов либо описанные признаки обхода обязательных условий. Рост цены на торгах — признак конкуренции.</p></div>
-      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Один участник не доказывает обход условий. Применимость правила к помещениям и зданиям проверяйте отдельно.</p></div>
-    </div>
-  </div>
-  
-  <div class="block">
-    <div class="block-rail"><span class="eyebrow">И6 / v1.1 / основной</span><h2 class="h2">Приобретение связанным лицом до начала процедуры при участии должностного лица</h2><span class="code code-wrap">Р1.6 — основа правила</span></div>
-    <div class="block-body cols-3">
-      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Купило ли участок до начала процедуры лицо, связанное с должностным лицом, которое участвовало в решении?</p></div>
-      <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Право зарегистрировано раньше начала процедуры, и ИНН участника решения совпадает с ИНН покупателя, его учредителя или руководителя (текущих или прежних) — совпадение сервис ищет сам. Связь через цепочку юрлиц, которой нет в загруженных данных, берётся из отметки исследователя «Совпадение ИНН в ЕГРЮЛ».</p></div>
-      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Совпадение одной фамилии связь не подтверждает: результат — «недостаточно данных», пока связь не подтверждена документами (ЕГРЮЛ, анкета, ЗАГС). Корректная контрольная цифра ИНН не подтверждает существование лица.</p></div>
-    </div>
-  </div>
-  
-  <div class="block">
-    <div class="block-rail"><span class="eyebrow">И8 / v1.0 / основной</span><h2 class="h2">Аномалия формы границ участка</h2><span class="code code-wrap">Вне Р1: форма границ</span></div>
-    <div class="block-body cols-3">
-      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Есть ли у контура участка узкие выступы, вырезы или вклинивания?</p></div>
-      <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Коэффициент заполнения = площадь контура / площадь наименьшего описанного прямоугольника (с поворотом). Меньше 0,85 — аномалия. Сервис считает коэффициент по координатам.</p></div>
-      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Порог 0,85 — методическое допущение, требует калибровки. Изломанность границ (п. 6 ст. 11.9 ЗК РФ) — повод для проверки.</p></div>
-    </div>
-  </div>
-  
-  <div class="block">
-    <div class="block-rail"><span class="eyebrow">И10 / v1.1 / основной</span><h2 class="h2">Повторяемость должностного лица в других индикаторах</h2><span class="code code-wrap">Усиливает Р1.6: повтор участника решений</span></div>
-    <div class="block-body cols-3">
-      <div><span class="eyebrow">Вопрос</span><p class="body-s" style="margin-top:var(--s2)">Встречается ли одно должностное лицо в эпизодах других индикаторов больше одного раза?</p></div>
-      <div><span class="eyebrow">Условие и порог</span><p class="body-s" style="margin-top:var(--s2)">Лицо встречается в других индикаторах больше одного раза.</p></div>
-      <div><span class="eyebrow">Ограничения</span><p class="body-s" style="margin-top:var(--s2)">Сервис считает эпизоды из комментария исследователя, объекты которых есть в загруженных таблицах других индикаторов; один эпизод не считается дважды. Участие лица в эпизоде — по записи исследователя: в таблицах других индикаторов должностные лица не указаны. Все лица в наборе синтетические.</p></div>
-    </div>
-  </div>
-  
-</section>
-<section class="section" id="tz">
-  <div class="block">
-    <div class="block-rail"><span class="eyebrow">Правила ТЗ</span><h2 class="h1">Соответствие Р1.2, Р1.6, Р1.8</h2><p class="small soft">Полная таблица: docs/indicator-mapping.md</p></div>
-    <div class="block-body tbl-wrap"><table class="tbl">
-      <thead><tr><th>Правило ТЗ</th><th>Чем покрыто</th><th>Статус</th></tr></thead>
-      <tbody>
-        <tr><td>Р1.6 — приобретение связанным лицом до начала процедуры</td><td data-label="Покрыто"><div class="codes"><span class="code">И6</span><span class="code">И1</span><span class="code">И10</span></div></td><td data-label="Статус" class="small">Реализовано как И6; одна фамилия — «недостаточно данных»</td></tr>
-        <tr><td>Р1.8 — последующая реализация выгоды, контекст</td><td data-label="Покрыто"><div class="codes"><span class="code">И3</span></div></td><td data-label="Статус" class="small">Реализовано как И3; приоритет не повышает</td></tr>
-        <tr><td>Р1.2 — новый ВРИ не соответствует регламенту</td><td data-label="Покрыто"><span class="soft">—</span></td><td data-label="Статус" class="small">Нет данных: в таблицах нет истории ВРИ и редакций ПЗЗ. И2 проверяет другое условие</td></tr>
-      </tbody>
-    </table></div>
-  </div>
-</section>
-<section class="section" id="quality">
-  <div class="block">
-    <div class="block-rail"><span class="eyebrow">Контрольный набор</span><h2 class="h1">Сверка с разметкой исследования</h2><span class="num-xl">69/70</span></div>
-    <div class="block-body">
-      <p class="body-s j">В каждой таблице исследования есть колонка с ответом автора. Правила считают ответ заново по исходным фактам, сервис сравнивает оба ответа. Сверка показывает работу правил на тестовых примерах. Качество выявления коррупции на реальных данных она не измеряет. Расхождения заложены в правило: при совпадении одной фамилии сервис отвечает «недостаточно данных», пока связь не подтверждена документами.</p>
-      <div class="tbl-wrap"><table class="tbl quality">
-        <thead><tr><th>Индикатор</th><th>Совпадение</th><th class="r">Совпало</th></tr></thead>
-        <tbody><tr>
-          <td><span class="code">И1</span> Покупка до смены категории</td>
-          <td style="vertical-align:middle"><div class="bar"><span class="b-trig" style="width:100%"></span></div></td>
-          <td class="r nowrap" data-label="Совпало">10 из 10</td>
-        </tr>
-        
-        <tr>
-          <td><span class="code">И2</span> Точечная правка ПЗЗ / генплана</td>
-          <td style="vertical-align:middle"><div class="bar"><span class="b-trig" style="width:100%"></span></div></td>
-          <td class="r nowrap" data-label="Совпало">10 из 10</td>
-        </tr>
-        
-        <tr>
-          <td><span class="code">И3</span> Выгода после смены категории</td>
-          <td style="vertical-align:middle"><div class="bar"><span class="b-trig" style="width:100%"></span></div></td>
-          <td class="r nowrap" data-label="Совпало">10 из 10</td>
-        </tr>
-        
-        <tr>
-          <td><span class="code">И4</span> Единственный участник торгов</td>
-          <td style="vertical-align:middle"><div class="bar"><span class="b-trig" style="width:100%"></span></div></td>
-          <td class="r nowrap" data-label="Совпало">10 из 10</td>
-        </tr>
-        
-        <tr>
-          <td><span class="code">И6</span> Связанное лицо до процедуры</td>
-          <td style="vertical-align:middle"><div class="bar"><span class="b-trig" style="width:90%"></span></div></td>
-          <td class="r nowrap" data-label="Совпало">9 из 10</td>
-        </tr>
-        <tr class="mismatch-row"><td colspan="3"><div class="notice small"><span class="eyebrow">Расхождение / Земельный участок 15 200 кв. м, Ростовская обл., Мясниковск…</span><p style="margin-top:var(--s2)">Ответ автора: «Да». Ответ правила: недостаточно данных. Покупка за 151 дн. до процедуры. С участником решения (К. М. П.) совпадает только фамилия. Связь не подтверждена: нужны документы.</p></div></td></tr>
-        <tr>
-          <td><span class="code">И8</span> Аномалия границ</td>
-          <td style="vertical-align:middle"><div class="bar"><span class="b-trig" style="width:100%"></span></div></td>
-          <td class="r nowrap" data-label="Совпало">10 из 10</td>
-        </tr>
-        
-        <tr>
-          <td><span class="code">И10</span> Повтор должностного лица</td>
-          <td style="vertical-align:middle"><div class="bar"><span class="b-trig" style="width:100%"></span></div></td>
-          <td class="r nowrap" data-label="Совпало">10 из 10</td>
-        </tr>
-        
-        </tbody>
-      </table></div>
-    </div>
-  </div>
-</section>
+<div class="pg-page">
+  <nav class="pg-steps" aria-label="Этапы работы">
+    <a class="card pg-step-link card-link" href="#step-1"><span class="pg-n">1</span><span class="t-compact">Загрузка таблиц</span></a>
+    <a class="card pg-step-link card-link" href="#step-2"><span class="pg-n">2</span><span class="t-compact">Проверка правилами</span></a>
+    <a class="card pg-step-link card-link" href="#step-3"><span class="pg-n">3</span><span class="t-compact">Риск объекта</span></a>
+    <a class="card pg-step-link card-link" href="#step-4"><span class="pg-n">4</span><span class="t-compact">Решение сотрудника</span></a>
+    <a class="card pg-step-link card-link" href="#step-5"><span class="pg-n">5</span><span class="t-compact">Выгрузка результатов</span></a>
+  </nav>
 
-    </div>
-  </main>
-  
-  <footer class="foot">
-    <div class="wrap foot-in">
-      <a class="foot-mark" href="/kod-prozrachnosti/"><span class="mark" aria-hidden="true"></span>Код прозрачности</a>
-      <div class="foot-meta body-s">
-        <span>ЕГРН / НСПД / ЕГРЮЛ / ГИС «Торги»</span>
-        <span>правила 1.0</span>
-        <span>анализ 20.11.2026 00:17</span>
-        <span class="nowrap" data-clock>00:17 МСК</span>
+  <section class="card" id="step-1" aria-labelledby="step-1-h">
+    <div class="pg-split">
+      <div class="pg-side">
+        <div class="pg-step-head"><span class="pg-n">1</span><span class="t-mono">Этап 1</span></div>
+        <h2 class="t-head" id="step-1-h">Загрузка таблиц исследования</h2>
+        <p class="pg-lead">Сотрудник с правом загрузки добавляет таблицы индикаторов в разделе «История изменений». Одна таблица — один индикатор.</p>
+        
+      </div>
+      <div class="pg-main">
+        <div class="pg-part">
+          <h3 class="t-mono">Что проверяется при загрузке</h3>
+          <ul class="pg-list">
+            <li>Формат: .xlsx или .csv (UTF-8 или cp1251), до 2 МиБ и 500 строк.</li>
+            <li>Тип таблицы определяется по заголовкам: совпасть должны не меньше 80 % колонок одного из семи индикаторов.</li>
+            <li>Даты, числа, координаты контура и полигоны зон проверяются в каждой строке.</li>
+            <li>При любой ошибке файл не сохраняется. Сервис показывает строку, поле и причину.</li>
+            <li>Повторная загрузка обновляет записи без дублей. Объект находится по кадастровому номеру, поэтому записи разных таблиц об одном участке попадают в одну карточку.</li>
+          </ul>
+        </div>
+        <div class="pg-part">
+          <h3 class="t-mono">Как отмечается происхождение ячеек</h3>
+          <ul class="pg-legend">
+            <li><span class="pg-sw real" aria-hidden="true"></span><span><b>Реальное.</b> Ячейка с жёлтой заливкой: автор исследования взял значение из опубликованных документов и реестров.</span></li>
+            <li><span class="pg-sw synth" aria-hidden="true"></span><span><b>Синтетическое.</b> Остальные заполненные ячейки таблицы Excel.</span></li>
+            <li><span class="pg-sw calc" aria-hidden="true"></span><span><b>Расчёт.</b> Ячейка с формулой. Правило такие ячейки не читает и считает значение заново.</span></li>
+            <li><span class="pg-sw unknown" aria-hidden="true"></span><span><b>Уточнить.</b> Таблица CSV: заливки в ней нет, происхождение не определить.</span></li>
+            <li><span class="pg-sw missing" aria-hidden="true"></span><span><b>Нет данных.</b> Пустая ячейка или слова «нет данных», «нет даты». Прочерк «—» означает, что события не было.</span></li>
+          </ul>
+          <p class="t-label soft">Колонка «Соответствие индикатору» — ответ автора исследования. Она хранится отдельно как разметка для сверки.</p>
+        </div>
       </div>
     </div>
-  </footer>
+  </section>
+
+  <section class="card" id="step-2" aria-labelledby="step-2-h">
+    <div class="pg-split">
+      <div class="pg-side">
+        <div class="pg-step-head"><span class="pg-n">2</span><span class="t-mono">Этап 2</span></div>
+        <h2 class="t-head" id="step-2-h">Проверка правилами</h2>
+        <p class="pg-lead">Каждый индикатор — отдельное правило с версией. Правило читает исходные факты записи. Значения, которые в таблице заданы формулой, оно считает заново.</p>
+        
+      </div>
+      <div class="pg-main">
+        <div class="pg-part">
+          <h3 class="t-mono">Ответ правила по записи</h3>
+          <ul class="pg-list pg-dots">
+            <li><span class="risk pg-trig">Сработал</span><span>Условие правила выполнено. Индикатор — повод для проверки.</span></li>
+            <li><span class="risk pg-none">Не сработал</span><span>Условие правила не выполнено на имеющихся сведениях.</span></li>
+            <li><span class="risk insufficient">Нет данных</span><span>Сведений для вывода не хватает. Правило перечисляет, каких именно. Нет данных — значит, не проверено.</span></li>
+          </ul>
+        </div>
+        <div class="pg-part">
+          <h3 class="t-mono">Семь правил</h3>
+          <div class="pg-rules">
+            
+            <details class="pg-rule">
+              <summary><span class="code">И1</span><span>Приобретение участка не более чем за 12 месяцев до смены категории</span><span class="t-period pg-hide-s">v1.0 / основной</span><svg class="icon" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+              <div class="pg-rule-body">
+                <div><span class="t-period">Вопрос</span><p>Куплен ли участок не более чем за 12 месяцев до смены категории?</p></div>
+                <div><span class="t-period">Условие и порог</span><p>Смена категории не раньше регистрации права и не позднее 12 месяцев после неё. Окно 12 месяцев — настройка пилота; правовой нормой оно не установлено.</p></div>
+                <div><span class="t-period">Ограничения</span><p>Дата присвоения кадастрового номера не заменяет дату приобретения права. Близость дат не доказывает, что покупатель знал о решении.</p></div>
+              </div>
+            </details>
+            
+            <details class="pg-rule">
+              <summary><span class="code">И2</span><span>Адресная правка ПЗЗ или генплана под участки одного владельца</span><span class="t-period pg-hide-s">v1.0 / основной</span><svg class="icon" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+              <div class="pg-rule-body">
+                <div><span class="t-period">Вопрос</span><p>Занимают ли участки одного правообладателя не меньше 80 % изменённой зоны?</p></div>
+                <div><span class="t-period">Условие и порог</span><p>Участки основного владельца занимают не меньше 80 % площади изменённой зоны. Порог 80 % — допущение исследования.</p></div>
+                <div><span class="t-period">Ограничения</span><p>Индикатор передан с пометкой «под вопросом»: нужны приложения к актам (границы зоны, правообладатели). Вывод по примеру генплана на ПЗЗ не распространяется без отдельной проверки.</p></div>
+              </div>
+            </details>
+            
+            <details class="pg-rule">
+              <summary><span class="code">И3</span><span>Рост кадастровой стоимости после смены категории и продажа с выгодой</span><span class="t-period pg-hide-s">v1.0 / контекстный</span><svg class="icon" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+              <div class="pg-rule-body">
+                <div><span class="t-period">Вопрос</span><p>Продан ли участок после смены категории и роста кадастровой стоимости?</p></div>
+                <div><span class="t-period">Условие и порог</span><p>КС после смены категории выше прежней, новая КС применяется не раньше смены категории, продажа — не раньше смены категории.</p></div>
+                <div><span class="t-period">Ограничения</span><p>Контекстный признак: показывает, как могла быть получена выгода; приоритет не повышает. Рост КС — изменение оценки, прибыль он не доказывает.</p></div>
+              </div>
+            </details>
+            
+            <details class="pg-rule">
+              <summary><span class="code">И4</span><span>Единственный участник или обход обязательных условий предоставления</span><span class="t-period pg-hide-s">v1.0 / основной</span><svg class="icon" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+              <div class="pg-rule-body">
+                <div><span class="t-period">Вопрос</span><p>Получено ли имущество на торгах с одним участником или в обход обязательных условий?</p></div>
+                <div><span class="t-period">Условие и порог</span><p>Один участник торгов либо описанные признаки обхода обязательных условий. Рост цены на торгах — признак конкуренции.</p></div>
+                <div><span class="t-period">Ограничения</span><p>Один участник не доказывает обход условий. Применимость правила к помещениям и зданиям проверяйте отдельно.</p></div>
+              </div>
+            </details>
+            
+            <details class="pg-rule">
+              <summary><span class="code">И6</span><span>Приобретение связанным лицом до начала процедуры при участии должностного лица</span><span class="t-period pg-hide-s">v1.1 / основной</span><svg class="icon" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+              <div class="pg-rule-body">
+                <div><span class="t-period">Вопрос</span><p>Купило ли участок до начала процедуры лицо, связанное с должностным лицом, которое участвовало в решении?</p></div>
+                <div><span class="t-period">Условие и порог</span><p>Право зарегистрировано раньше начала процедуры, и ИНН участника решения совпадает с ИНН покупателя, его учредителя или руководителя (текущих или прежних) — совпадение сервис ищет сам. Связь через цепочку юрлиц, которой нет в загруженных данных, берётся из отметки исследователя «Совпадение ИНН в ЕГРЮЛ».</p></div>
+                <div><span class="t-period">Ограничения</span><p>Совпадение одной фамилии связь не подтверждает: результат — «недостаточно данных», пока связь не подтверждена документами (ЕГРЮЛ, анкета, ЗАГС). Корректная контрольная цифра ИНН не подтверждает существование лица.</p></div>
+              </div>
+            </details>
+            
+            <details class="pg-rule">
+              <summary><span class="code">И8</span><span>Аномалия формы границ участка</span><span class="t-period pg-hide-s">v1.0 / основной</span><svg class="icon" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+              <div class="pg-rule-body">
+                <div><span class="t-period">Вопрос</span><p>Есть ли у контура участка узкие выступы, вырезы или вклинивания?</p></div>
+                <div><span class="t-period">Условие и порог</span><p>Коэффициент заполнения = площадь контура / площадь наименьшего описанного прямоугольника (с поворотом). Меньше 0,85 — аномалия. Сервис считает коэффициент по координатам.</p></div>
+                <div><span class="t-period">Ограничения</span><p>Порог 0,85 — методическое допущение, требует калибровки. Изломанность границ (п. 6 ст. 11.9 ЗК РФ) — повод для проверки.</p></div>
+              </div>
+            </details>
+            
+            <details class="pg-rule">
+              <summary><span class="code">И10</span><span>Повторяемость должностного лица в других индикаторах</span><span class="t-period pg-hide-s">v1.1 / основной</span><svg class="icon" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+              <div class="pg-rule-body">
+                <div><span class="t-period">Вопрос</span><p>Встречается ли одно должностное лицо в эпизодах других индикаторов больше одного раза?</p></div>
+                <div><span class="t-period">Условие и порог</span><p>Лицо встречается в других индикаторах больше одного раза.</p></div>
+                <div><span class="t-period">Ограничения</span><p>Сервис считает эпизоды из комментария исследователя, объекты которых есть в загруженных таблицах других индикаторов; один эпизод не считается дважды. Участие лица в эпизоде — по записи исследователя: в таблицах других индикаторов должностные лица не указаны. Все лица в наборе синтетические.</p></div>
+              </div>
+            </details>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="step-3" aria-labelledby="step-3-h">
+    <div class="pg-split">
+      <div class="pg-side">
+        <div class="pg-step-head"><span class="pg-n">3</span><span class="t-mono">Этап 3</span></div>
+        <h2 class="t-head" id="step-3-h">Риск объекта</h2>
+        <p class="pg-lead">Риск объекта — наибольший вес среди сработавших индикаторов. Вес каждого индикатора взят из таблицы исследования «Индикаторы и источники данных Р1 и Р2». Риск задаёт порядок проверки; вероятность коррупции сервис не считает.</p>
+      </div>
+      <div class="pg-main">
+        <div class="pg-part">
+          <h3 class="t-mono">Вес индикаторов</h3>
+          <div class="tbl-wrap"><table class="tbl pg-stack">
+            <thead><tr><th>Вес</th><th>Индикаторы</th></tr></thead>
+            <tbody><tr>
+              <td class="pg-full pg-top" style="width:220px"><span class="risk high">Высокий</span></td>
+              <td class="pg-full"><ul class="pg-list"><li><span class="code">И4</span> Единственный участник торгов</li><li><span class="code">И10</span> Повтор должностного лица</li></ul></td>
+            </tr><tr>
+              <td class="pg-full pg-top" style="width:220px"><span class="risk medium">Средний</span></td>
+              <td class="pg-full"><ul class="pg-list"><li><span class="code">И1</span> Покупка до смены категории</li><li><span class="code">И2</span> Точечная правка ПЗЗ / генплана</li><li><span class="code">И6</span> Связанное лицо до процедуры</li><li><span class="code">И8</span> Аномалия границ</li></ul></td>
+            </tr><tr>
+              <td class="pg-full pg-top" style="width:220px"><span class="risk low">Низкий</span></td>
+              <td class="pg-full"><ul class="pg-list"><li><span class="code">И3</span> Выгода после смены категории</li></ul></td>
+            </tr></tbody>
+          </table></div>
+        </div>
+        <div class="pg-part">
+          <h3 class="t-mono">Как считается риск</h3>
+          <ul class="pg-list pg-dots">
+            <li><span class="risk high">Высокий, средний, низкий</span><span>Сработал хотя бы один индикатор. Риск равен наибольшему весу среди сработавших. Пример: сработали И1 и И10 — риск высокий.</span></li>
+            <li><span class="risk insufficient">Нет данных</span><span>Ни одно правило не сработало, и хотя бы одному не хватило сведений.</span></li>
+            <li><span class="risk pg-none">Сигналов нет</span><span>Ни одно правило не сработало на имеющихся сведениях.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="step-4" aria-labelledby="step-4-h">
+    <div class="pg-split">
+      <div class="pg-side">
+        <div class="pg-step-head"><span class="pg-n">4</span><span class="t-mono">Этап 4</span></div>
+        <h2 class="t-head" id="step-4-h">Решение сотрудника</h2>
+        <p class="pg-lead">Сотрудник открывает карточку объекта, проверяет основания и документы и записывает решение с обоснованием. Решение принимает сотрудник.</p>
+        <div class="actions"><a class="btn btn-ghost" href="/kod-prozrachnosti/cases/">Открыть реестр <svg class="icon" style="width:18px;height:18px"><use href="#i-arrow"/></svg></a></div>
+      </div>
+      <div class="pg-main">
+        <div class="pg-part">
+          <h3 class="t-mono">Три решения</h3>
+          <ul class="pg-list pg-dots">
+            <li><span class="risk confirmed">Подтверждено</span><span>Основания для проверки подтвердились. Объект уходит из вкладок риска во вкладку «Подтверждено».</span></li>
+            <li><span class="risk not_confirmed">Не подтверждено</span><span>Основания не подтвердились. Объект уходит из вкладок риска во вкладку «Не подтверждено».</span></li>
+            <li><span class="risk needs_information">Нужны сведения</span><span>Для решения не хватает документов. Объект остаётся во вкладке своего риска, на главной он в счётчике «В работе».</span></li>
+          </ul>
+          <p class="t-label soft">Каждое решение — новая запись с автором и временем. Исходные факты при этом не меняются. Все решения видны в разделе «История изменений».</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="step-5" aria-labelledby="step-5-h">
+    <div class="pg-split">
+      <div class="pg-side">
+        <div class="pg-step-head"><span class="pg-n">5</span><span class="t-mono">Этап 5</span></div>
+        <h2 class="t-head" id="step-5-h">Выгрузка результатов</h2>
+        <p class="pg-lead">Реестр выгружается в файл CSV с теми фильтрами, что выбраны на экране. Выгрузка доступна сотрудникам с правом выгрузки.</p>
+        <div class="actions"><a class="btn btn-ghost" href="/kod-prozrachnosti/exports/cases.csv">Выгрузить CSV</a></div>
+      </div>
+      <div class="pg-main">
+        <div class="pg-part">
+          <h3 class="t-mono">Колонки файла</h3>
+          <ul class="codes"><li class="code">Идентификатор</li><li class="code">Объект</li><li class="code">Кадастровый номер</li><li class="code">Регион</li><li class="code">Итог анализа</li><li class="code">Сработавшие индикаторы</li><li class="code">Объяснение</li><li class="code">Результат проверки сотрудника</li><li class="code">Дата проверки</li><li class="code">Проверил</li><li class="code">Демонстрационные данные</li></ul>
+          <p class="t-label soft">Разделитель — точка с запятой, кодировка UTF-8: файл открывается в Excel. В колонке «Объяснение» — ответы сработавших правил по последнему анализу.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="tz" aria-labelledby="tz-h">
+    <div class="pg-split">
+      <div class="pg-side">
+        <span class="t-mono">Правила ТЗ</span>
+        <h2 class="t-head" id="tz-h">Соответствие правилам Р1.2, Р1.6, Р1.8</h2>
+        <p class="pg-lead">Набор правил построен на семи таблицах исследования. Полная таблица соответствия — docs/indicator-mapping.md.</p>
+      </div>
+      <div class="pg-main">
+        <div class="tbl-wrap"><table class="tbl pg-stack">
+          <thead><tr><th>Правило ТЗ</th><th>Чем покрыто</th><th>Статус</th></tr></thead>
+          <tbody>
+            <tr><td class="pg-full">Р1.6 — приобретение связанным лицом до начала процедуры</td><td class="pg-full" data-label="Чем покрыто"><div class="codes"><span class="code">И6</span><span class="code">И1</span><span class="code">И10</span></div></td><td class="pg-full" data-label="Статус"><span class="risk pg-trig pg-wrap">Реализовано как И6. Одна совпавшая фамилия — «нет данных»</span></td></tr>
+            <tr><td class="pg-full">Р1.8 — последующая реализация выгоды, контекст</td><td class="pg-full" data-label="Чем покрыто"><div class="codes"><span class="code">И3</span></div></td><td class="pg-full" data-label="Статус"><span class="risk pg-trig pg-wrap">Реализовано как И3, вес низкий</span></td></tr>
+            <tr><td class="pg-full">Р1.2 — новый ВРИ не соответствует регламенту</td><td class="pg-full" data-label="Чем покрыто"><span class="soft">—</span></td><td class="pg-full" data-label="Статус"><span class="risk insufficient pg-wrap">Нет данных: в таблицах нет истории ВРИ и редакций ПЗЗ. И2 проверяет другое условие</span></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="quality" aria-labelledby="quality-h">
+    <div class="pg-split">
+      <div class="pg-side">
+        <span class="t-mono">Контрольный набор</span>
+        <h2 class="t-head" id="quality-h">Сверка с разметкой исследования</h2>
+        <p class="t-kpi">69 <span class="pg-of">из 70</span></p>
+        <p class="pg-lead">В каждой таблице исследования есть колонка с ответом автора. Правила считают ответ заново по исходным фактам, сервис сравнивает оба ответа. Сверка показывает работу правил на тестовых примерах. Качество выявления коррупции на реальных данных она не измеряет. Расхождения заложены в правило: при совпадении одной фамилии сервис отвечает «нет данных», пока связь не подтверждена документами.</p>
+      </div>
+      <div class="pg-main">
+        <div class="tbl-wrap"><table class="tbl pg-stack">
+          <thead><tr><th>Индикатор</th><th>Совпадение</th></tr></thead>
+          <tbody><tr>
+            <td class="pg-full"><span class="code">И1</span> Покупка до смены категории</td>
+            <td class="pg-full" style="width:45%"><span class="pg-agree"><span class="pg-meter"><i style="width:100%"></i></span><span class="nowrap">10 из 10</span></span></td>
+          </tr>
+          
+          <tr>
+            <td class="pg-full"><span class="code">И2</span> Точечная правка ПЗЗ / генплана</td>
+            <td class="pg-full" style="width:45%"><span class="pg-agree"><span class="pg-meter"><i style="width:100%"></i></span><span class="nowrap">10 из 10</span></span></td>
+          </tr>
+          
+          <tr>
+            <td class="pg-full"><span class="code">И3</span> Выгода после смены категории</td>
+            <td class="pg-full" style="width:45%"><span class="pg-agree"><span class="pg-meter"><i style="width:100%"></i></span><span class="nowrap">10 из 10</span></span></td>
+          </tr>
+          
+          <tr>
+            <td class="pg-full"><span class="code">И4</span> Единственный участник торгов</td>
+            <td class="pg-full" style="width:45%"><span class="pg-agree"><span class="pg-meter"><i style="width:100%"></i></span><span class="nowrap">10 из 10</span></span></td>
+          </tr>
+          
+          <tr>
+            <td class="pg-full"><span class="code">И6</span> Связанное лицо до процедуры</td>
+            <td class="pg-full" style="width:45%"><span class="pg-agree"><span class="pg-meter"><i style="width:90%"></i></span><span class="nowrap">9 из 10</span></span></td>
+          </tr>
+          <tr class="pg-mismatch"><td colspan="2" class="pg-full"><div class="notice"><span class="t-period">Расхождение / Земельный участок 15 200 кв. м, Ростовская обл., Мясниковск…</span><p>Ответ автора: «Да». Ответ правила: нет данных. Покупка за 151 дн. до процедуры. С участником решения (К. М. П.) совпадает только фамилия. Связь не подтверждена: нужны документы.</p></div></td></tr>
+          <tr>
+            <td class="pg-full"><span class="code">И8</span> Аномалия границ</td>
+            <td class="pg-full" style="width:45%"><span class="pg-agree"><span class="pg-meter"><i style="width:100%"></i></span><span class="nowrap">10 из 10</span></span></td>
+          </tr>
+          
+          <tr>
+            <td class="pg-full"><span class="code">И10</span> Повтор должностного лица</td>
+            <td class="pg-full" style="width:45%"><span class="pg-agree"><span class="pg-meter"><i style="width:100%"></i></span><span class="nowrap">10 из 10</span></span></td>
+          </tr>
+          
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+  </div>
+  <button class="search-fab" type="button" data-search-open><svg class="icon"><use href="#i-search"/></svg>Найти объект, документ или событие…</button>
+  <div class="scrim" data-scrim></div>
+  <div class="palette" data-palette data-index="/kod-prozrachnosti/search.json" role="dialog" aria-label="Поиск">
+    <div class="palette-tabs">
+      <button type="button" data-tab="all" aria-pressed="true">Все</button>
+      <button type="button" data-tab="object" aria-pressed="false">Объекты</button>
+      <button type="button" data-tab="document" aria-pressed="false">Документы</button>
+      <button type="button" data-tab="event" aria-pressed="false">События</button>
+    </div>
+    <div class="palette-body" data-results></div>
+    <input class="palette-input" type="search" placeholder="Найти объект, документ или событие…" aria-label="Поиск" autocomplete="off">
+  </div>
   
-  <script>
-  // every page opens at its top after a link or a reload; only an #anchor opens at the anchor
-  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
-  if (!location.hash) window.scrollTo(0, 0);
-  </script>
-  <script>
-  // Each line of a heading is scaled to the full width of its block, so a heading lies as one
-  // rectangle (like FitLine on ЭВА-РИСК) instead of a ragged staircase. Hand-set .fit headings
-  // keep their lines; every other heading is broken where the browser breaks it at its own
-  // size, and those lines are fitted. Headings stay hidden until fitted (see .fit-wait).
-  (function () {
-    const AUTO = ".display-xl:not(.fit), .display-l:not(.break), .block-rail > .h1, .section-head > .h1";
-    const GROW = 2.6;  // a line never grows past this multiple of the heading's own size
-    function lines(h) {
-      const text = h.dataset.text || (h.dataset.text = h.textContent.trim().replace(/\s+/g, " "));
-      h.classList.remove("fit", "fitted");
-      h.textContent = text;
-      h.dataset.base = parseFloat(getComputedStyle(h).fontSize);
-      const node = h.firstChild, range = document.createRange(), out = [];
-      let top = null, pos = 0;
-      for (const word of text.split(" ")) {
-        range.setStart(node, pos); range.setEnd(node, pos + word.length);
-        const y = Math.round(range.getClientRects()[0]?.top ?? 0);
-        if (top === null || Math.abs(y - top) > 2) { out.push([]); top = y; }
-        out[out.length - 1].push(word);
-        pos += word.length + 1;
-      }
-      h.textContent = "";
-      const sr = document.createElement("span");
-      sr.className = "sr-only"; sr.textContent = text; h.append(sr);
-      for (const words of out) {
-        const line = document.createElement("span");
-        line.className = "fit-line"; line.setAttribute("aria-hidden", "true");
-        line.textContent = words.join(" "); h.append(line);
-      }
-      h.classList.add("fit");
-    }
-    const autos = [...document.querySelectorAll(AUTO)];  // taken once: fitting adds .fit to them
-    function fit(force) {
-      autos.forEach((h) => {
-        const width = Math.round(h.parentElement.getBoundingClientRect().width);
-        if (force || h.dataset.width !== String(width)) { h.dataset.width = width; lines(h); h.dataset.max = h.dataset.base * GROW; }
-      });
-      document.querySelectorAll(".fit").forEach((box) => {
-        const width = box.getBoundingClientRect().width;
-        box.querySelectorAll(".fit-line").forEach((line) => {
-          // measure the glyphs themselves: a grid item always stretches to its column
-          line.style.fontSize = "100px";
-          const range = document.createRange();
-          range.selectNodeContents(line);
-          const natural = range.getBoundingClientRect().width || 1;
-          line.style.fontSize = Math.min((width / natural) * 100 * 0.995, box.dataset.max || 999) + "px";
-        });
-        box.classList.add("fitted");
-      });
-      document.documentElement.classList.remove("fit-wait");
-    }
-    const ready = document.fonts ? document.fonts.ready : Promise.resolve();
-    ready.then(() => fit(true));
-    setTimeout(() => document.documentElement.classList.remove("fit-wait"), 1500);
-    let pending;
-    window.addEventListener("resize", () => { cancelAnimationFrame(pending); pending = requestAnimationFrame(() => fit(false)); });
-  })();
-  (function () {
-    const hdr = document.querySelector("[data-hdr]");
-    const burger = document.querySelector("[data-burger]");
-    const sheet = document.querySelector("[data-sheet]");
-    let open = false;
-    function paint() {
-      if (open) { hdr.removeAttribute("data-solid"); hdr.removeAttribute("data-hidden"); return; }
-      const y = hdr.offsetHeight + 1;
-      const below = document.elementFromPoint(window.innerWidth / 2, y);
-      const onPaper = below && below.closest(".paper");
-      hdr.toggleAttribute("data-solid", !!onPaper);
-      hdr.toggleAttribute("data-hidden", !onPaper && window.scrollY > 40);
-    }
-    let ticking = false;
-    window.addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { paint(); ticking = false; }); } }, { passive: true });
-    window.addEventListener("resize", paint);
-    paint();
-    if (burger && sheet) {
-      burger.addEventListener("click", () => {
-        open = !open;
-        sheet.toggleAttribute("data-open", open);
-        burger.setAttribute("aria-expanded", String(open));
-        document.documentElement.style.overflow = open ? "hidden" : "";
-        paint();
-      });
-      document.addEventListener("keydown", (event) => { if (event.key === "Escape" && open) burger.click(); });
-    }
-  })();
-  </script>
-  <script>
-  // One dropdown for every list: the native select stays in the form (hidden) and is driven
-  // by a button and a listbox in the site's own style. Keyboard: Enter/Space, arrows, Esc.
-  (function () {
-    const chev = '<svg class="icon chev" aria-hidden="true"><use href="#i-chev"/></svg>';
-    document.querySelectorAll("select.input").forEach((select, n) => {
-      const box = document.createElement("div");
-      box.className = "dd";
-      select.parentNode.insertBefore(box, select);
-      box.appendChild(select);
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "input dd-btn";
-      button.setAttribute("aria-haspopup", "listbox");
-      button.setAttribute("aria-expanded", "false");
-      if (select.getAttribute("aria-label")) button.setAttribute("aria-label", select.getAttribute("aria-label"));
-      if (select.id) { button.id = select.id; select.removeAttribute("id"); }
-      const list = document.createElement("ul");
-      list.className = "dd-list";
-      list.setAttribute("role", "listbox");
-      list.id = "dd-list-" + n;
-      button.setAttribute("aria-controls", list.id);
-      [...select.options].forEach((option, i) => {
-        const item = document.createElement("li");
-        item.setAttribute("role", "option");
-        item.textContent = option.textContent;
-        item.dataset.index = i;
-        list.appendChild(item);
-      });
-      box.append(button, list);
-      let active = select.selectedIndex;
-      const items = [...list.children];
-      button.innerHTML = "<span></span>" + chev;  // built once: re-rendering inside a click detached its target
-      const label = button.firstChild;
-      function render() {
-        label.textContent = select.options[select.selectedIndex]?.textContent || "";
-        items.forEach((item, i) => {
-          item.setAttribute("aria-selected", String(i === select.selectedIndex));
-          item.toggleAttribute("data-active", i === active);
-        });
-      }
-      function open(state) {
-        box.toggleAttribute("data-open", state);
-        button.setAttribute("aria-expanded", String(state));
-        if (state) { active = select.selectedIndex; render(); items[active]?.scrollIntoView({ block: "nearest" }); }
-      }
-      function choose(i) {
-        select.selectedIndex = i;
-        select.dispatchEvent(new Event("change", { bubbles: true }));
-        open(false); render(); button.focus();
-      }
-      button.addEventListener("click", () => open(!box.hasAttribute("data-open")));
-      list.addEventListener("click", (event) => { const item = event.target.closest("li"); if (item) choose(Number(item.dataset.index)); });
-      button.addEventListener("keydown", (event) => {
-        const isOpen = box.hasAttribute("data-open");
-        if (event.key === "ArrowDown" || event.key === "ArrowUp") {
-          event.preventDefault();
-          if (!isOpen) return open(true);
-          active = Math.max(0, Math.min(items.length - 1, active + (event.key === "ArrowDown" ? 1 : -1)));
-          render(); items[active].scrollIntoView({ block: "nearest" });
-        } else if ((event.key === "Enter" || event.key === " ") && isOpen) { event.preventDefault(); choose(active); }
-        else if (event.key === "Escape" && isOpen) { event.preventDefault(); open(false); }
-      });
-      document.addEventListener("click", (event) => { if (event.target.isConnected && !box.contains(event.target)) open(false); });
-      render();
-    });
-  })();
-  </script>
-  <script>
-  (function () {
-    const clock = document.querySelector("[data-clock]");
-    if (!clock) return;
-    const tick = () => { clock.textContent = new Date().toLocaleTimeString("ru-RU", { timeZone: "Europe/Moscow" }) + " МСК"; };
-    tick(); setInterval(tick, 1000);
-  })();
-  </script>
-  <script>
-  (function () {
-    const box = document.querySelector("[data-toasts]");
-    if (!box) return;
-    const hide = () => box.setAttribute("data-hidden", "");
-    box.addEventListener("click", (event) => { if (event.target.closest("[data-close]")) hide(); });
-    setTimeout(hide, 7000);
-  })();
-  </script>
+  <script src="/kod-prozrachnosti/static/js/app.js"></script>
   
 </body>
 </html>
