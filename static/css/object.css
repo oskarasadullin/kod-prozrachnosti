@@ -133,3 +133,9 @@
 }
 
 /* KPI-ссылка: .card-link в app.css ставит display:block и сбрасывает сетку .kpi — возвращаем её */
+
+/* contour of the plot (И8): the polygon over a light grid, north up */
+.outline-plate { display: grid; gap: var(--s3); margin: 0; }
+.outline-plate svg { width: 100%; height: auto; aspect-ratio: 1; max-width: 420px; background: var(--control); border-radius: var(--r-in); }
+.outline-plate .grid-line { stroke: var(--hair); stroke-width: 1; }
+.outline-plate path { fill: rgba(2, 120, 244, 0.14); stroke: var(--focus); stroke-width: 2; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
