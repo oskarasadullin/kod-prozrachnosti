@@ -98,6 +98,10 @@
 }
 @media (max-width: 860px) {
   .obj-found { font-size: 16px; }
+  /* phone: the count on its own line, the actions share the next row in equal halves */
+  .obj-tools { flex: 1 1 100%; flex-wrap: wrap; gap: var(--s2); }
+  .obj-found { flex: 1 1 100%; }
+  .obj-tools .btn { flex: 1 1 0; min-width: 0; }
   .obj-filters { grid-template-columns: minmax(0, 1fr); }
   .obj-table .tbl, .obj-table .tbl tbody, .obj-table .tbl td { display: block; }
   .obj-table .tbl thead { display: none; }
@@ -127,3 +131,6 @@
   .obj-table .codes { flex-wrap: wrap; }
   .map-facts div { align-items: flex-start; }
 }
+
+.registry-documents { margin-top: 20px; padding: 20px; overflow-wrap: anywhere; }
+.registry-documents li + li { margin-top: 8px; }

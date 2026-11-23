@@ -1,0 +1,1 @@
+const s=document.querySelector("#id_password"),e=document.querySelector("#toggle-password");s&&e&&(e.hidden=!1,e.addEventListener("click",()=>{const t=s.type==="password";s.type=t?"text":"password",e.setAttribute("aria-pressed",String(t)),e.setAttribute("aria-label",t?"Скрыть пароль":"Показать пароль")}));

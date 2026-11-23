@@ -76,14 +76,18 @@
   setTimeout(hide, 7000);
 })();
 
+// Pop-up panels under a header button (bell, account): one open at a time, Esc and a click
+// outside close them.
 (function () {
-  const bell = document.querySelector("[data-bell]");
-  const panel = document.querySelector("[data-notif]");
-  if (!bell || !panel) return;
-  const set = (on) => { panel.toggleAttribute("data-open", on); bell.setAttribute("aria-expanded", String(on)); };
-  bell.addEventListener("click", (event) => { event.stopPropagation(); set(!panel.hasAttribute("data-open")); });
-  document.addEventListener("click", (event) => { if (!panel.contains(event.target)) set(false); });
-  document.addEventListener("keydown", (event) => { if (event.key === "Escape") set(false); });
+  const pairs = [...document.querySelectorAll("[data-pop]")].map((button) => [button, button.parentNode.querySelector("[data-pop-panel]")]);
+  const set = (pair, on) => { pair[1].toggleAttribute("data-open", on); pair[0].setAttribute("aria-expanded", String(on)); };
+  pairs.forEach((pair) => pair[0].addEventListener("click", (event) => {
+    event.stopPropagation();
+    const on = !pair[1].hasAttribute("data-open");
+    pairs.forEach((other) => set(other, other === pair && on));
+  }));
+  document.addEventListener("click", (event) => pairs.forEach((pair) => { if (!pair[1].contains(event.target)) set(pair, false); }));
+  document.addEventListener("keydown", (event) => { if (event.key === "Escape") pairs.forEach((pair) => set(pair, false)); });
 })();
 
 (function () {

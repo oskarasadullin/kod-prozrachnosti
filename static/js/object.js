@@ -43,10 +43,3 @@
   new ResizeObserver(draw).observe(box);
   document.fonts?.ready.then(draw);
 })();
-
-(function () {
-  const input = document.getElementById("doc-file");
-  if (input) input.addEventListener("change", () => {
-    document.getElementById("doc-file-name").textContent = input.files[0] ? input.files[0].name : "Файл не выбран";
-  });
-})();

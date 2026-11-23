@@ -53,8 +53,6 @@
 .obj-tbl tr.used td:nth-child(-n + 2) { font-weight: 600; color: var(--text); }
 
 .obj-form { display: grid; gap: var(--s4); }
-.obj-form-grid { gap: var(--s3); }
-.obj-file { display: flex; align-items: center; gap: var(--s3); flex-wrap: wrap; }
 .obj-choices { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s1); margin: 0; padding: var(--s1); border: 0; border-radius: var(--r-in); background: var(--control); }
 .obj-choice { position: relative; display: flex; align-items: center; justify-content: center; height: 40px; padding: 0 var(--s2); border-radius: var(--s2); font-size: 14px; cursor: pointer; text-align: center; }
 .obj-choice input { position: absolute; opacity: 0; pointer-events: none; }
